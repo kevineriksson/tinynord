@@ -7,7 +7,6 @@
 node_modules/
 
 # Images
-*.png
 *.pdf
 *.jpg
 *.jpeg
