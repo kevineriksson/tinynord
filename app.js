@@ -361,7 +361,36 @@ function renderHeader() {
         <span class="tn-lang-sep">·</span>
         <button class="tn-lang-btn${state.lang === 'et' ? ' is-active' : ''}" data-action="lang" data-lang="et">ET</button>
       </div>
+      <button class="tn-burger" data-action="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="tn-mobile-menu">
+        <nav class="tn-mobile-nav">
+          ${items.map(it => `<button class="tn-mobile-link${isActive(it.id) ? ' is-active' : ''}" data-action="route" data-page="${it.id}">${escapeHtml(it.label)}</button>`).join('')}
+        </nav>
+        <div class="tn-mobile-lang">
+          <button class="tn-lang-btn${state.lang === 'en' ? ' is-active' : ''}" data-action="lang" data-lang="en">EN</button>
+          <span class="tn-lang-sep">·</span>
+          <button class="tn-lang-btn${state.lang === 'et' ? ' is-active' : ''}" data-action="lang" data-lang="et">ET</button>
+        </div>
+      </div>
     </header>`;
+}
+
+function toggleMobileMenu() {
+  const header = document.querySelector('.tn-header');
+  if (!header) return;
+  const open = !header.classList.contains('is-open');
+  header.classList.toggle('is-open', open);
+  const burger = header.querySelector('.tn-burger');
+  if (burger) burger.setAttribute('aria-expanded', String(open));
+}
+function closeMobileMenu() {
+  const header = document.querySelector('.tn-header');
+  if (!header) return;
+  header.classList.remove('is-open');
+  const burger = header.querySelector('.tn-burger');
+  if (burger) burger.setAttribute('aria-expanded', 'false');
 }
 
 function renderHero() {
@@ -666,12 +695,17 @@ document.addEventListener('click', (e) => {
   const action = target.dataset.action;
   if (action === 'route') {
     e.preventDefault();
+    closeMobileMenu();
     setRoute({ page: target.dataset.page, anchor: target.dataset.anchor });
   } else if (action === 'category') {
     e.preventDefault();
+    closeMobileMenu();
     setRoute({ page: 'category', cat: target.dataset.cat });
   } else if (action === 'lang') {
     setLang(target.dataset.lang);
+    closeMobileMenu();
+  } else if (action === 'burger') {
+    toggleMobileMenu();
   } else if (action === 'product') {
     openProduct(target.dataset.id);
   } else if (action === 'close-modal') {
@@ -685,7 +719,11 @@ document.addEventListener('click', (e) => {
 });
 
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && state.activeProduct) closeProduct();
+  if (e.key === 'Escape') {
+    if (state.activeProduct) closeProduct();
+    else closeMobileMenu();
+    return;
+  }
 });
 
 // Boot
