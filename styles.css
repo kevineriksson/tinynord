@@ -386,12 +386,15 @@ img.tn-thumb-illus { object-fit: cover; }
   display: flex; align-items: center; justify-content: center;
   padding: 32px;
   animation: tn-fade 0.3s ease both;
+  overscroll-behavior: contain;
+  touch-action: none;
 }
 .tn-modal {
   background: var(--bg);
   border-radius: 24px;
   width: 100%;
   max-width: 1100px;
+  height: calc(100vh - 64px);
   max-height: calc(100vh - 64px);
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -399,9 +402,20 @@ img.tn-thumb-illus { object-fit: cover; }
   position: relative;
   border: 1.5px solid var(--ink);
   animation: tn-modal-in 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
 }
 @keyframes tn-modal-in { from { opacity: 0; transform: translateY(20px) scale(0.98); } to { opacity: 1; transform: none; } }
-@media (max-width: 880px) { .tn-modal { grid-template-columns: 1fr; max-height: calc(100vh - 32px); } .tn-modal-bg { padding: 16px; } }
+@media (max-width: 880px) {
+  .tn-modal {
+    grid-template-columns: 1fr;
+    height: calc(100vh - 32px);
+    max-height: calc(100vh - 32px);
+    overflow-y: auto;
+    grid-template-rows: auto auto;
+  }
+  .tn-modal-bg { padding: 16px; }
+}
 .tn-modal-close {
   position: absolute; top: 16px; right: 16px;
   width: 36px; height: 36px; border-radius: 50%;
@@ -413,10 +427,32 @@ img.tn-thumb-illus { object-fit: cover; }
 }
 .tn-modal-close:hover { background: var(--ink); color: var(--bg); transform: rotate(90deg); }
 
-.tn-modal-gallery { padding: 24px; display: flex; flex-direction: column; gap: 12px; min-height: 0; min-width: 0; }
-.tn-modal-main { border-radius: 16px; aspect-ratio: 1; overflow: hidden; flex: 1; min-height: 0; }
+.tn-modal-gallery {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  min-width: 0;
+  align-items: stretch;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+}
+@media (max-width: 880px) {
+  .tn-modal-gallery { overflow: visible; }
+}
+.tn-modal-main {
+  border-radius: 16px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  flex: 0 0 auto;
+  align-self: stretch;
+  width: 100%;
+}
+.tn-modal-main img { width: 100%; height: 100%; }
 .tn-modal-illus { width: 100%; height: 100%; }
-.tn-modal-thumbs { display: flex; gap: 8px; }
+.tn-modal-thumbs { display: flex; gap: 8px; width: 100%; box-sizing: border-box; }
 .tn-thumb {
   flex: 1; aspect-ratio: 1; border: 0; padding: 0;
   border-radius: 12px; overflow: hidden; cursor: pointer;
@@ -427,7 +463,15 @@ img.tn-thumb-illus { object-fit: cover; }
 .tn-thumb.is-active { opacity: 1; outline-color: var(--accent); }
 .tn-thumb-illus { width: 100%; height: 100%; }
 
-.tn-modal-info { padding: 48px 40px; overflow-y: auto; }
+.tn-modal-info {
+  padding: 48px 40px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  min-height: 0;
+}
+@media (max-width: 880px) {
+  .tn-modal-info { overflow: visible; padding: 32px 24px; }
+}
 .tn-modal-title { margin-top: 12px; font-size: clamp(32px, 4vw, 52px); }
 .tn-modal-tag { font-family: 'Cera Pro', sans-serif; font-style: italic; font-size: 18px; color: var(--ink); opacity: 0.75; margin: 12px 0 24px; }
 .tn-modal-desc { font-size: 15px; line-height: 1.65; color: var(--ink); opacity: 0.8; margin: 0 0 32px; text-wrap: pretty; }

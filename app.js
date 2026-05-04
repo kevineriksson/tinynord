@@ -293,17 +293,36 @@ function setLang(lang) {
   renderApp();
 }
 
+// iOS Safari ignores body{overflow:hidden} once a tap happens, so freeze the
+// body in place with position:fixed and restore the scroll offset on close.
+let _savedScrollY = 0;
+function lockBodyScroll() {
+  _savedScrollY = window.scrollY || window.pageYOffset || 0;
+  document.body.style.overflow = 'hidden';
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${_savedScrollY}px`;
+  document.body.style.width = '100%';
+}
+function unlockBodyScroll() {
+  document.body.style.overflow = '';
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, _savedScrollY);
+}
+
 function openProduct(id) {
   state.activeProduct = PRODUCTS.find(p => p.code === id) || null;
   state.modalImgIdx = 0;
   renderModal();
-  document.body.style.overflow = state.activeProduct ? 'hidden' : '';
+  if (state.activeProduct) lockBodyScroll();
+  else unlockBodyScroll();
 }
 
 function closeProduct() {
   state.activeProduct = null;
   renderModal();
-  document.body.style.overflow = '';
+  unlockBodyScroll();
 }
 
 // Swap only the main modal image and active-thumb class — no full re-render.
