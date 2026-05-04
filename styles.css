@@ -1,4 +1,33 @@
-/* Tinynord — brandbook-aligned (lime / beige / black, Mulish, dotted-circle motif) */
+/* Tinynord — brandbook-aligned (lime / beige / black, Cera Pro, dotted-circle motif) */
+
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('fonts/CeraPRO-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('fonts/CeraPRO-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('fonts/CeraPRO-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('fonts/CeraPRO-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --bg: #F7F1E5;
@@ -16,7 +45,7 @@ html, body { margin: 0; padding: 0; }
 body {
   background: var(--bg);
   color: var(--ink);
-  font-family: 'Mulish', system-ui, -apple-system, sans-serif;
+  font-family: 'Cera Pro', system-ui, -apple-system, sans-serif;
   font-feature-settings: "ss01", "kern";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -37,7 +66,7 @@ button { font: inherit; color: inherit; }
 
 /* ─── Type ────────────────────────────────────────────────────────────── */
 .tn-h1 {
-  font-family: 'Mulish', system-ui, sans-serif;
+  font-family: 'Cera Pro', system-ui, sans-serif;
   font-weight: 700;
   font-size: clamp(48px, 7.4vw, 112px);
   line-height: 1.0;
@@ -47,7 +76,7 @@ button { font: inherit; color: inherit; }
 }
 .tn-h1 em { font-style: normal; color: var(--accent); font-weight: inherit; }
 .tn-h2 {
-  font-family: 'Mulish', system-ui, sans-serif;
+  font-family: 'Cera Pro', system-ui, sans-serif;
   font-weight: 700;
   font-size: clamp(36px, 4.8vw, 72px);
   line-height: 1.02;
@@ -57,7 +86,7 @@ button { font: inherit; color: inherit; }
 }
 .tn-h2 em { font-style: normal; color: var(--accent); font-weight: inherit; }
 .tn-eyebrow {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Cera Pro', sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.22em;
@@ -80,9 +109,11 @@ button { font: inherit; color: inherit; }
 }
 @media (max-width: 720px) { .tn-header { padding: 20px 24px; grid-template-columns: 1fr auto; } .tn-nav { display: none; } }
 .tn-logo { display: inline-flex; align-items: center; cursor: pointer; }
+.tn-logo-img { height: 56px; width: auto; display: block; }
+@media (max-width: 720px) { .tn-logo-img { height: 40px; } }
 .tn-nav { display: flex; gap: 36px; justify-content: center; }
 .tn-nav-link {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Cera Pro', sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: var(--ink);
@@ -118,7 +149,7 @@ button { font: inherit; color: inherit; }
 @media (max-width: 880px) { .tn-hero { grid-template-columns: 1fr; gap: 48px; padding: 16px 0 64px; } }
 
 .tn-hero-eyebrow {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Cera Pro', sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.24em;
@@ -168,7 +199,10 @@ button { font: inherit; color: inherit; }
 .tn-hero-product {
   position: relative;
   animation: tn-fade 0.9s ease both 0.15s;
+  cursor: pointer;
 }
+.tn-hero-product:hover .tn-hero-product-frame { transform: translateY(-4px); }
+.tn-hero-product-frame { transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); }
 .tn-hero-product-frame {
   border-radius: 32px;
   aspect-ratio: 1 / 1.05;
@@ -184,7 +218,7 @@ button { font: inherit; color: inherit; }
   align-items: baseline;
   gap: 24px;
 }
-.tn-hero-product-name { font-family: 'Mulish', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.02em; }
+.tn-hero-product-name { font-family: 'Cera Pro', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.02em; }
 .tn-hero-product-tagline { font-size: 13px; color: var(--ink); opacity: 0.65; text-align: right; max-width: 24ch; }
 
 .tn-hero-dot-1 { position: absolute; top: -40px; right: -40px; z-index: 1; opacity: 0.85; pointer-events: none; }
@@ -201,7 +235,7 @@ button { font: inherit; color: inherit; }
 }
 @media (max-width: 720px) { .tn-slogan-band { margin: 0 -24px; padding: 40px 24px; } }
 .tn-slogan-band-text {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Cera Pro', sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: clamp(22px, 3vw, 36px);
@@ -245,12 +279,13 @@ button { font: inherit; color: inherit; }
   background: var(--beige);
 }
 .tn-cat-card:hover { transform: translateY(-6px); border-color: var(--ink); }
-.tn-cat-card-illus { flex: 1; min-height: 140px; display: flex; align-items: center; justify-content: center; }
-.tn-cat-card-illus-inner { width: 86%; aspect-ratio: 1; transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.tn-cat-card-illus { flex: 1; min-height: 140px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.tn-cat-card-illus-inner { width: 86%; aspect-ratio: 1; object-fit: contain; transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
+img.tn-cat-card-illus-inner { object-fit: contain; }
 .tn-cat-card:hover .tn-cat-card-illus-inner { transform: scale(1.05) rotate(-1deg); }
 .tn-cat-card-foot { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
 .tn-cat-card-name {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Cera Pro', sans-serif;
   font-weight: 700;
   font-size: 22px;
   letter-spacing: -0.02em;
@@ -261,7 +296,7 @@ button { font: inherit; color: inherit; }
 .tn-cat-card:hover .tn-cat-card-arrow { transform: translate(4px, -4px); opacity: 1; }
 .tn-cat-card-count {
   position: absolute; top: 20px; right: 20px;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Cera Pro', sans-serif;
   font-size: 10px; font-weight: 700; letter-spacing: 0.12em;
   color: var(--ink); opacity: 0.55;
   text-transform: uppercase;
@@ -272,7 +307,7 @@ button { font: inherit; color: inherit; }
 .tn-catpage-head { padding: 32px 0 48px; max-width: 760px; }
 .tn-back {
   background: none; border: 0; padding: 8px 0; margin-bottom: 32px;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Cera Pro', sans-serif;
   font-size: 13px; font-weight: 600; letter-spacing: 0.04em;
   color: var(--ink); opacity: 0.65; cursor: pointer;
   display: inline-flex; align-items: center; gap: 8px;
@@ -295,8 +330,51 @@ button { font: inherit; color: inherit; }
 }
 .tn-prod-card:hover .tn-prod-frame { transform: translateY(-6px); border-color: var(--ink); }
 .tn-prod-illus { width: 100%; height: 100%; }
+img.tn-prod-illus { object-fit: cover; }
+.tn-prod-img { display: block; }
+.tn-img--missing { background: var(--lightgrey); width: 100%; height: 100%; }
+.tn-catpage-sub { font-family: 'Cera Pro', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink); opacity: 0.7; margin: 48px 0 24px; }
+.tn-catpage-sub:first-child { margin-top: 0; }
+.tn-hero-product-illus { width: 100%; height: 100%; }
+img.tn-hero-product-illus { object-fit: cover; }
+.tn-modal-illus { width: 100%; height: 100%; }
+img.tn-modal-illus { object-fit: contain; }
+.tn-thumb-illus { width: 100%; height: 100%; }
+img.tn-thumb-illus { object-fit: cover; }
+.tn-modal-thumbs {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--ink) 30%, transparent) transparent;
+  /* Padding leaves room for the active thumb's outline (2px stroke + 2px offset = 4px reach). */
+  padding: 6px 6px 10px;
+  min-width: 0;
+  max-width: 100%;
+}
+.tn-modal-thumbs::-webkit-scrollbar { height: 6px; }
+.tn-modal-thumbs::-webkit-scrollbar-track { background: transparent; }
+.tn-modal-thumbs::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--ink) 25%, transparent);
+  border-radius: 3px;
+}
+.tn-modal-thumbs::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--ink) 50%, transparent);
+}
+.tn-modal-thumbs .tn-thumb {
+  flex: 0 0 72px;
+  width: 72px;
+  height: 72px;
+  aspect-ratio: 1;
+  scroll-snap-align: start;
+}
+@media (max-width: 720px) {
+  .tn-modal-thumbs .tn-thumb { flex-basis: 64px; width: 64px; height: 64px; }
+}
 .tn-prod-meta { padding: 20px 4px 0; display: flex; justify-content: space-between; gap: 24px; align-items: baseline; }
-.tn-prod-name { font-family: 'Mulish', sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; }
+.tn-prod-name { font-family: 'Cera Pro', sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; }
 .tn-prod-tag { font-size: 13px; color: var(--ink); opacity: 0.65; text-align: right; max-width: 32ch; line-height: 1.4; }
 
 /* ─── Modal ──────────────────────────────────────────────────────────── */
@@ -335,7 +413,7 @@ button { font: inherit; color: inherit; }
 }
 .tn-modal-close:hover { background: var(--ink); color: var(--bg); transform: rotate(90deg); }
 
-.tn-modal-gallery { padding: 24px; display: flex; flex-direction: column; gap: 12px; min-height: 0; }
+.tn-modal-gallery { padding: 24px; display: flex; flex-direction: column; gap: 12px; min-height: 0; min-width: 0; }
 .tn-modal-main { border-radius: 16px; aspect-ratio: 1; overflow: hidden; flex: 1; min-height: 0; }
 .tn-modal-illus { width: 100%; height: 100%; }
 .tn-modal-thumbs { display: flex; gap: 8px; }
@@ -351,7 +429,7 @@ button { font: inherit; color: inherit; }
 
 .tn-modal-info { padding: 48px 40px; overflow-y: auto; }
 .tn-modal-title { margin-top: 12px; font-size: clamp(32px, 4vw, 52px); }
-.tn-modal-tag { font-family: 'Mulish', sans-serif; font-style: italic; font-size: 18px; color: var(--ink); opacity: 0.75; margin: 12px 0 24px; }
+.tn-modal-tag { font-family: 'Cera Pro', sans-serif; font-style: italic; font-size: 18px; color: var(--ink); opacity: 0.75; margin: 12px 0 24px; }
 .tn-modal-desc { font-size: 15px; line-height: 1.65; color: var(--ink); opacity: 0.8; margin: 0 0 32px; text-wrap: pretty; }
 .tn-spec { display: grid; gap: 16px; margin: 0; padding: 24px 0 0; border-top: 1.5px solid var(--ink); }
 .tn-spec > div { display: grid; grid-template-columns: 110px 1fr; gap: 16px; align-items: baseline; }
@@ -397,7 +475,7 @@ button { font: inherit; color: inherit; }
   position: relative;
   z-index: 1;
 }
-.tn-value-t { font-family: 'Mulish', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.02em; }
+.tn-value-t { font-family: 'Cera Pro', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.02em; }
 .tn-value-b { font-size: 14px; line-height: 1.55; color: var(--ink); opacity: 0.75; margin: 0; }
 
 /* ─── Retailers ──────────────────────────────────────────────────────── */
@@ -425,7 +503,7 @@ button { font: inherit; color: inherit; }
 }
 .tn-ret-card:hover .tn-ret-logo { transform: translateY(-4px); border-color: var(--ink); }
 .tn-ret-name {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Cera Pro', sans-serif;
   font-weight: 700;
   font-size: clamp(24px, 2.4vw, 32px);
   letter-spacing: -0.025em;
@@ -449,11 +527,13 @@ button { font: inherit; color: inherit; }
 .tn-footer-hills { position: absolute; left: 0; right: 0; bottom: 0; height: 100px; opacity: 0.35; pointer-events: none; }
 .tn-footer-top { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; position: relative; z-index: 1; }
 @media (max-width: 880px) { .tn-footer-top { grid-template-columns: 1fr; gap: 48px; } .tn-footer { padding: 56px 24px 24px; } }
-.tn-footer-tag { font-family: 'Mulish', sans-serif; font-style: italic; font-size: 18px; margin: 16px 0 8px; opacity: 0.85; }
+.tn-footer-logo { height: 56px; width: auto; display: block; filter: invert(1); }
+@media (max-width: 720px) { .tn-footer-logo { height: 44px; } }
+.tn-footer-tag { font-family: 'Cera Pro', sans-serif; font-style: italic; font-size: 18px; margin: 16px 0 8px; opacity: 0.85; }
 .tn-footer-addr { font-size: 13px; opacity: 0.55; margin: 0; }
 .tn-footer-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
 @media (max-width: 540px) { .tn-footer-cols { grid-template-columns: 1fr 1fr; } }
-.tn-footer-h { font-family: 'Mulish', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.55; margin-bottom: 16px; }
+.tn-footer-h { font-family: 'Cera Pro', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.55; margin-bottom: 16px; }
 .tn-footer-cols ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
 .tn-footer-cols a { font-size: 14px; color: var(--bg); opacity: 0.85; transition: color 0.2s, opacity 0.2s; cursor: pointer; }
 .tn-footer-cols a:hover { color: var(--accent); opacity: 1; }

@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "tinynord",
+			"path": "../../tinynord/tinynord"
+		},
+		{
+			"name": "GENERAL",
+			"path": "."
+		},
+		{
+			"name": "PRODUCT CATEGORIES",
+			"path": "../PRODUCT CATEGORIES"
+		}
+	],
+	"settings": {}
+}

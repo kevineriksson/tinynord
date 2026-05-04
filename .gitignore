@@ -1,0 +1,24 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+
+# Images
+*.png
+*.pdf
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.svg
+*.bmp
+*.tiff
+*.tif
+*.ico
+*.avif
+*.heic
+*.heif
+*.raw

@@ -127,167 +127,41 @@ const COPY = {
   },
 };
 
-const CATEGORIES = [
-  { id: 'strollers',    en: 'Strollers',            et: 'Lapsevankrid',           count: 2 },
-  { id: 'stroller-acc', en: 'Stroller Accessories', et: 'Vankri tarvikud',        count: 2 },
-  { id: 'bedroom',      en: 'Bedroom',              et: 'Magamistuba',            count: 2 },
-  { id: 'bathroom',     en: 'Bathroom',             et: 'Vannituba',              count: 2 },
-  { id: 'eating',       en: 'Eating Goods',         et: 'Söögivahendid', count: 2 },
-  { id: 'clothing',     en: 'Clothing',             et: 'Rõivad',             count: 2 },
-  { id: 'safety',       en: 'Safety Products',      et: 'Turvatooted',            count: 2 },
-  { id: 'car',          en: 'Car Accessories',      et: 'Auto tarvikud',          count: 2 },
+const _CATS_BASE = [
+  { id: 'strollers',    en: 'Strollers',            et: 'Lapsevankrid' },
+  { id: 'stroller-acc', en: 'Stroller Accessories', et: 'Vankri tarvikud' },
+  { id: 'bedroom',      en: 'Bedroom',              et: 'Magamistuba' },
+  { id: 'bathroom',     en: 'Bathroom',             et: 'Vannituba' },
+  { id: 'eating',       en: 'Eating Goods',         et: 'Söögivahendid' },
+  { id: 'clothing',     en: 'Clothing',             et: 'Rõivad' },
+  { id: 'safety',       en: 'Safety Products',      et: 'Turvatooted' },
+  { id: 'car',          en: 'Car Accessories',      et: 'Auto tarvikud' },
 ];
 
-const PRODUCTS = [
-  { id: 'fjord-04', cat: 'strollers', tint: 'lime',
-    en: { name: 'Fjord 04 Pram', tag: 'A complete travel system, from newborn to toddler.' },
-    et: { name: 'Fjord 04 vanker', tag: 'Täielik süsteem väikelapsest taadiks.' },
-    desc: { en: 'Four configurations — carrycot, seat, car seat adapter, and toddler stand. Magnesium chassis, all-terrain wheels with PU-foam cushioning, and a one-handed fold designed for narrow Nordic doorways.', et: 'Neli konfiguratsiooni — vanker, iste, turvahoidja adapter ja väikelapse seismislaud.' },
-    materials: ['Magnesium chassis','OEKO-TEX cotton canvas','Recycled aluminium handle'],
-    dims: '102 × 60 × 95 cm — 12.4 kg',
-    ages: '0–36 months',
-    certs: ['EN 1888-1','EN 1466','OEKO-TEX 100'],
-    palette: ['#E3D8D1','#959791','#231F20'] },
-  { id: 'tundra-go', cat: 'strollers', tint: 'beige',
-    en: { name: 'Tundra Go Buggy', tag: 'Light, foldable, made for cobblestones.' },
-    et: { name: 'Tundra Go jalutuskaru', tag: 'Kerge, kokkupandav.' },
-    desc: { en: 'A 6.8 kg city buggy that folds with one hand and stands on its own. Reclines fully flat and rolls on suspension wheels tuned for the Tallinn old town.', et: 'Linna jalutuskaru kaaluga 6.8 kg.' },
-    materials: ['Aluminium alloy frame','OEKO-TEX shadowfabric','Recycled PET basket'],
-    dims: '47 × 30 × 56 cm folded — 6.8 kg',
-    ages: '6–48 months',
-    certs: ['EN 1888-2','OEKO-TEX 100'],
-    palette: ['#F7F1E5','#231F20','#D0D15F'] },
-  { id: 'rain-cover', cat: 'stroller-acc', tint: 'lightgrey',
-    en: { name: 'Sky Rain Cover', tag: 'Tailored to fit the Fjord 04 and Tundra Go.' },
-    et: { name: 'Sky vihmakate', tag: 'Õmmeldud Fjord 04 ja Tundra Go jaoks.' },
-    desc: { en: 'A clear PU rain cover with a soft trim and a single front zip for ventilation. Folds into a matching pouch the size of a paperback.', et: 'Läbipaistev PU vihmakate.' },
-    materials: ['PFC-free PU','Recycled cotton trim','YKK zippers'],
-    dims: 'Universal fit — packs to 18 × 12 cm',
-    ages: 'All ages',
-    certs: ['REACH','OEKO-TEX 100'],
-    palette: ['#F7F1E5','#959791','#231F20'] },
-  { id: 'footmuff-arctic', cat: 'stroller-acc', tint: 'beige',
-    en: { name: 'Arctic Footmuff', tag: 'For −20 °C mornings.' },
-    et: { name: 'Arctic jalakott', tag: '−20 °C hommikuteks.' },
-    desc: { en: 'Recycled wool fleece interior, water-repellent shell, full-length two-way zip. Tested through a Tallinn winter and an Areön morning at the lighthouse.', et: 'Ringlussevõetud villane sisu.' },
-    materials: ['Recycled wool fleece','Bluesign® shell','Cotton lining'],
-    dims: '90 × 45 cm',
-    ages: '0–36 months',
-    certs: ['Bluesign®','OEKO-TEX 100'],
-    palette: ['#E3D8D1','#959791','#231F20'] },
-  { id: 'moln-cot', cat: 'bedroom', tint: 'beige',
-    en: { name: 'Mo̊ln Convertible Cot', tag: 'A cot, a toddler bed, a junior bed.' },
-    et: { name: 'Mo̊ln muundatav voodi', tag: 'Võrepesa, väikelapse voodi.' },
-    desc: { en: 'Solid Estonian birch in a brushed lime-wash. Three heights, two open sides, and a conversion kit included. No exposed hardware.', et: 'Eesti kase massiiv.' },
-    materials: ['FSC Estonian birch','Water-based lacquer','Brass fittings'],
-    dims: '125 × 67 × 88 cm',
-    ages: '0–6 years',
-    certs: ['EN 716','FSC','EU Ecolabel'],
-    palette: ['#E3D8D1','#F7F1E5','#231F20'] },
-  { id: 'cloud-mobile', cat: 'bedroom', tint: 'lime',
-    en: { name: 'Cloud Mobile', tag: 'Hand-felted shapes that move with the room.' },
-    et: { name: 'Cloud mobiil', tag: 'Käsitsi vooditud kujundid.' },
-    desc: { en: 'Six wool-felt clouds suspended on a turned beech ring. Balanced to drift on the gentlest breeze; never battery-powered, never musical.', et: 'Kuus villasest vildist pilvekest.' },
-    materials: ['100% wool felt','FSC beech','Cotton cord'],
-    dims: 'Ø 32 cm — 60 cm drop',
-    ages: '0–12 months',
-    certs: ['EN 71','OEKO-TEX 100'],
-    palette: ['#D0D15F','#F7F1E5','#231F20'] },
-  { id: 'soft-tub', cat: 'bathroom', tint: 'lightgrey',
-    en: { name: 'Soft-Tub Baby Bath', tag: 'Silicone, suction-base, dishwasher safe.' },
-    et: { name: 'Soft-Tub vann', tag: 'Silikoon, alusega.' },
-    desc: { en: 'Food-grade silicone with a non-slip bottom and a low-pour spout for easy emptying. Folds flat for travel.', et: 'Toidusilikoon mittelibiseva põhjaga.' },
-    materials: ['Food-grade silicone','BPA-free'],
-    dims: '76 × 44 × 22 cm',
-    ages: '0–12 months',
-    certs: ['LFGB','FDA'],
-    palette: ['#F7F1E5','#E3D8D1','#231F20'] },
-  { id: 'linen-towel', cat: 'bathroom', tint: 'beige',
-    en: { name: 'Hooded Linen Towel', tag: 'Stonewashed Estonian linen.' },
-    et: { name: 'Kapuutsiga linane rätik', tag: 'Pehmestatud Eesti linane.' },
-    desc: { en: 'Woven in Tartu from European flax, then stonewashed three times for a softness that ordinary cotton can’t match. Two corners, one hood, no buttons.', et: 'Kootud Tartus Euroopa linast.' },
-    materials: ['100% European flax linen'],
-    dims: '90 × 90 cm',
-    ages: '0–3 years',
-    certs: ['European Flax®','OEKO-TEX 100'],
-    palette: ['#E3D8D1','#F7F1E5','#959791'] },
-  { id: 'first-bowl', cat: 'eating', tint: 'lime',
-    en: { name: 'First Bowl & Spoon', tag: 'Weighted base. Won’t skid, won’t flip.' },
-    et: { name: 'Esimene kauss ja lusikas', tag: 'Raskendatud põhi.' },
-    desc: { en: 'A wide, low silicone bowl with a stoneware-feel weight at the base, paired with a cherry-wood handled spoon sized to a six-month-old’s grip.', et: 'Lai madal silikoonkauss.' },
-    materials: ['Food-grade silicone','FSC cherry wood'],
-    dims: 'Ø 14 cm — spoon 14 cm',
-    ages: '6+ months',
-    certs: ['LFGB','FSC'],
-    palette: ['#D0D15F','#231F20','#F7F1E5'] },
-  { id: 'sip-cup', cat: 'eating', tint: 'beige',
-    en: { name: 'Sip Training Cup', tag: 'A real cup, sized small.' },
-    et: { name: 'Sip joogitäss', tag: 'Päris täss, väike.' },
-    desc: { en: 'A 90 ml borosilicate cup with a silicone collar. No spout, no straw, no lid — the way speech therapists recommend.', et: '90 ml klaasist täss.' },
-    materials: ['Borosilicate glass','Food-grade silicone'],
-    dims: 'Ø 6 × 6 cm — 90 ml',
-    ages: '6+ months',
-    certs: ['LFGB'],
-    palette: ['#E3D8D1','#F7F1E5','#231F20'] },
-  { id: 'sleep-bag', cat: 'clothing', tint: 'beige',
-    en: { name: 'Merino Sleep Bag', tag: 'Year-round. Two togs in one.' },
-    et: { name: 'Meriino magamiskott', tag: 'Aastaringne.' },
-    desc: { en: 'A Merino jersey shell over a fine-knit liner. Unzip the liner in summer, keep it in for winter. Side zip, fold-over mitts, no tags.', et: 'Meriino kest peene koe voodriga.' },
-    materials: ['100% Merino wool','OEKO-TEX cotton liner'],
-    dims: 'Sizes 0–6, 6–18, 18–36 mo',
-    ages: '0–36 months',
-    certs: ['ZQ Merino','OEKO-TEX 100'],
-    palette: ['#E3D8D1','#F7F1E5','#231F20'] },
-  { id: 'first-cardigan', cat: 'clothing', tint: 'lightgrey',
-    en: { name: 'First Cardigan', tag: 'Knitted in Viljandi from undyed wool.' },
-    et: { name: 'Esimene kampsun', tag: 'Kootud Viljandis värvimata villast.' },
-    desc: { en: 'A relaxed boxy cut with raglan sleeves and shell buttons. Three natural fleece colours — oat, ash, mocha — nothing dyed.', et: 'Vaba lõige raglaan-varrukatega.' },
-    materials: ['100% undyed Estonian wool','Mother-of-pearl buttons'],
-    dims: 'Sizes 56 → 92 cm',
-    ages: '0–24 months',
-    certs: ['Estonian wool mark'],
-    palette: ['#F7F1E5','#959791','#231F20'] },
-  { id: 'door-set', cat: 'safety', tint: 'beige',
-    en: { name: 'Quiet Door Set', tag: 'Foam stoppers and finger guards.' },
-    et: { name: 'Vaikse ukse komplekt', tag: 'Vahust stopperid.' },
-    desc: { en: 'A six-piece set: two finger guards, two soft door-stoppers, two corner caps. All in a calm tone that disappears against most walls.', et: 'Kuueosaline komplekt.' },
-    materials: ['EVA foam','Recycled silicone'],
-    dims: 'Universal fit',
-    ages: '6+ months',
-    certs: ['EN 71','REACH'],
-    palette: ['#E3D8D1','#F7F1E5','#231F20'] },
-  { id: 'plug-set', cat: 'safety', tint: 'lime',
-    en: { name: 'Outlet Plug Set', tag: 'Pinch-proof EU type-F covers.' },
-    et: { name: 'Pistikukaitsmete komplekt', tag: 'EU tüüp-F kaitsmed.' },
-    desc: { en: 'A box of twelve translucent plugs that slot flush against the wall. Tested to 25 N pull-out force. No visible logo.', et: 'Karp 12 läbipaistva pistikuga.' },
-    materials: ['Recycled ABS'],
-    dims: 'EU type F (Schuko)',
-    ages: '6+ months',
-    certs: ['EN 50075','REACH'],
-    palette: ['#D0D15F','#F7F1E5','#231F20'] },
-  { id: 'sun-shade', cat: 'car', tint: 'lime',
-    en: { name: 'Linen Sun Shade', tag: 'Two per pack. Static-cling, no suction.' },
-    et: { name: 'Linane päikesekate', tag: 'Kaks pakis.' },
-    desc: { en: 'A loose-weave linen sun shade that cuts 89 % of UV without darkening the cabin. Static-cling sticks to clean glass for years.', et: 'Linane kate, mis lõikab 89 % UV.' },
-    materials: ['100% linen','Static-cling backing'],
-    dims: '44 × 36 cm × 2',
-    ages: 'All ages',
-    certs: ['UPF 50+','OEKO-TEX 100'],
-    palette: ['#D0D15F','#F7F1E5','#231F20'] },
-  { id: 'mirror', cat: 'car', tint: 'beige',
-    en: { name: 'Rear-Seat Mirror', tag: 'Wide angle, shatterproof, tilt-locked.' },
-    et: { name: 'Tagaistme peegel', tag: 'Lai vaatenurk.' },
-    desc: { en: 'A 24 cm convex mirror in a soft frame. Adjustable head locks in place — no rattles on cobbles, no glare in headlights.', et: '24 cm kumer peegel.' },
-    materials: ['Shatterproof acrylic','Recycled silicone frame'],
-    dims: 'Ø 24 cm',
-    ages: '0–2 years',
-    certs: ['ECE R17'],
-    palette: ['#E3D8D1','#231F20','#F7F1E5'] },
-];
+const TND = window.TINYNORD_DATA || { products: [], counts: {} };
+const CATEGORIES = _CATS_BASE.map(c => ({ ...c, count: TND.counts[c.id] || 0 }));
+const PRODUCTS = TND.products;
+function productsInCategory(catId) { return PRODUCTS.filter(p => p.category === catId); }
 
-function tintColor(tint) {
-  return THEME[tint] || THEME.lightgrey;
+// ─── Cloudinary ───────────────────────────────────────────────────────────
+// Set CLOUD_NAME to your Cloudinary cloud name (dashboard → Account Details).
+// PATH_PREFIX is prepended to image paths from data.js — set it to the folder
+// you uploaded into on Cloudinary (e.g. 'tinynord/'), or '' if you uploaded
+// preserving the original folder structure at the cloud root.
+const CLOUDINARY = {
+  CLOUD_NAME: 'dqbtlzcft',
+  PATH_PREFIX: '',
+  DEFAULTS: 'f_auto,q_auto',
+};
+function cldUrl(path, transforms = '') {
+  if (!path) return '';
+  if (/^https?:\/\//i.test(path)) return path;
+  const decoded = decodeURIComponent(path).replace(/^\/+/, '');
+  const publicId = encodeURI(CLOUDINARY.PATH_PREFIX + decoded).replace(/#/g, '%23').replace(/\?/g, '%3F');
+  const t = [CLOUDINARY.DEFAULTS, transforms].filter(Boolean).join(',');
+  return `https://res.cloudinary.com/${CLOUDINARY.CLOUD_NAME}/image/upload/${t}/${publicId}`;
 }
+
 
 const RETAILERS = [
   { name: 'Nordbaby', url: 'https://nordbaby.com', country: 'Estonia, Latvia, Finland', tagline: 'The flagship retailer.', flag: '🇪🇪' },
@@ -305,7 +179,7 @@ const logoMark = (size = 28, color = 'currentColor') =>
 const logoWordmark = (height = 32, color = 'currentColor') =>
   `<span style="display:inline-flex;align-items:center;gap:${height * 0.22}px;color:${color}">
      ${logoMark(Math.round(height * 0.95), color)}
-     <span style="font-family:Mulish,system-ui,sans-serif;font-weight:700;font-size:${height * 0.78}px;letter-spacing:-0.025em;line-height:1;color:${color}">tinynord</span>
+     <span style="font-family:'Cera Pro',system-ui,sans-serif;font-weight:700;font-size:${height * 0.78}px;letter-spacing:-0.025em;line-height:1;color:${color}">tinynord</span>
    </span>`;
 
 function dottedCircle({ size = 120, color = '#D0D15F', cut = 'right', dotSize = 4, style = '' } = {}) {
@@ -339,198 +213,18 @@ function wavyHills({ color = '#D0D15F', opacity = 1, style = '' } = {}) {
 
 const slogan = (text, color = 'currentColor', size = 16) => {
   const dot = `<span style="width:${size * 0.25}px;height:${size * 0.25}px;border-radius:50%;background:${color};display:inline-block"></span>`;
-  return `<span style="font-family:Mulish,system-ui,sans-serif;font-style:italic;font-weight:400;font-size:${size}px;letter-spacing:0.02em;color:${color};display:inline-flex;align-items:center;gap:${size * 0.5}px">${dot}${escapeHtml(text)}${dot}</span>`;
+  return `<span style="font-family:'Cera Pro',system-ui,sans-serif;font-style:italic;font-weight:400;font-size:${size}px;letter-spacing:0.02em;color:${color};display:inline-flex;align-items:center;gap:${size * 0.5}px">${dot}${escapeHtml(text)}${dot}</span>`;
 };
 
-// ─── Product illustrations (mapped by id) ─────────────────────────────────
-const ILLUSTRATIONS = {
-  'fjord-04': (bg, mid, accent) => `
-    <ellipse cx="200" cy="330" rx="120" ry="6" fill="#000" opacity="0.08"/>
-    <path d="M 100 200 Q 100 160 140 160 L 280 160 Q 320 160 320 200 L 320 240 Q 320 250 310 250 L 110 250 Q 100 250 100 240 Z" fill="${mid}"/>
-    <path d="M 100 200 Q 100 160 140 160 L 220 160 Q 200 200 195 250 L 110 250 Q 100 250 100 240 Z" fill="${accent}" opacity="0.12"/>
-    <path d="M 320 220 Q 350 180 340 130" stroke="${accent}" stroke-width="6" fill="none" stroke-linecap="round"/>
-    <circle cx="340" cy="130" r="6" fill="${accent}"/>
-    <circle cx="140" cy="290" r="36" fill="${accent}"/>
-    <circle cx="140" cy="290" r="14" fill="${bg}"/>
-    <circle cx="280" cy="290" r="36" fill="${accent}"/>
-    <circle cx="280" cy="290" r="14" fill="${bg}"/>
-    <line x1="160" y1="250" x2="155" y2="285" stroke="${accent}" stroke-width="4"/>
-    <line x1="260" y1="250" x2="265" y2="285" stroke="${accent}" stroke-width="4"/>
-    <line x1="120" y1="220" x2="300" y2="220" stroke="${accent}" stroke-width="1" opacity="0.3"/>`,
-  'tundra-go': (bg, mid, accent) => `
-    <ellipse cx="200" cy="335" rx="110" ry="5" fill="#000" opacity="0.08"/>
-    <path d="M 145 100 L 175 100 L 230 250 L 200 250 Z" fill="${accent}"/>
-    <path d="M 145 220 L 280 220 L 270 270 L 160 270 Z" fill="${mid}"/>
-    <path d="M 145 100 Q 130 95 130 110" stroke="${accent}" stroke-width="6" fill="none" stroke-linecap="round"/>
-    <line x1="170" y1="250" x2="140" y2="310" stroke="${accent}" stroke-width="5" stroke-linecap="round"/>
-    <line x1="260" y1="250" x2="290" y2="310" stroke="${accent}" stroke-width="5" stroke-linecap="round"/>
-    <line x1="200" y1="265" x2="200" y2="305" stroke="${accent}" stroke-width="3"/>
-    <circle cx="140" cy="310" r="20" fill="${accent}"/>
-    <circle cx="200" cy="310" r="14" fill="${accent}"/>
-    <circle cx="290" cy="310" r="20" fill="${accent}"/>
-    <circle cx="140" cy="310" r="6" fill="${bg}"/>
-    <circle cx="290" cy="310" r="6" fill="${bg}"/>`,
-  'rain-cover': (bg, mid, accent) => `
-    <ellipse cx="200" cy="320" rx="100" ry="5" fill="#000" opacity="0.06"/>
-    <path d="M 110 260 Q 110 130 200 130 Q 290 130 290 260 Z" fill="${mid}" opacity="0.4" stroke="${accent}" stroke-width="1.5"/>
-    <path d="M 200 130 L 200 260" stroke="${accent}" stroke-width="0.8" opacity="0.4"/>
-    <line x1="200" y1="135" x2="200" y2="220" stroke="${accent}" stroke-width="2" stroke-dasharray="3 2"/>
-    <circle cx="200" cy="220" r="4" fill="${accent}"/>
-    <circle cx="140" cy="170" r="3" fill="${accent}" opacity="0.3"/>
-    <circle cx="260" cy="200" r="3" fill="${accent}" opacity="0.3"/>
-    <circle cx="170" cy="240" r="2" fill="${accent}" opacity="0.3"/>`,
-  'footmuff-arctic': (bg, mid, accent) => `
-    <ellipse cx="200" cy="335" rx="110" ry="5" fill="#000" opacity="0.06"/>
-    <path d="M 130 130 Q 130 110 150 110 L 250 110 Q 270 110 270 130 L 270 310 Q 270 325 255 325 L 145 325 Q 130 325 130 310 Z" fill="${mid}"/>
-    <path d="M 130 130 Q 130 110 150 110 L 250 110 Q 270 110 270 130 L 270 145 Q 270 155 250 158 Q 200 150 150 158 Q 130 155 130 145 Z" fill="${bg}" stroke="${accent}" stroke-width="0.5" opacity="0.9"/>
-    <line x1="200" y1="160" x2="200" y2="310" stroke="${accent}" stroke-width="1.5" stroke-dasharray="2 2"/>
-    <circle cx="200" cy="310" r="5" fill="${accent}"/>
-    <circle cx="155" cy="135" r="2" fill="${accent}" opacity="0.2"/>
-    <circle cx="245" cy="138" r="2" fill="${accent}" opacity="0.2"/>`,
-  'moln-cot': (bg, mid, accent) => {
-    let slats = '';
-    for (let i = 0; i < 11; i++) slats += `<rect x="${92 + i * 22}" y="174" width="3.5" height="96" fill="${accent}" opacity="0.85"/>`;
-    return `
-      <ellipse cx="200" cy="330" rx="120" ry="5" fill="#000" opacity="0.07"/>
-      <rect x="80" y="160" width="240" height="14" rx="2" fill="${accent}"/>
-      <rect x="80" y="270" width="240" height="14" rx="2" fill="${accent}"/>
-      ${slats}
-      <rect x="80" y="140" width="14" height="160" rx="3" fill="${accent}"/>
-      <rect x="306" y="140" width="14" height="160" rx="3" fill="${accent}"/>
-      <rect x="100" y="220" width="200" height="48" rx="4" fill="${mid}"/>
-      <rect x="120" y="225" width="160" height="6" rx="2" fill="${bg}" opacity="0.6"/>
-      <circle cx="245" cy="248" r="10" fill="${bg}" opacity="0.85"/>
-      <circle cx="241" cy="245" r="1.5" fill="${accent}"/>
-      <circle cx="249" cy="245" r="1.5" fill="${accent}"/>`;
-  },
-  'cloud-mobile': (bg, mid, accent) => `
-    <line x1="200" y1="40" x2="200" y2="130" stroke="${accent}" stroke-width="1"/>
-    <ellipse cx="200" cy="150" rx="100" ry="14" fill="none" stroke="${accent}" stroke-width="3"/>
-    <ellipse cx="200" cy="150" rx="100" ry="14" fill="none" stroke="${accent}" stroke-width="1" opacity="0.3"/>
-    <line x1="120" y1="156" x2="120" y2="220" stroke="${accent}" stroke-width="0.6"/>
-    <line x1="160" y1="160" x2="160" y2="260" stroke="${accent}" stroke-width="0.6"/>
-    <line x1="200" y1="162" x2="200" y2="240" stroke="${accent}" stroke-width="0.6"/>
-    <line x1="240" y1="160" x2="240" y2="290" stroke="${accent}" stroke-width="0.6"/>
-    <line x1="280" y1="156" x2="280" y2="230" stroke="${accent}" stroke-width="0.6"/>
-    <ellipse cx="120" cy="230" rx="20" ry="14" fill="${mid}"/>
-    <ellipse cx="160" cy="270" rx="22" ry="15" fill="${bg}" stroke="${accent}" stroke-width="0.5" opacity="0.95"/>
-    <ellipse cx="200" cy="250" rx="18" ry="13" fill="${mid}" opacity="0.7"/>
-    <ellipse cx="240" cy="300" rx="22" ry="15" fill="${bg}" stroke="${accent}" stroke-width="0.5" opacity="0.95"/>
-    <ellipse cx="280" cy="240" rx="20" ry="14" fill="${mid}"/>
-    <circle cx="115" cy="225" r="6" fill="${mid}"/>
-    <circle cx="156" cy="265" r="7" fill="${bg}" stroke="${accent}" stroke-width="0.5"/>
-    <circle cx="244" cy="295" r="7" fill="${bg}" stroke="${accent}" stroke-width="0.5"/>
-    <circle cx="285" cy="235" r="6" fill="${mid}"/>`,
-  'soft-tub': (bg, mid, accent) => `
-    <ellipse cx="200" cy="320" rx="130" ry="6" fill="#000" opacity="0.06"/>
-    <path d="M 80 180 Q 80 270 200 290 Q 320 270 320 180 Z" fill="${mid}"/>
-    <path d="M 110 200 Q 110 260 200 275 Q 290 260 290 200 Z" fill="${bg}" opacity="0.7"/>
-    <path d="M 80 180 Q 70 180 65 195 L 80 200 Z" fill="${mid}"/>
-    <path d="M 130 235 Q 165 230 200 235 T 270 235" stroke="${accent}" stroke-width="1.2" fill="none" opacity="0.35"/>
-    <path d="M 145 250 Q 180 246 215 250 T 260 250" stroke="${accent}" stroke-width="1" fill="none" opacity="0.25"/>
-    <circle cx="120" cy="260" r="3" fill="${accent}" opacity="0.25"/>
-    <circle cx="280" cy="260" r="3" fill="${accent}" opacity="0.25"/>`,
-  'linen-towel': (bg, mid, accent) => {
-    let h = '', v = '';
-    for (let i = 0; i < 12; i++) h += `<line x1="118" y1="${150 + i * 14}" x2="282" y2="${150 + i * 14}" stroke="${accent}" stroke-width="0.4" opacity="0.18"/>`;
-    for (let i = 0; i < 14; i++) v += `<line x1="${120 + i * 12}" y1="135" x2="${120 + i * 12}" y2="318" stroke="${accent}" stroke-width="0.4" opacity="0.12"/>`;
-    return `
-      <ellipse cx="200" cy="335" rx="110" ry="5" fill="#000" opacity="0.06"/>
-      <path d="M 110 130 L 290 130 L 280 320 L 120 320 Z" fill="${mid}"/>
-      <path d="M 170 130 L 200 100 L 230 130 Z" fill="${mid}"/>
-      <path d="M 170 130 L 200 100 L 230 130 Z" fill="${accent}" opacity="0.1"/>
-      ${h}${v}
-      <rect x="262" y="280" width="14" height="22" rx="1" fill="${bg}" stroke="${accent}" stroke-width="0.5"/>`;
-  },
-  'first-bowl': (bg, mid, accent) => `
-    <ellipse cx="200" cy="290" rx="130" ry="8" fill="#000" opacity="0.08"/>
-    <path d="M 90 180 Q 90 270 200 280 Q 310 270 310 180 Z" fill="${mid}"/>
-    <ellipse cx="200" cy="180" rx="110" ry="22" fill="${bg}" stroke="${accent}" stroke-width="1"/>
-    <ellipse cx="200" cy="180" rx="100" ry="18" fill="${accent}" opacity="0.08"/>
-    <path d="M 320 110 Q 350 130 340 165" stroke="${accent}" stroke-width="6" fill="none" stroke-linecap="round"/>
-    <ellipse cx="338" cy="180" rx="14" ry="10" transform="rotate(20 338 180)" fill="${accent}"/>`,
-  'sip-cup': (bg, mid, accent) => `
-    <ellipse cx="200" cy="330" rx="80" ry="5" fill="#000" opacity="0.07"/>
-    <path d="M 140 130 L 260 130 L 250 310 Q 250 320 240 320 L 160 320 Q 150 320 150 310 Z" fill="${bg}" opacity="0.4" stroke="${accent}" stroke-width="1.5"/>
-    <rect x="142" y="180" width="116" height="40" fill="${mid}"/>
-    <path d="M 158 280 L 242 280 L 246 300 Q 246 310 240 310 L 160 310 Q 154 310 154 300 Z" fill="${accent}" opacity="0.3"/>
-    <ellipse cx="200" cy="130" rx="60" ry="6" fill="none" stroke="${accent}" stroke-width="1.5"/>`,
-  'sleep-bag': (bg, mid, accent) => {
-    let lines = '';
-    for (let i = 0; i < 8; i++) lines += `<line x1="130" y1="${170 + i * 20}" x2="270" y2="${170 + i * 20}" stroke="${accent}" stroke-width="0.3" opacity="0.15"/>`;
-    return `
-      <ellipse cx="200" cy="335" rx="115" ry="5" fill="#000" opacity="0.07"/>
-      <path d="M 130 140 L 270 140 L 280 320 L 120 320 Z" fill="${mid}"/>
-      <path d="M 130 140 Q 100 145 100 175 L 130 175 Z" fill="${mid}"/>
-      <path d="M 270 140 Q 300 145 300 175 L 270 175 Z" fill="${mid}"/>
-      <path d="M 175 130 Q 200 110 225 130 L 220 145 L 180 145 Z" fill="${bg}" stroke="${accent}" stroke-width="0.8"/>
-      <line x1="135" y1="160" x2="135" y2="310" stroke="${accent}" stroke-width="1.5" stroke-dasharray="2 2"/>
-      ${lines}`;
-  },
-  'first-cardigan': (bg, mid, accent) => {
-    let knit = '';
-    for (let i = 0; i < 30; i++) knit += `<line x1="${130 + i * 5}" y1="180" x2="${130 + i * 5}" y2="305" stroke="${accent}" stroke-width="0.25" opacity="0.18"/>`;
-    let buttons = '';
-    for (const y of [180, 215, 250, 285]) buttons += `<circle cx="200" cy="${y}" r="3" fill="${bg}" stroke="${accent}" stroke-width="0.6"/>`;
-    return `
-      <ellipse cx="200" cy="320" rx="120" ry="5" fill="#000" opacity="0.06"/>
-      <path d="M 120 170 L 200 150 L 280 170 L 290 310 L 110 310 Z" fill="${mid}"/>
-      <path d="M 120 170 L 70 220 L 90 240 L 130 200 Z" fill="${mid}"/>
-      <path d="M 280 170 L 330 220 L 310 240 L 270 200 Z" fill="${mid}"/>
-      <line x1="200" y1="155" x2="200" y2="310" stroke="${accent}" stroke-width="0.8"/>
-      ${buttons}${knit}`;
-  },
-  'door-set': (bg, mid, accent) => `
-    <ellipse cx="200" cy="340" rx="140" ry="6" fill="#000" opacity="0.05"/>
-    <path d="M 90 130 L 200 130 Q 220 130 220 150 L 220 230 Q 220 250 200 250 L 90 250 Q 100 200 90 130 Z" fill="${mid}"/>
-    <ellipse cx="280" cy="180" rx="50" ry="22" fill="${mid}"/>
-    <rect x="230" y="180" width="100" height="50" fill="${mid}"/>
-    <ellipse cx="280" cy="230" rx="50" ry="22" fill="${accent}" opacity="0.15"/>
-    <ellipse cx="280" cy="180" rx="50" ry="22" fill="none" stroke="${accent}" stroke-width="0.6" opacity="0.4"/>
-    <path d="M 130 280 L 200 280 L 200 320 Z" fill="${mid}"/>
-    <path d="M 250 280 L 320 280 L 320 320 Z" fill="${mid}"/>`,
-  'plug-set': (bg, mid, accent) => `
-    <ellipse cx="200" cy="330" rx="100" ry="6" fill="#000" opacity="0.06"/>
-    <rect x="120" y="120" width="160" height="200" rx="14" fill="${mid}"/>
-    <rect x="120" y="120" width="160" height="200" rx="14" fill="none" stroke="${accent}" stroke-width="0.6" opacity="0.3"/>
-    <circle cx="200" cy="220" r="50" fill="${bg}" stroke="${accent}" stroke-width="1"/>
-    <circle cx="200" cy="220" r="36" fill="${accent}" opacity="0.18"/>
-    <circle cx="200" cy="220" r="36" fill="none" stroke="${accent}" stroke-width="0.8"/>
-    <circle cx="186" cy="220" r="3.5" fill="${accent}"/>
-    <circle cx="214" cy="220" r="3.5" fill="${accent}"/>
-    <rect x="196" y="180" width="8" height="3" fill="${accent}"/>
-    <rect x="196" y="257" width="8" height="3" fill="${accent}"/>`,
-  'sun-shade': (bg, mid, accent) => {
-    let h = '', v = '';
-    for (let i = 0; i < 14; i++) h += `<line x1="102" y1="${125 + i * 11}" x2="298" y2="${125 + i * 11}" stroke="${accent}" stroke-width="0.3" opacity="0.2"/>`;
-    for (let i = 0; i < 18; i++) v += `<line x1="${104 + i * 11}" y1="122" x2="${104 + i * 11}" y2="278" stroke="${accent}" stroke-width="0.3" opacity="0.15"/>`;
-    return `
-      <ellipse cx="200" cy="330" rx="110" ry="6" fill="#000" opacity="0.05"/>
-      <rect x="80" y="100" width="240" height="200" rx="6" fill="${accent}" opacity="0.85"/>
-      <rect x="92" y="112" width="216" height="176" rx="3" fill="${bg}"/>
-      <rect x="100" y="120" width="200" height="160" fill="${mid}" opacity="0.85"/>
-      ${h}${v}
-      <circle cx="160" cy="170" r="14" fill="${bg}" opacity="0.25"/>
-      <circle cx="240" cy="220" r="10" fill="${bg}" opacity="0.25"/>`;
-  },
-  'mirror': (bg, mid, accent) => `
-    <ellipse cx="200" cy="330" rx="110" ry="6" fill="#000" opacity="0.07"/>
-    <circle cx="200" cy="200" r="120" fill="${mid}"/>
-    <circle cx="200" cy="200" r="92" fill="${bg}" opacity="0.4" stroke="${accent}" stroke-width="1"/>
-    <path d="M 140 160 Q 200 130 260 160" stroke="${bg}" stroke-width="14" stroke-linecap="round" opacity="0.6"/>
-    <rect x="186" y="320" width="28" height="20" fill="${accent}" rx="3"/>
-    <line x1="200" y1="310" x2="200" y2="320" stroke="${accent}" stroke-width="3"/>
-    <ellipse cx="200" cy="220" rx="22" ry="26" fill="${accent}" opacity="0.12"/>
-    <circle cx="200" cy="200" r="10" fill="${accent}" opacity="0.18"/>`,
-};
-
-function illustration(id, palette, className = '', extraStyle = '') {
-  const [bg, mid, accent] = palette || ['#EAE2D6', '#C8D5C0', '#2A2A28'];
-  const inner = (ILLUSTRATIONS[id] || ILLUSTRATIONS['fjord-04'])(bg, mid, accent);
-  return `<div class="${className}" style="background:${bg};${extraStyle}">
-    <svg viewBox="0 0 400 400" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">${inner}</svg>
-  </div>`;
+// ─── Product images ───────────────────────────────────────────────────────
+function productImage(product, idx, className = '', loading = 'lazy') {
+  const raw = (product.images && product.images[idx]) || (product.images && product.images[0]) || '';
+  if (!raw) return `<div class="${className} tn-img--missing"></div>`;
+  const src = cldUrl(raw, 'w_800');
+  const alt = product.name || '';
+  return `<img src="${src}" alt="${escapeHtml(alt)}" class="${className}" loading="${loading}" />`;
 }
+
 
 // ─── State ────────────────────────────────────────────────────────────────
 const state = {
@@ -555,6 +249,43 @@ function setRoute(r) {
       window.scrollTo({ top: 0, behavior: 'instant' });
     }
   });
+  if (r.page === 'category' && r.cat) {
+    preloadCategoryImages(r.cat);
+  } else {
+    cancelPreload();
+  }
+}
+
+// Sequentially preload every gallery image for a category, so the product
+// modal's images are already in browser cache by the time the user opens one.
+let _preloadCtrl = null;
+function cancelPreload() {
+  if (_preloadCtrl) _preloadCtrl.cancelled = true;
+  _preloadCtrl = null;
+}
+function preloadCategoryImages(catId) {
+  cancelPreload();
+  const ctrl = { cancelled: false };
+  _preloadCtrl = ctrl;
+
+  const queue = [];
+  for (const p of productsInCategory(catId)) {
+    if (!p.images) continue;
+    for (const path of p.images) {
+      queue.push(cldUrl(path, 'w_1400'));
+    }
+  }
+
+  let i = 0;
+  const step = () => {
+    if (ctrl.cancelled || i >= queue.length) return;
+    const img = new Image();
+    const done = () => { if (!ctrl.cancelled) { i++; step(); } };
+    img.onload = done;
+    img.onerror = done;
+    img.src = queue[i];
+  };
+  step();
 }
 
 function setLang(lang) {
@@ -563,7 +294,7 @@ function setLang(lang) {
 }
 
 function openProduct(id) {
-  state.activeProduct = PRODUCTS.find(p => p.id === id) || null;
+  state.activeProduct = PRODUCTS.find(p => p.code === id) || null;
   state.modalImgIdx = 0;
   renderModal();
   document.body.style.overflow = state.activeProduct ? 'hidden' : '';
@@ -573,6 +304,20 @@ function closeProduct() {
   state.activeProduct = null;
   renderModal();
   document.body.style.overflow = '';
+}
+
+// Swap only the main modal image and active-thumb class — no full re-render.
+function setModalImage(idx) {
+  const p = state.activeProduct;
+  if (!p || !p.images || !p.images[idx]) return;
+  state.modalImgIdx = idx;
+  const mainImg = document.querySelector('.tn-modal-main img');
+  if (mainImg) {
+    mainImg.src = cldUrl(p.images[idx], 'w_1400');
+  }
+  document.querySelectorAll('.tn-modal-thumbs .tn-thumb').forEach((btn, i) => {
+    btn.classList.toggle('is-active', i === idx);
+  });
 }
 
 // ─── Section renderers ────────────────────────────────────────────────────
@@ -586,7 +331,9 @@ function renderHeader() {
   const isActive = (id) => state.route.page === id || (id === 'home' && state.route.page === 'category');
   return `
     <header class="tn-header">
-      <a href="#" class="tn-logo" data-action="route" data-page="home">${logoWordmark(28, 'var(--ink)')}</a>
+      <a href="#" class="tn-logo" data-action="route" data-page="home" aria-label="Tinynord — home">
+        <img src="assets/logo-tinynord.png" alt="Tinynord" class="tn-logo-img" />
+      </a>
       <nav class="tn-nav">
         ${items.map(it => `<button class="tn-nav-link${isActive(it.id) ? ' is-active' : ''}" data-action="route" data-page="${it.id}">${escapeHtml(it.label)}</button>`).join('')}
       </nav>
@@ -600,12 +347,19 @@ function renderHeader() {
 
 function renderHero() {
   const t = COPY[state.lang].hero;
-  const featured = PRODUCTS[0];
+  const featured = PRODUCTS.find(p => p.code === 'lux') || PRODUCTS.find(p => p.category === 'strollers') || PRODUCTS[0];
   const titleHTML = t.title.map((l, i) => {
     const isLast = i === t.title.length - 1;
     const piece = isLast ? `<em>${escapeHtml(l)}</em>` : escapeHtml(l);
     return `<span>${piece}${!isLast ? '<br/>' : ''}</span>`;
   }).join('');
+  if (!featured) {
+    return `<section class="tn-hero"><div class="tn-hero-text">
+      <div class="tn-hero-eyebrow">${escapeHtml(t.eyebrow)}</div>
+      <h1 class="tn-h1">${titleHTML}</h1>
+      <p class="tn-hero-lede">${escapeHtml(t.lede)}</p>
+    </div></section>`;
+  }
   return `
     <section class="tn-hero">
       <div class="tn-hero-text">
@@ -615,15 +369,15 @@ function renderHero() {
         <p class="tn-hero-lede tn-hero-lede--small">${escapeHtml(t.lede2)}</p>
         <button class="tn-cta" data-action="route" data-page="home" data-anchor="catalogue">${escapeHtml(t.cta)} <span>→</span></button>
       </div>
-      <div class="tn-hero-product">
+      <div class="tn-hero-product" data-action="product" data-id="${escapeHtml(featured.code)}">
         <div class="tn-hero-dot-1">${dottedCircle({ size: 140, color: 'var(--accent)', cut: 'right' })}</div>
         <div class="tn-hero-dot-2">${dottedCircle({ size: 90,  color: 'var(--beige)', cut: 'left' })}</div>
-        <div class="tn-hero-product-frame" style="background:${THEME.lime}">
-          ${illustration(featured.id, featured.palette, 'tn-hero-product-illus')}
+        <div class="tn-hero-product-frame" style="background:${THEME.lightgrey}">
+          ${productImage(featured, 0, 'tn-hero-product-illus tn-prod-img', 'eager')}
         </div>
         <div class="tn-hero-product-meta">
-          <div class="tn-hero-product-name">${escapeHtml(featured[state.lang].name)}</div>
-          <div class="tn-hero-product-tagline">${escapeHtml(featured[state.lang].tag)}</div>
+          <div class="tn-hero-product-name">${escapeHtml(featured.name)}</div>
+          <div class="tn-hero-product-tagline">${escapeHtml(featured.tag || '')}</div>
         </div>
       </div>
     </section>`;
@@ -653,16 +407,15 @@ function renderCategoryGrid() {
       </div>
       <div class="tn-cat-grid">
         ${CATEGORIES.map((c, idx) => {
-          const sample = PRODUCTS.find(p => p.cat === c.id);
-          const illus = sample ? illustration(sample.id, sample.palette, 'tn-cat-card-illus-inner') : '';
+          const sample = productsInCategory(c.id).find(p => p.images && p.images.length);
+          const img = sample ? productImage(sample, 0, 'tn-cat-card-illus-inner tn-prod-img') : '';
           return `
             <button class="tn-cat-card" style="animation-delay:${idx * 60}ms" data-action="category" data-cat="${c.id}">
-              <div class="tn-cat-card-illus">${illus}</div>
+              <div class="tn-cat-card-illus">${img}</div>
               <div class="tn-cat-card-foot">
                 <div class="tn-cat-card-name">${escapeHtml(c[state.lang])}</div>
                 <div class="tn-cat-card-arrow">→</div>
               </div>
-              <div class="tn-cat-card-count">${c.count} ${escapeHtml(COPY[state.lang].pieces(c.count))}</div>
             </button>`;
         }).join('')}
       </div>
@@ -746,7 +499,28 @@ function renderRetailers() {
 function renderCategoryPage() {
   const cat = CATEGORIES.find(c => c.id === state.route.cat);
   if (!cat) return '';
-  const products = PRODUCTS.filter(p => p.cat === cat.id);
+  const products = productsInCategory(cat.id);
+  // Group by subcategory for readability when categories are large.
+  const groups = new Map();
+  for (const p of products) {
+    const k = p.subcategory || '';
+    if (!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(p);
+  }
+  const groupHTML = Array.from(groups.entries()).map(([sub, items]) => `
+    ${sub ? `<h3 class="tn-catpage-sub">${escapeHtml(sub)}</h3>` : ''}
+    <div class="tn-prod-grid">
+      ${items.map((p, idx) => `
+        <button class="tn-prod-card" style="animation-delay:${idx * 40}ms" data-action="product" data-id="${escapeHtml(p.code)}">
+          <div class="tn-prod-frame" style="background:${THEME.lightgrey}">
+            ${productImage(p, 0, 'tn-prod-illus tn-prod-img')}
+          </div>
+          <div class="tn-prod-meta">
+            <div class="tn-prod-name">${escapeHtml(p.name)}</div>
+            <div class="tn-prod-tag">${escapeHtml(p.tag || '')}</div>
+          </div>
+        </button>`).join('')}
+    </div>`).join('');
   return `
     <section class="tn-catpage">
       <div class="tn-catpage-head">
@@ -756,18 +530,7 @@ function renderCategoryPage() {
         <div class="tn-eyebrow">${escapeHtml(COPY[state.lang].category)}</div>
         <h1 class="tn-h1 tn-catpage-title"><em>${escapeHtml(cat[state.lang])}</em></h1>
       </div>
-      <div class="tn-prod-grid">
-        ${products.map((p, idx) => `
-          <button class="tn-prod-card" style="animation-delay:${idx * 80}ms" data-action="product" data-id="${p.id}">
-            <div class="tn-prod-frame" style="background:${tintColor(p.tint)}">
-              ${illustration(p.id, p.palette, 'tn-prod-illus')}
-            </div>
-            <div class="tn-prod-meta">
-              <div class="tn-prod-name">${escapeHtml(p[state.lang].name)}</div>
-              <div class="tn-prod-tag">${escapeHtml(p[state.lang].tag)}</div>
-            </div>
-          </button>`).join('')}
-      </div>
+      ${groupHTML}
     </section>`;
 }
 
@@ -779,7 +542,7 @@ function renderFooter() {
       <div class="tn-footer-hills">${wavyHills({ color: 'var(--accent)', opacity: 0.5 })}</div>
       <div class="tn-footer-top">
         <div class="tn-footer-brand">
-          ${logoWordmark(32, 'var(--bg)')}
+          <img src="assets/logo-tinynord.png" alt="Tinynord" class="tn-footer-logo" />
           <div class="tn-footer-tag" style="margin-top:20px">${slogan(t.tagline, 'var(--accent)', 16)}</div>
           <p class="tn-footer-addr">${escapeHtml(t.addr)}</p>
         </div>
@@ -839,35 +602,38 @@ function renderModal() {
   const p = state.activeProduct;
   if (!p) { slot.innerHTML = ''; return; }
   const t = COPY[state.lang].modal;
-  const [a, b, c] = p.palette;
-  const variants = [[a, b, c], [b, a, c], [THEME.lime, c, a]];
-  const variant = variants[state.modalImgIdx];
-  const cat = CATEGORIES.find(x => x.id === p.cat);
+  const cat = CATEGORIES.find(x => x.id === p.category);
+  const images = p.images || [];
+  const idx = Math.min(state.modalImgIdx, images.length - 1);
+  const colorsLine = (p.colors && p.colors.length) ? p.colors.join(' · ') : '';
+  const codeLine = p.code && !/^[a-z-]+$/.test(p.code) ? `Code ${p.code}` : '';
   slot.innerHTML = `
     <div class="tn-modal-bg" data-action="close-modal">
       <div class="tn-modal">
         <button class="tn-modal-close" data-action="close-modal" aria-label="Close">×</button>
         <div class="tn-modal-gallery">
-          <div class="tn-modal-main" style="background:${tintColor(p.tint)}">
-            ${illustration(p.id, variant, 'tn-modal-illus')}
+          <div class="tn-modal-main" style="background:${THEME.lightgrey}">
+            ${images[idx] ? `<img src="${cldUrl(images[idx], 'w_1400')}" alt="${escapeHtml(p.name)}" class="tn-modal-illus tn-prod-img" />` : ''}
           </div>
-          <div class="tn-modal-thumbs">
-            ${variants.map((v, i) => `
-              <button class="tn-thumb${i === state.modalImgIdx ? ' is-active' : ''}" data-action="thumb" data-idx="${i}" style="background:${tintColor(p.tint)}">
-                ${illustration(p.id, v, 'tn-thumb-illus')}
+          ${images.length > 1 ? `<div class="tn-modal-thumbs">
+            ${images.map((src, i) => `
+              <button class="tn-thumb${i === idx ? ' is-active' : ''}" data-action="thumb" data-idx="${i}" style="background:${THEME.lightgrey}">
+                <img src="${cldUrl(src, 'w_240')}" alt="" class="tn-thumb-illus tn-prod-img" loading="lazy" />
               </button>`).join('')}
-          </div>
+          </div>` : ''}
         </div>
         <div class="tn-modal-info">
-          <div class="tn-eyebrow">${escapeHtml(cat[state.lang])}</div>
-          <h2 class="tn-h2 tn-modal-title">${escapeHtml(p[state.lang].name)}</h2>
-          <p class="tn-modal-tag">${escapeHtml(p[state.lang].tag)}</p>
-          <p class="tn-modal-desc">${escapeHtml(p.desc[state.lang])}</p>
+          <div class="tn-eyebrow">${cat ? escapeHtml(cat[state.lang]) : ''}</div>
+          <h2 class="tn-h2 tn-modal-title">${escapeHtml(p.name)}</h2>
+          ${p.tag ? `<p class="tn-modal-tag">${escapeHtml(p.tag)}</p>` : ''}
+          ${p.description ? `<p class="tn-modal-desc">${escapeHtml(p.description)}</p>` : ''}
           <dl class="tn-spec">
-            <div><dt>${escapeHtml(t.materials)}</dt><dd>${escapeHtml(p.materials.join(' · '))}</dd></div>
-            <div><dt>${escapeHtml(t.dimensions)}</dt><dd>${escapeHtml(p.dims)}</dd></div>
-            <div><dt>${escapeHtml(t.ages)}</dt><dd>${escapeHtml(p.ages)}</dd></div>
-            <div><dt>${escapeHtml(t.certifications)}</dt><dd>${escapeHtml(p.certs.join(' · '))}</dd></div>
+            ${(p.materials && p.materials.length) ? `<div><dt>${escapeHtml(t.materials)}</dt><dd>${escapeHtml(p.materials.join(' · '))}</dd></div>` : ''}
+            ${p.dims ? `<div><dt>${escapeHtml(t.dimensions)}</dt><dd>${escapeHtml(p.dims)}</dd></div>` : ''}
+            ${p.ages ? `<div><dt>${escapeHtml(t.ages)}</dt><dd>${escapeHtml(p.ages)}</dd></div>` : ''}
+            ${(p.certs && p.certs.length) ? `<div><dt>${escapeHtml(t.certifications)}</dt><dd>${escapeHtml(p.certs.join(' · '))}</dd></div>` : ''}
+            ${colorsLine ? `<div><dt>${state.lang==='en'?'Colours':'Värvid'}</dt><dd>${escapeHtml(colorsLine)}</dd></div>` : ''}
+            ${codeLine ? `<div><dt>${state.lang==='en'?'Code':'Kood'}</dt><dd>${escapeHtml(p.code)}</dd></div>` : ''}
           </dl>
         </div>
       </div>
@@ -895,8 +661,7 @@ document.addEventListener('click', (e) => {
     if (target.classList.contains('tn-modal-bg') && e.target !== target) return;
     closeProduct();
   } else if (action === 'thumb') {
-    state.modalImgIdx = parseInt(target.dataset.idx, 10) || 0;
-    renderModal();
+    setModalImage(parseInt(target.dataset.idx, 10) || 0);
   }
 });
 
