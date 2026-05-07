@@ -168,14 +168,39 @@ def find_images_for_product(product: dict, all_images: list[Path]) -> list[str]:
     return out
 
 
+def normalize_basename(name: str) -> str:
+    """Mirror Cloudinary's auto-rename: 'AB CD (1).jpg' → 'AB_CD_1'."""
+    import re as _re
+    stem = name.rsplit(".", 1)[0]
+    stem = _re.sub(r"[\s()]+", "_", stem)
+    stem = _re.sub(r"_+", "_", stem).strip("_")
+    return stem
+
+
+def load_cloudinary_manifest() -> dict[str, str]:
+    """Optional manifest: { '<normalized basename>': '<cloudinary public_id>' }."""
+    manifest_path = ROOT / "data" / "cloudinary-manifest.json"
+    if not manifest_path.exists():
+        return {}
+    try:
+        return json.loads(manifest_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        print(f"warning: could not parse {manifest_path}: {e}", file=sys.stderr)
+        return {}
+
+
 def main() -> int:
     products = json.loads(PRODUCTS_JSON.read_text(encoding="utf-8"))
     products = expand_color_split(products)
     images = gather_images()
+    cloudinary_manifest = load_cloudinary_manifest()
     print(f"scanned {len(images)} images", file=sys.stderr)
+    if cloudinary_manifest:
+        print(f"loaded Cloudinary manifest: {len(cloudinary_manifest)} entries", file=sys.stderr)
 
     matched_total = 0
     unmatched_codes: list[str] = []
+    cloud_hits = 0
     for p in products:
         urls = find_images_for_product(p, images)
         p["images"] = urls
@@ -183,10 +208,27 @@ def main() -> int:
             matched_total += len(urls)
         else:
             unmatched_codes.append(p["code"])
+        # Attach Cloudinary public IDs in parallel to the local URLs so the
+        # frontend can choose Cloudinary in production. Falls back to the
+        # local path when no manifest entry exists.
+        if cloudinary_manifest and urls:
+            cloud_ids: list[str] = []
+            for url in urls:
+                # url looks like "PRODUCT%20CATEGORIES/.../303525(1).jpg"
+                basename = url.rsplit("/", 1)[-1]
+                from urllib.parse import unquote
+                stem = normalize_basename(unquote(basename))
+                pid = cloudinary_manifest.get(stem)
+                if pid:
+                    cloud_hits += 1
+                cloud_ids.append(pid or "")
+            p["cloudIds"] = cloud_ids
         # _image_root is a build-time helper, not needed in the runtime payload.
         p.pop("_image_root", None)
 
     print(f"matched {matched_total} image references across {len(products)} products", file=sys.stderr)
+    if cloudinary_manifest:
+        print(f"Cloudinary manifest hits: {cloud_hits} / {matched_total}", file=sys.stderr)
     if unmatched_codes:
         print(f"products without images: {len(unmatched_codes)} — {unmatched_codes[:10]}{'…' if len(unmatched_codes) > 10 else ''}", file=sys.stderr)
 

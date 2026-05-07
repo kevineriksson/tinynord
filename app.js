@@ -158,19 +158,40 @@ function isLocalHost() {
   const h = window.location.hostname;
   return h === 'localhost' || h === '127.0.0.1' || h === '0.0.0.0' || h.endsWith('.local');
 }
-function cldUrl(path, transforms = '') {
-  if (!path) return '';
+// Build a Cloudinary URL given a public_id (no path-prefixing, since the
+// manifest stores fully qualified IDs as Cloudinary returned them).
+function cldUrlFromPublicId(publicId, transforms = '') {
+  if (!publicId) return '';
+  const t = [CLOUDINARY.DEFAULTS, transforms].filter(Boolean).join(',');
+  return `https://res.cloudinary.com/${CLOUDINARY.CLOUD_NAME}/image/upload/${t}/${encodeURIComponent(publicId)}.jpg`;
+}
+// `pathOrEntry` is either the URL-encoded local path string (back-compat)
+// or a {url, cloudId} pair so the caller can pass both at once.
+function cldUrl(pathOrEntry, transforms = '') {
+  const entry = (pathOrEntry && typeof pathOrEntry === 'object')
+    ? pathOrEntry
+    : { url: pathOrEntry, cloudId: '' };
+  const path = entry.url || '';
+  const cloudId = entry.cloudId || '';
+  if (!path && !cloudId) return '';
   if (/^https?:\/\//i.test(path)) return path;
-  // On localhost (or when the cloud isn't configured), serve directly from
-  // the static server — the same paths in PRODUCT CATEGORIES/. Cloudinary
-  // only kicks in once the site is deployed and the assets are uploaded.
-  if (!CLOUDINARY.CLOUD_NAME || isLocalHost()) {
+  // On localhost serve directly from the Python static server.
+  if (isLocalHost() || !CLOUDINARY.CLOUD_NAME) {
     return '/' + path.replace(/^\/+/, '');
   }
+  // Production: prefer Cloudinary public_id from the manifest.
+  if (cloudId) return cldUrlFromPublicId(cloudId, transforms);
+  // Manifest miss → fall through to constructing a URL from the path.
   const decoded = decodeURIComponent(path).replace(/^\/+/, '');
   const publicId = encodeURI(CLOUDINARY.PATH_PREFIX + decoded).replace(/#/g, '%23').replace(/\?/g, '%3F');
   const t = [CLOUDINARY.DEFAULTS, transforms].filter(Boolean).join(',');
   return `https://res.cloudinary.com/${CLOUDINARY.CLOUD_NAME}/image/upload/${t}/${publicId}`;
+}
+// Resolve image #i of a product to a {url, cloudId} pair the caller can pass on.
+function imageEntry(product, i) {
+  const url = (product.images && product.images[i]) || '';
+  const cloudId = (product.cloudIds && product.cloudIds[i]) || '';
+  return { url, cloudId };
 }
 
 
@@ -229,9 +250,9 @@ const slogan = (text, color = 'currentColor', size = 16) => {
 
 // ─── Product images ───────────────────────────────────────────────────────
 function productImage(product, idx, className = '', loading = 'lazy') {
-  const raw = (product.images && product.images[idx]) || (product.images && product.images[0]) || '';
-  if (!raw) return `<div class="${className} tn-img--missing"></div>`;
-  const src = cldUrl(raw, 'w_800');
+  const fallback = (product.images && product.images.length) ? imageEntry(product, idx in (product.images || {}) ? idx : 0) : null;
+  if (!fallback || !fallback.url) return `<div class="${className} tn-img--missing"></div>`;
+  const src = cldUrl(fallback, 'w_800');
   const alt = product.name || '';
   return `<img src="${src}" alt="${escapeHtml(alt)}" class="${className}" loading="${loading}" />`;
 }
@@ -282,8 +303,8 @@ function preloadCategoryImages(catId) {
   const queue = [];
   for (const p of productsInCategory(catId)) {
     if (!p.images) continue;
-    for (const path of p.images) {
-      queue.push(cldUrl(path, 'w_1400'));
+    for (let i = 0; i < p.images.length; i++) {
+      queue.push(cldUrl(imageEntry(p, i), 'w_1400'));
     }
   }
 
@@ -343,7 +364,7 @@ function setModalImage(idx) {
   state.modalImgIdx = idx;
   const mainImg = document.querySelector('.tn-modal-main img');
   if (mainImg) {
-    mainImg.src = cldUrl(p.images[idx], 'w_1400');
+    mainImg.src = cldUrl(imageEntry(p, idx), 'w_1400');
   }
   document.querySelectorAll('.tn-modal-thumbs .tn-thumb').forEach((btn, i) => {
     btn.classList.toggle('is-active', i === idx);
@@ -661,12 +682,12 @@ function renderModal() {
         <button class="tn-modal-close" data-action="close-modal" aria-label="Close">×</button>
         <div class="tn-modal-gallery">
           <div class="tn-modal-main" style="background:${THEME.lightgrey}">
-            ${images[idx] ? `<img src="${cldUrl(images[idx], 'w_1400')}" alt="${escapeHtml(p.name)}" class="tn-modal-illus tn-prod-img" />` : ''}
+            ${images[idx] ? `<img src="${cldUrl(imageEntry(p, idx), 'w_1400')}" alt="${escapeHtml(p.name)}" class="tn-modal-illus tn-prod-img" />` : ''}
           </div>
           ${images.length > 1 ? `<div class="tn-modal-thumbs">
             ${images.map((src, i) => `
               <button class="tn-thumb${i === idx ? ' is-active' : ''}" data-action="thumb" data-idx="${i}" style="background:${THEME.lightgrey}">
-                <img src="${cldUrl(src, 'w_240')}" alt="" class="tn-thumb-illus tn-prod-img" loading="lazy" />
+                <img src="${cldUrl(imageEntry(p, i), 'w_240')}" alt="" class="tn-thumb-illus tn-prod-img" loading="lazy" />
               </button>`).join('')}
           </div>` : ''}
         </div>
