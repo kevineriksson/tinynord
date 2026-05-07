@@ -38,17 +38,18 @@ SECRET = os.environ.get("CLOUDINARY_API_SECRET")
 
 
 def normalize_basename(name: str) -> str:
-    """Mirror Cloudinary's auto-rename: 'AB CD (1).jpg' → 'AB_CD_1'.
+    """Mirror Cloudinary's auto-rename: replace whitespace, parens and `&`
+    with `_` (each char individually — Cloudinary does NOT collapse runs).
 
-    Cloudinary strips the extension on upload and converts whitespace +
-    parens into underscores. We match against this normalized form so we
-    can collapse e.g. '298917_2_o4rkwy' (uploaded id) back to '298917_2'
-    (predicted from filename).
+    Examples (from a real upload):
+      'AB CD (1).jpg'        → 'AB_CD_1'
+      '297295(1)_LEON.jpg'   → '297295_1__LEON'   (double `_` from `()`)
+      'Protector&Kickmat-01' → 'Protector_Kickmat-01'
     """
     stem = name.rsplit(".", 1)[0]
-    stem = re.sub(r"[\s()]+", "_", stem)
-    stem = re.sub(r"_+", "_", stem).strip("_")
-    return stem
+    # Each contiguous run of bad chars → single `_`. Pre-existing `_` between
+    # runs is preserved (so `(1)_LEON` becomes `_1__LEON` — two underscores).
+    return re.sub(r"[\s()&]+", "_", stem).strip("_")
 
 
 def cloudinary_get(path: str) -> dict:

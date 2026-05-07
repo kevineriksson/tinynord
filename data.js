@@ -1396,10 +1396,10 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/BEDROOM/COT%20BEDS/PRODUCT%20PICTURES/297295(4)_LEON.jpg"
 ],
 "cloudIds": [
-"",
-"",
-"",
-""
+"297295_1__LEON_haepii",
+"297295_2__LEON_gkfgdu",
+"297295_3__LEON_k4avaj",
+"297295_4__LEON_aoxizz"
 ]
 },
 {
@@ -1425,8 +1425,8 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/BEDROOM/COT%20BEDS/PRODUCT%20PICTURES/297297(2)_LASSY_natural.jpg"
 ],
 "cloudIds": [
-"",
-""
+"297297_1__LASSY_natural_iu2t3d",
+"297297_2__LASSY_natural_qqhidv"
 ]
 },
 {
@@ -1452,8 +1452,8 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/BEDROOM/COT%20BEDS/PRODUCT%20PICTURES/297296(2)_LASSY.jpg"
 ],
 "cloudIds": [
-"",
-""
+"297296_1__LASSY_white_l0gjru",
+"297296_2__LASSY_ikrauu"
 ]
 },
 {
@@ -3469,7 +3469,7 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/CAR%20ACCESSORIES/PRODUCT%20PICTURES/Protector&Kickmat-02.jpg"
 ],
 "cloudIds": [
-""
+"Protector_Kickmat-02_ctpr9n"
 ]
 },
 {
@@ -3493,7 +3493,7 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/CAR%20ACCESSORIES/PRODUCT%20PICTURES/Protector&Kickmat-01.jpg"
 ],
 "cloudIds": [
-""
+"Protector_Kickmat-01_okoors"
 ]
 },
 {

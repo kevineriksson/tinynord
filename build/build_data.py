@@ -169,12 +169,11 @@ def find_images_for_product(product: dict, all_images: list[Path]) -> list[str]:
 
 
 def normalize_basename(name: str) -> str:
-    """Mirror Cloudinary's auto-rename: 'AB CD (1).jpg' → 'AB_CD_1'."""
+    """Mirror Cloudinary's auto-rename: replace whitespace, parens and `&`
+    with `_` (each char individually, no run-collapsing)."""
     import re as _re
     stem = name.rsplit(".", 1)[0]
-    stem = _re.sub(r"[\s()]+", "_", stem)
-    stem = _re.sub(r"_+", "_", stem).strip("_")
-    return stem
+    return _re.sub(r"[\s()&]+", "_", stem).strip("_")
 
 
 def load_cloudinary_manifest() -> dict[str, str]:
