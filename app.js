@@ -153,9 +153,20 @@ const CLOUDINARY = {
   PATH_PREFIX: '',
   DEFAULTS: 'f_auto,q_auto',
 };
+function isLocalHost() {
+  if (typeof window === 'undefined' || !window.location) return false;
+  const h = window.location.hostname;
+  return h === 'localhost' || h === '127.0.0.1' || h === '0.0.0.0' || h.endsWith('.local');
+}
 function cldUrl(path, transforms = '') {
   if (!path) return '';
   if (/^https?:\/\//i.test(path)) return path;
+  // On localhost (or when the cloud isn't configured), serve directly from
+  // the static server — the same paths in PRODUCT CATEGORIES/. Cloudinary
+  // only kicks in once the site is deployed and the assets are uploaded.
+  if (!CLOUDINARY.CLOUD_NAME || isLocalHost()) {
+    return '/' + path.replace(/^\/+/, '');
+  }
   const decoded = decodeURIComponent(path).replace(/^\/+/, '');
   const publicId = encodeURI(CLOUDINARY.PATH_PREFIX + decoded).replace(/#/g, '%23').replace(/\?/g, '%3F');
   const t = [CLOUDINARY.DEFAULTS, transforms].filter(Boolean).join(',');
@@ -395,19 +406,11 @@ function closeMobileMenu() {
 
 function renderHero() {
   const t = COPY[state.lang].hero;
-  const featured = PRODUCTS.find(p => p.code === 'lux') || PRODUCTS.find(p => p.category === 'strollers') || PRODUCTS[0];
   const titleHTML = t.title.map((l, i) => {
     const isLast = i === t.title.length - 1;
     const piece = isLast ? `<em>${escapeHtml(l)}</em>` : escapeHtml(l);
     return `<span>${piece}${!isLast ? '<br/>' : ''}</span>`;
   }).join('');
-  if (!featured) {
-    return `<section class="tn-hero"><div class="tn-hero-text">
-      <div class="tn-hero-eyebrow">${escapeHtml(t.eyebrow)}</div>
-      <h1 class="tn-h1">${titleHTML}</h1>
-      <p class="tn-hero-lede">${escapeHtml(t.lede)}</p>
-    </div></section>`;
-  }
   return `
     <section class="tn-hero">
       <div class="tn-hero-text">
@@ -417,15 +420,11 @@ function renderHero() {
         <p class="tn-hero-lede tn-hero-lede--small">${escapeHtml(t.lede2)}</p>
         <button class="tn-cta" data-action="route" data-page="home" data-anchor="catalogue">${escapeHtml(t.cta)} <span>→</span></button>
       </div>
-      <div class="tn-hero-product" data-action="product" data-id="${escapeHtml(featured.code)}">
+      <div class="tn-hero-product">
         <div class="tn-hero-dot-1">${dottedCircle({ size: 140, color: 'var(--accent)', cut: 'right' })}</div>
         <div class="tn-hero-dot-2">${dottedCircle({ size: 90,  color: 'var(--beige)', cut: 'left' })}</div>
         <div class="tn-hero-product-frame" style="background:${THEME.lightgrey}">
-          ${productImage(featured, 0, 'tn-hero-product-illus tn-prod-img', 'eager')}
-        </div>
-        <div class="tn-hero-product-meta">
-          <div class="tn-hero-product-name">${escapeHtml(featured.name)}</div>
-          <div class="tn-hero-product-tagline">${escapeHtml(featured.tag || '')}</div>
+          <img src="assets/hero.jpg" alt="Tinynord" class="tn-hero-product-illus tn-prod-img" loading="eager" />
         </div>
       </div>
     </section>`;
@@ -654,6 +653,7 @@ function renderModal() {
   const images = p.images || [];
   const idx = Math.min(state.modalImgIdx, images.length - 1);
   const colorsLine = (p.colors && p.colors.length) ? p.colors.join(' · ') : '';
+  const chassisLine = (p.chassis && p.chassis.length) ? p.chassis.join(' · ') : '';
   const codeLine = p.code && !/^[a-z-]+$/.test(p.code) ? `Code ${p.code}` : '';
   slot.innerHTML = `
     <div class="tn-modal-bg" data-action="close-modal">
@@ -681,6 +681,7 @@ function renderModal() {
             ${p.ages ? `<div><dt>${escapeHtml(t.ages)}</dt><dd>${escapeHtml(p.ages)}</dd></div>` : ''}
             ${(p.certs && p.certs.length) ? `<div><dt>${escapeHtml(t.certifications)}</dt><dd>${escapeHtml(p.certs.join(' · '))}</dd></div>` : ''}
             ${colorsLine ? `<div><dt>${state.lang==='en'?'Colours':'Värvid'}</dt><dd>${escapeHtml(colorsLine)}</dd></div>` : ''}
+            ${chassisLine ? `<div><dt>${state.lang==='en'?'Chassis':'Šassii'}</dt><dd>${escapeHtml(chassisLine)}</dd></div>` : ''}
             ${codeLine ? `<div><dt>${state.lang==='en'?'Code':'Kood'}</dt><dd>${escapeHtml(p.code)}</dd></div>` : ''}
           </dl>
         </div>

@@ -175,7 +175,7 @@ button { font: inherit; color: inherit; }
   .tn-mobile-link {
     font-family: 'Cera Pro', sans-serif;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--ink);
     background: none;
     border: 0;
@@ -533,7 +533,21 @@ img.tn-thumb-illus { object-fit: cover; }
 @media (max-width: 880px) {
   .tn-modal-gallery { overflow: visible; padding: 16px; }
   .tn-modal-main { aspect-ratio: 4 / 3; max-height: 50vh; }
-  .tn-modal-thumbs { width: 100%; max-width: 100%; padding: 4px 0 8px; position: relative; z-index: 1; background: var(--bg); }
+  .tn-modal-thumbs {
+    width: 100%;
+    max-width: 100%;
+    gap: 14px;
+    padding: 4px 0 8px;
+    position: relative;
+    z-index: 1;
+    background: var(--bg);
+  }
+  /* Each mobile thumb gets a hairline outline so adjacent thumbs are clearly
+     separated even with similar imagery. */
+  .tn-modal-thumbs .tn-thumb {
+    border: 1px solid color-mix(in srgb, var(--ink) 22%, transparent);
+  }
+  /* Active state still wins via the existing outline on .tn-thumb.is-active */
 }
 .tn-modal-main {
   border-radius: 16px;

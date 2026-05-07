@@ -36,6 +36,59 @@ FALLBACK_PATTERNS = {
     "car-3in1-protector":     {"contains_filename": ["301496(3)", "9645"]},
 }
 
+# Products that should be split into one card per colour. Each entry maps the
+# parent code to the absolute path of the directory whose first-level
+# subfolders (case-insensitively matching the parent's `colors` array) hold
+# the images for each colour.
+COLOR_SPLIT_PRODUCTS = {
+    "lux":            "STROLLERS/PRODUCT PICTURES/LUX",
+    "active-comfort": "STROLLERS/PRODUCT PICTURES/ACTIVE_COMFORT",
+}
+
+
+def slugify(s: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+
+
+def color_folder_for(parent_root: Path, color: str) -> Path | None:
+    """Find the immediate child directory whose name matches `color` case-insensitively."""
+    if not parent_root.is_dir():
+        return None
+    target = color.lower()
+    for child in parent_root.iterdir():
+        if child.is_dir() and child.name.lower() == target:
+            return child
+    return None
+
+
+def expand_color_split(products: list[dict]) -> list[dict]:
+    """Replace products with per-folder colour splits where applicable."""
+    out: list[dict] = []
+    for p in products:
+        if p["code"] not in COLOR_SPLIT_PRODUCTS or not p.get("colors"):
+            out.append(p)
+            continue
+        parent_root = PRODUCT_DIRS / COLOR_SPLIT_PRODUCTS[p["code"]]
+        # Optional per-colour cover overrides on the parent: {"Brilliant black": "298918 (1)"}.
+        # If a colour also has a parent-level `cover`, the per-colour one wins.
+        color_covers = p.get("colorCovers") or {}
+        for colour in p["colors"]:
+            folder = color_folder_for(parent_root, colour)
+            if folder is None:
+                # No matching folder — skip this colour silently.
+                continue
+            child = dict(p)
+            child.pop("colorCovers", None)
+            child["code"] = f"{p['code']}-{slugify(colour)}"
+            child["name"] = f"{p['name']} – {colour}"
+            child["colors"] = [colour]
+            # Stash the folder so find_images_for_product can locate it.
+            child["_image_root"] = str(folder.relative_to(ROOT))
+            if colour in color_covers:
+                child["cover"] = color_covers[colour]
+            out.append(child)
+    return out
+
 
 def relpath_for_url(p: Path) -> str:
     """Path relative to project root, URL-encoded for the static server."""
@@ -57,12 +110,20 @@ def gather_images() -> list[Path]:
     return sorted(images)
 
 
-def find_images_for_product(code: str, all_images: list[Path]) -> list[str]:
-    """Return URL-encoded paths for images that belong to a product code."""
+def find_images_for_product(product: dict, all_images: list[Path]) -> list[str]:
+    """Return URL-encoded paths for images that belong to a product."""
+    code = product["code"]
     matches: list[Path] = []
 
-    fallback = FALLBACK_PATTERNS.get(code)
-    if fallback:
+    image_root = product.get("_image_root")
+    if image_root:
+        # Colour-split product: only consider images under this folder.
+        for img in all_images:
+            rel_str = str(img.relative_to(ROOT))
+            if rel_str.startswith(image_root):
+                matches.append(img)
+    elif code in FALLBACK_PATTERNS:
+        fallback = FALLBACK_PATTERNS[code]
         for img in all_images:
             rel_str = str(img.relative_to(ROOT))
             if any(s in rel_str for s in fallback.get("contains_path", [])):
@@ -70,17 +131,27 @@ def find_images_for_product(code: str, all_images: list[Path]) -> list[str]:
             elif any(s in img.name for s in fallback.get("contains_filename", [])):
                 matches.append(img)
     elif code.isdigit():
-        # SKU-prefix match: the leading digit run of the filename equals the code.
+        # SKU-prefix match: the leading digit run of the filename equals the
+        # primary code OR any sibling code listed under `extraSkus`.
+        accepted_skus = {code, *(s for s in product.get("extraSkus", []) if s)}
         for img in all_images:
             m = SKU_RE.match(img.name)
             if not m:
                 continue
             sku = m.group(1)
-            if sku == code:
+            if sku in accepted_skus:
                 matches.append(img)
             # Combined-stem files like 305317_305318.jpg also belong to both SKUs.
-            elif "_" in img.stem and code in img.stem.split("_"):
+            elif "_" in img.stem and any(s in img.stem.split("_") for s in accepted_skus):
                 matches.append(img)
+
+    # If the product names a `cover` image (filename substring), move it
+    # to the front of the matches list so it becomes the card's primary photo.
+    cover = product.get("cover")
+    if cover:
+        prioritized = [m for m in matches if cover.lower() in m.name.lower()]
+        rest = [m for m in matches if cover.lower() not in m.name.lower()]
+        matches = prioritized + rest
 
     # De-dupe by URL AND by basename (same file copied into nested folders is
     # the same photo — keep the first occurrence only).
@@ -99,18 +170,21 @@ def find_images_for_product(code: str, all_images: list[Path]) -> list[str]:
 
 def main() -> int:
     products = json.loads(PRODUCTS_JSON.read_text(encoding="utf-8"))
+    products = expand_color_split(products)
     images = gather_images()
     print(f"scanned {len(images)} images", file=sys.stderr)
 
     matched_total = 0
     unmatched_codes: list[str] = []
     for p in products:
-        urls = find_images_for_product(p["code"], images)
+        urls = find_images_for_product(p, images)
         p["images"] = urls
         if urls:
             matched_total += len(urls)
         else:
             unmatched_codes.append(p["code"])
+        # _image_root is a build-time helper, not needed in the runtime payload.
+        p.pop("_image_root", None)
 
     print(f"matched {matched_total} image references across {len(products)} products", file=sys.stderr)
     if unmatched_codes:
