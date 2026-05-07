@@ -445,7 +445,7 @@ function renderHero() {
         <div class="tn-hero-dot-1">${dottedCircle({ size: 140, color: 'var(--accent)', cut: 'right' })}</div>
         <div class="tn-hero-dot-2">${dottedCircle({ size: 90,  color: 'var(--beige)', cut: 'left' })}</div>
         <div class="tn-hero-product-frame" style="background:${THEME.lightgrey}">
-          <img src="assets/hero.jpg" alt="Tinynord" class="tn-hero-product-illus tn-prod-img" loading="eager" />
+          <img src="${isLocalHost() || !CLOUDINARY.CLOUD_NAME ? 'assets/hero.jpg' : `https://res.cloudinary.com/${CLOUDINARY.CLOUD_NAME}/image/upload/${CLOUDINARY.DEFAULTS},w_1400/IMG_1332_yecoea.jpg`}" alt="Tinynord" class="tn-hero-product-illus tn-prod-img" loading="eager" />
         </div>
       </div>
     </section>`;
