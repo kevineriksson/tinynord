@@ -43,7 +43,21 @@ FALLBACK_PATTERNS = {
 COLOR_SPLIT_PRODUCTS = {
     "lux":            "STROLLERS/PRODUCT PICTURES/LUX",
     "active-comfort": "STROLLERS/PRODUCT PICTURES/ACTIVE_COMFORT",
+    "comfort":        "STROLLERS/PRODUCT PICTURES/ACTIVE_COMFORT",
 }
+
+IMAGE_EXTS = {"jpg", "jpeg", "png"}
+
+
+def first_image_in(folder: Path) -> str | None:
+    """Lexically-first image filename inside `folder`, or None if empty/missing."""
+    if not folder.is_dir():
+        return None
+    names = sorted(
+        f.name for f in folder.iterdir()
+        if f.is_file() and f.name.lower().rsplit(".", 1)[-1] in IMAGE_EXTS
+    )
+    return names[0] if names else None
 
 
 def slugify(s: str) -> str:
@@ -86,6 +100,14 @@ def expand_color_split(products: list[dict]) -> list[dict]:
             child["_image_root"] = str(folder.relative_to(ROOT))
             if colour in color_covers:
                 child["cover"] = color_covers[colour]
+            # `primaryFrame`: use the first image inside the named frame subfolder
+            # as the cover. Wins over any per-colour cover above.
+            primary_frame = p.get("primaryFrame")
+            if primary_frame:
+                frame_dir = color_folder_for(folder, primary_frame)
+                first = first_image_in(frame_dir) if frame_dir else None
+                if first:
+                    child["cover"] = first.rsplit(".", 1)[0]
             out.append(child)
     return out
 
@@ -118,10 +140,20 @@ def find_images_for_product(product: dict, all_images: list[Path]) -> list[str]:
     image_root = product.get("_image_root")
     if image_root:
         # Colour-split product: only consider images under this folder.
+        # When `frameInclude` is set, keep only top-level images (directly in the
+        # colour folder) plus images inside the named frame subfolders.
+        frame_include = product.get("frameInclude")
+        allowed_frames = {f.lower() for f in frame_include} if frame_include else None
         for img in all_images:
             rel_str = str(img.relative_to(ROOT))
-            if rel_str.startswith(image_root):
-                matches.append(img)
+            if not rel_str.startswith(image_root):
+                continue
+            if allowed_frames is not None:
+                # Path segment immediately after the colour folder, if any.
+                remainder = rel_str[len(image_root):].lstrip(os.sep).split(os.sep)
+                if len(remainder) > 1 and remainder[0].lower() not in allowed_frames:
+                    continue
+            matches.append(img)
     elif code in FALLBACK_PATTERNS:
         fallback = FALLBACK_PATTERNS[code]
         for img in all_images:
@@ -222,8 +254,10 @@ def main() -> int:
                     cloud_hits += 1
                 cloud_ids.append(pid or "")
             p["cloudIds"] = cloud_ids
-        # _image_root is a build-time helper, not needed in the runtime payload.
+        # Build-time helpers, not needed in the runtime payload.
         p.pop("_image_root", None)
+        p.pop("frameInclude", None)
+        p.pop("primaryFrame", None)
 
     print(f"matched {matched_total} image references across {len(products)} products", file=sys.stderr)
     if cloudinary_manifest:

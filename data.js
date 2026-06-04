@@ -4071,14 +4071,14 @@ window.TINYNORD_DATA = {
 ],
 "chassis": [
 "ACTIVE Bronze (black grip)",
-"ACTIVE Onyx (brown grip)",
-"COMFORT (black grip)"
+"ACTIVE Onyx (brown grip)"
 ],
 "colors": [
 "Brilliant black"
 ],
-"cover": "0443",
+"cover": "298917 (1)",
 "images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/Active%20Onyx,%20brown%20grip/298917%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/0443.jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/8808.jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/8858.jpg",
@@ -4087,12 +4087,10 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/8913.jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/Active%20Bronze,%20black%20grip/298918%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/Active%20Bronze,%20black%20grip/298918%20(2).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/Active%20Onyx,%20brown%20grip/298917%20(1).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/Active%20Onyx,%20brown%20grip/298917%20(2).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/Comfort,%20black%20grip/298920%20(1).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/Comfort,%20black%20grip/298920%20(2).jpg"
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/Active%20Onyx,%20brown%20grip/298917%20(2).jpg"
 ],
 "cloudIds": [
+"298917_1_aq4k2f",
 "0443_eixvm6",
 "8808_zqvzz6",
 "8858_jdtlff",
@@ -4101,10 +4099,7 @@ window.TINYNORD_DATA = {
 "8913_fezpux",
 "298918_1_o2wqaa",
 "298918_2_amqczj",
-"298917_1_aq4k2f",
-"298917_2_o4rkwy",
-"298920_1_mudmgw",
-"298920_2_l6orwo"
+"298917_2_o4rkwy"
 ]
 },
 {
@@ -4131,14 +4126,14 @@ window.TINYNORD_DATA = {
 ],
 "chassis": [
 "ACTIVE Bronze (black grip)",
-"ACTIVE Onyx (brown grip)",
-"COMFORT (black grip)"
+"ACTIVE Onyx (brown grip)"
 ],
 "colors": [
 "Garden green"
 ],
-"cover": "290981 (1)",
+"cover": "0468",
 "images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/Active%20Onyx,%20brown%20grip/0468.jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/290981%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/290981%20(2).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/290981%20(3).jpg",
@@ -4147,12 +4142,10 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/290981%20(6).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/Active%20Bronze,%20black%20grip/0481.jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/Active%20Bronze,%20black%20grip/0532.jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/Active%20Onyx,%20brown%20grip/0468.jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/Active%20Onyx,%20brown%20grip/0520.jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/Comfort,%20black%20grip/0490.jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/Comfort,%20black%20grip/0546.jpg"
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/Active%20Onyx,%20brown%20grip/0520.jpg"
 ],
 "cloudIds": [
+"0468_jomqr4",
 "290981_1_tbbi4j",
 "290981_2_fe2hf8",
 "290981_3_ghxaco",
@@ -4161,10 +4154,7 @@ window.TINYNORD_DATA = {
 "290981_6_kfd74u",
 "0481_kcv5kl",
 "0532_gbao4p",
-"0468_jomqr4",
-"0520_sxjomy",
-"0490_tsgoju",
-"0546_jhu3bv"
+"0520_sxjomy"
 ]
 },
 {
@@ -4191,14 +4181,14 @@ window.TINYNORD_DATA = {
 ],
 "chassis": [
 "ACTIVE Bronze (black grip)",
-"ACTIVE Onyx (brown grip)",
-"COMFORT (black grip)"
+"ACTIVE Onyx (brown grip)"
 ],
 "colors": [
 "Praline beige"
 ],
-"cover": "298907 (1)",
+"cover": "298917 (1)",
 "images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/Active%20Onyx,%20brown%20grip/298917%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/298907%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/298907%20(2).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/298907%20(3).jpg",
@@ -4207,12 +4197,10 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/298907%20(6).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/Active%20Bronze,%20black%20grip/298918%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/Active%20Bronze,%20black%20grip/298918%20(2).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/Active%20Onyx,%20brown%20grip/298917%20(1).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/Active%20Onyx,%20brown%20grip/298917%20(2).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/Comfort,%20black%20grip/298920%20(1).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/Comfort,%20black%20grip/298920%20(2).jpg"
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/Active%20Onyx,%20brown%20grip/298917%20(2).jpg"
 ],
 "cloudIds": [
+"298917_1_aq4k2f",
 "298907_1_wkupzg",
 "298907_2_ztevtg",
 "298907_3_ntsqin",
@@ -4221,10 +4209,7 @@ window.TINYNORD_DATA = {
 "298907_6_qcbfld",
 "298918_1_o2wqaa",
 "298918_2_amqczj",
-"298917_1_aq4k2f",
-"298917_2_o4rkwy",
-"298920_1_mudmgw",
-"298920_2_l6orwo"
+"298917_2_o4rkwy"
 ]
 },
 {
@@ -4251,14 +4236,14 @@ window.TINYNORD_DATA = {
 ],
 "chassis": [
 "ACTIVE Bronze (black grip)",
-"ACTIVE Onyx (brown grip)",
-"COMFORT (black grip)"
+"ACTIVE Onyx (brown grip)"
 ],
 "colors": [
 "Dark chocolate"
 ],
-"cover": "298908 (1)",
+"cover": "298917 (1)",
 "images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/Active%20Onyx,%20brown%20grip/298917%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/298908%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/298908%20(2).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/298908%20(3).jpg",
@@ -4267,12 +4252,10 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/298908%20(6).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/Active%20Bronze,%20black%20grip/298918%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/Active%20Bronze,%20black%20grip/298918%20(2).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/Active%20Onyx,%20brown%20grip/298917%20(1).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/Active%20Onyx,%20brown%20grip/298917%20(2).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/Comfort,%20black%20grip/298920%20(1).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/Comfort,%20black%20grip/298920%20(2).jpg"
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/Active%20Onyx,%20brown%20grip/298917%20(2).jpg"
 ],
 "cloudIds": [
+"298917_1_aq4k2f",
 "298908_1_q4uyhq",
 "298908_2_xsvydq",
 "298908_3_t67wp6",
@@ -4281,10 +4264,7 @@ window.TINYNORD_DATA = {
 "298908_6_fxr8q0",
 "298918_1_o2wqaa",
 "298918_2_amqczj",
-"298917_1_aq4k2f",
-"298917_2_o4rkwy",
-"298920_1_mudmgw",
-"298920_2_l6orwo"
+"298917_2_o4rkwy"
 ]
 },
 {
@@ -4311,14 +4291,14 @@ window.TINYNORD_DATA = {
 ],
 "chassis": [
 "ACTIVE Bronze (black grip)",
-"ACTIVE Onyx (brown grip)",
-"COMFORT (black grip)"
+"ACTIVE Onyx (brown grip)"
 ],
 "colors": [
 "Mystic copper"
 ],
-"cover": "298909 (1)",
+"cover": "298917 (1)",
 "images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/Active%20Onyx,%20brown%20grip/298917%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/298909%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/298909%20(2).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/298909%20(3).jpg",
@@ -4327,12 +4307,10 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/298909%20(6).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/Active%20Bronze,%20black%20grip/298918%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/Active%20Bronze,%20black%20grip/298918%20(2).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/Active%20Onyx,%20brown%20grip/298917%20(1).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/Active%20Onyx,%20brown%20grip/298917%20(2).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/Comfort,%20black%20grip/298920%20(1).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/Comfort,%20black%20grip/298920%20(2).jpg"
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/Active%20Onyx,%20brown%20grip/298917%20(2).jpg"
 ],
 "cloudIds": [
+"298917_1_aq4k2f",
 "298909_1_j5dpgq",
 "298909_2_zz5izh",
 "298909_3_kcptmc",
@@ -4341,10 +4319,7 @@ window.TINYNORD_DATA = {
 "298909_6_pua8w5",
 "298918_1_o2wqaa",
 "298918_2_amqczj",
-"298917_1_aq4k2f",
-"298917_2_o4rkwy",
-"298920_1_mudmgw",
-"298920_2_l6orwo"
+"298917_2_o4rkwy"
 ]
 },
 {
@@ -4371,14 +4346,14 @@ window.TINYNORD_DATA = {
 ],
 "chassis": [
 "ACTIVE Bronze (black grip)",
-"ACTIVE Onyx (brown grip)",
-"COMFORT (black grip)"
+"ACTIVE Onyx (brown grip)"
 ],
 "colors": [
 "Midnight blue"
 ],
-"cover": "298910 (1)",
+"cover": "298917 (1)",
 "images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/Active%20Onyx,%20brown%20grip/298917%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/298910%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/298910%20(2).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/298910%20(3).jpg",
@@ -4387,12 +4362,10 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/298910%20(6).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/Active%20Bronze,%20black%20grip/298918%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/Active%20Bronze,%20black%20grip/298918%20(2).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/Active%20Onyx,%20brown%20grip/298917%20(1).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/Active%20Onyx,%20brown%20grip/298917%20(2).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/Comfort,%20black%20grip/298920%20(1).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/Comfort,%20black%20grip/298920%20(2).jpg"
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/Active%20Onyx,%20brown%20grip/298917%20(2).jpg"
 ],
 "cloudIds": [
+"298917_1_aq4k2f",
 "298910_1_rvkyxo",
 "298910_2_svaxpg",
 "298910_3_ut9zvr",
@@ -4401,10 +4374,7 @@ window.TINYNORD_DATA = {
 "298910_6_s49nz9",
 "298918_1_o2wqaa",
 "298918_2_amqczj",
-"298917_1_aq4k2f",
-"298917_2_o4rkwy",
-"298920_1_mudmgw",
-"298920_2_l6orwo"
+"298917_2_o4rkwy"
 ]
 },
 {
@@ -4431,14 +4401,14 @@ window.TINYNORD_DATA = {
 ],
 "chassis": [
 "ACTIVE Bronze (black grip)",
-"ACTIVE Onyx (brown grip)",
-"COMFORT (black grip)"
+"ACTIVE Onyx (brown grip)"
 ],
 "colors": [
 "Jelly mint"
 ],
-"cover": "298911 (1)",
+"cover": "298917 (1)",
 "images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/Active%20Onyx,%20brown%20grip/298917%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/298911%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/298911%20(2).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/298911%20(3).jpg",
@@ -4447,12 +4417,10 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/298911%20(6).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/Active%20Bronze,%20black%20grip/298918%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/Active%20Bronze,%20black%20grip/298918%20(2).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/Active%20Onyx,%20brown%20grip/298917%20(1).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/Active%20Onyx,%20brown%20grip/298917%20(2).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/Comfort,%20black%20grip/298920%20(1).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/Comfort,%20black%20grip/298920%20(2).jpg"
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/Active%20Onyx,%20brown%20grip/298917%20(2).jpg"
 ],
 "cloudIds": [
+"298917_1_aq4k2f",
 "298911_1_hxu1pc",
 "298911_2_u3ol59",
 "298911_3_aqls8l",
@@ -4461,9 +4429,356 @@ window.TINYNORD_DATA = {
 "298911_6_icxgce",
 "298918_1_o2wqaa",
 "298918_2_amqczj",
-"298917_1_aq4k2f",
-"298917_2_o4rkwy",
+"298917_2_o4rkwy"
+]
+},
+{
+"code": "comfort-brilliant-black",
+"name": "COMFORT Stroller Set – Brilliant black",
+"category": "strollers",
+"subcategory": "",
+"tag": "Smooth, all-season rides for modern, active parents",
+"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"materials": [
+"Lightweight aluminium chassis",
+"100% cotton OEKO-TEX lining",
+"Faux leather handle grip",
+"Faux leather bumper bar",
+"Magnetic 5-point safety harness",
+"Reflective piping (360°)",
+"ACTIVE wheels: PUR foam rubber 10″/12″",
+"COMFORT wheels: 32 cm air tires with suspension"
+],
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"ages": "From birth to ~36 months / max 22 kg",
+"certs": [
+"OEKO-TEX (cotton lining)"
+],
+"chassis": [
+"COMFORT (black grip)"
+],
+"colors": [
+"Brilliant black"
+],
+"cover": "298920 (1)",
+"images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/Comfort,%20black%20grip/298920%20(1).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/0443.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/8808.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/8858.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/8859.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/8912.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/8913.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Brilliant%20black/Comfort,%20black%20grip/298920%20(2).jpg"
+],
+"cloudIds": [
 "298920_1_mudmgw",
+"0443_eixvm6",
+"8808_zqvzz6",
+"8858_jdtlff",
+"8859_qacnep",
+"8912_lqifpa",
+"8913_fezpux",
+"298920_2_l6orwo"
+]
+},
+{
+"code": "comfort-garden-green",
+"name": "COMFORT Stroller Set – Garden green",
+"category": "strollers",
+"subcategory": "",
+"tag": "Smooth, all-season rides for modern, active parents",
+"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"materials": [
+"Lightweight aluminium chassis",
+"100% cotton OEKO-TEX lining",
+"Faux leather handle grip",
+"Faux leather bumper bar",
+"Magnetic 5-point safety harness",
+"Reflective piping (360°)",
+"ACTIVE wheels: PUR foam rubber 10″/12″",
+"COMFORT wheels: 32 cm air tires with suspension"
+],
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"ages": "From birth to ~36 months / max 22 kg",
+"certs": [
+"OEKO-TEX (cotton lining)"
+],
+"chassis": [
+"COMFORT (black grip)"
+],
+"colors": [
+"Garden green"
+],
+"cover": "0490",
+"images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/Comfort,%20black%20grip/0490.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/290981%20(1).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/290981%20(2).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/290981%20(3).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/290981%20(4).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/290981%20(5).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/290981%20(6).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Garden%20green/Comfort,%20black%20grip/0546.jpg"
+],
+"cloudIds": [
+"0490_tsgoju",
+"290981_1_tbbi4j",
+"290981_2_fe2hf8",
+"290981_3_ghxaco",
+"290981_4_h9syni",
+"290981_5_aiqwkp",
+"290981_6_kfd74u",
+"0546_jhu3bv"
+]
+},
+{
+"code": "comfort-praline-beige",
+"name": "COMFORT Stroller Set – Praline beige",
+"category": "strollers",
+"subcategory": "",
+"tag": "Smooth, all-season rides for modern, active parents",
+"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"materials": [
+"Lightweight aluminium chassis",
+"100% cotton OEKO-TEX lining",
+"Faux leather handle grip",
+"Faux leather bumper bar",
+"Magnetic 5-point safety harness",
+"Reflective piping (360°)",
+"ACTIVE wheels: PUR foam rubber 10″/12″",
+"COMFORT wheels: 32 cm air tires with suspension"
+],
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"ages": "From birth to ~36 months / max 22 kg",
+"certs": [
+"OEKO-TEX (cotton lining)"
+],
+"chassis": [
+"COMFORT (black grip)"
+],
+"colors": [
+"Praline beige"
+],
+"cover": "298920 (1)",
+"images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/Comfort,%20black%20grip/298920%20(1).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/298907%20(1).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/298907%20(2).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/298907%20(3).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/298907%20(4).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/298907%20(5).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/298907%20(6).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Praline%20beige/Comfort,%20black%20grip/298920%20(2).jpg"
+],
+"cloudIds": [
+"298920_1_mudmgw",
+"298907_1_wkupzg",
+"298907_2_ztevtg",
+"298907_3_ntsqin",
+"298907_4_gmlfya",
+"298907_5_cazn0a",
+"298907_6_qcbfld",
+"298920_2_l6orwo"
+]
+},
+{
+"code": "comfort-dark-chocolate",
+"name": "COMFORT Stroller Set – Dark chocolate",
+"category": "strollers",
+"subcategory": "",
+"tag": "Smooth, all-season rides for modern, active parents",
+"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"materials": [
+"Lightweight aluminium chassis",
+"100% cotton OEKO-TEX lining",
+"Faux leather handle grip",
+"Faux leather bumper bar",
+"Magnetic 5-point safety harness",
+"Reflective piping (360°)",
+"ACTIVE wheels: PUR foam rubber 10″/12″",
+"COMFORT wheels: 32 cm air tires with suspension"
+],
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"ages": "From birth to ~36 months / max 22 kg",
+"certs": [
+"OEKO-TEX (cotton lining)"
+],
+"chassis": [
+"COMFORT (black grip)"
+],
+"colors": [
+"Dark chocolate"
+],
+"cover": "298920 (1)",
+"images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/Comfort,%20black%20grip/298920%20(1).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/298908%20(1).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/298908%20(2).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/298908%20(3).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/298908%20(4).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/298908%20(5).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/298908%20(6).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Dark%20chocolate/Comfort,%20black%20grip/298920%20(2).jpg"
+],
+"cloudIds": [
+"298920_1_mudmgw",
+"298908_1_q4uyhq",
+"298908_2_xsvydq",
+"298908_3_t67wp6",
+"298908_4_zyrrs6",
+"298908_5_af9aei",
+"298908_6_fxr8q0",
+"298920_2_l6orwo"
+]
+},
+{
+"code": "comfort-mystic-copper",
+"name": "COMFORT Stroller Set – Mystic copper",
+"category": "strollers",
+"subcategory": "",
+"tag": "Smooth, all-season rides for modern, active parents",
+"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"materials": [
+"Lightweight aluminium chassis",
+"100% cotton OEKO-TEX lining",
+"Faux leather handle grip",
+"Faux leather bumper bar",
+"Magnetic 5-point safety harness",
+"Reflective piping (360°)",
+"ACTIVE wheels: PUR foam rubber 10″/12″",
+"COMFORT wheels: 32 cm air tires with suspension"
+],
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"ages": "From birth to ~36 months / max 22 kg",
+"certs": [
+"OEKO-TEX (cotton lining)"
+],
+"chassis": [
+"COMFORT (black grip)"
+],
+"colors": [
+"Mystic copper"
+],
+"cover": "298920 (1)",
+"images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/Comfort,%20black%20grip/298920%20(1).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/298909%20(1).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/298909%20(2).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/298909%20(3).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/298909%20(4).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/298909%20(5).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/298909%20(6).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Mystic%20Copper/Comfort,%20black%20grip/298920%20(2).jpg"
+],
+"cloudIds": [
+"298920_1_mudmgw",
+"298909_1_j5dpgq",
+"298909_2_zz5izh",
+"298909_3_kcptmc",
+"298909_4_zhjgrd",
+"298909_5_popm45",
+"298909_6_pua8w5",
+"298920_2_l6orwo"
+]
+},
+{
+"code": "comfort-midnight-blue",
+"name": "COMFORT Stroller Set – Midnight blue",
+"category": "strollers",
+"subcategory": "",
+"tag": "Smooth, all-season rides for modern, active parents",
+"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"materials": [
+"Lightweight aluminium chassis",
+"100% cotton OEKO-TEX lining",
+"Faux leather handle grip",
+"Faux leather bumper bar",
+"Magnetic 5-point safety harness",
+"Reflective piping (360°)",
+"ACTIVE wheels: PUR foam rubber 10″/12″",
+"COMFORT wheels: 32 cm air tires with suspension"
+],
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"ages": "From birth to ~36 months / max 22 kg",
+"certs": [
+"OEKO-TEX (cotton lining)"
+],
+"chassis": [
+"COMFORT (black grip)"
+],
+"colors": [
+"Midnight blue"
+],
+"cover": "298920 (1)",
+"images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/Comfort,%20black%20grip/298920%20(1).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/298910%20(1).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/298910%20(2).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/298910%20(3).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/298910%20(4).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/298910%20(5).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/298910%20(6).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Midnight%20blue/Comfort,%20black%20grip/298920%20(2).jpg"
+],
+"cloudIds": [
+"298920_1_mudmgw",
+"298910_1_rvkyxo",
+"298910_2_svaxpg",
+"298910_3_ut9zvr",
+"298910_4_odroic",
+"298910_5_oovb8b",
+"298910_6_s49nz9",
+"298920_2_l6orwo"
+]
+},
+{
+"code": "comfort-jelly-mint",
+"name": "COMFORT Stroller Set – Jelly mint",
+"category": "strollers",
+"subcategory": "",
+"tag": "Smooth, all-season rides for modern, active parents",
+"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"materials": [
+"Lightweight aluminium chassis",
+"100% cotton OEKO-TEX lining",
+"Faux leather handle grip",
+"Faux leather bumper bar",
+"Magnetic 5-point safety harness",
+"Reflective piping (360°)",
+"ACTIVE wheels: PUR foam rubber 10″/12″",
+"COMFORT wheels: 32 cm air tires with suspension"
+],
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"ages": "From birth to ~36 months / max 22 kg",
+"certs": [
+"OEKO-TEX (cotton lining)"
+],
+"chassis": [
+"COMFORT (black grip)"
+],
+"colors": [
+"Jelly mint"
+],
+"cover": "298920 (1)",
+"images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/Comfort,%20black%20grip/298920%20(1).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/298911%20(1).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/298911%20(2).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/298911%20(3).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/298911%20(4).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/298911%20(5).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/298911%20(6).jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/ACTIVE_COMFORT/Jelly%20mint/Comfort,%20black%20grip/298920%20(2).jpg"
+],
+"cloudIds": [
+"298920_1_mudmgw",
+"298911_1_hxu1pc",
+"298911_2_u3ol59",
+"298911_3_aqls8l",
+"298911_4_h3px3v",
+"298911_5_dkwmd5",
+"298911_6_icxgce",
 "298920_2_l6orwo"
 ]
 },
@@ -4700,6 +5015,6 @@ window.TINYNORD_DATA = {
 "car": 12,
 "safety": 8,
 "stroller-acc": 12,
-"strollers": 11
+"strollers": 18
 }
 };
