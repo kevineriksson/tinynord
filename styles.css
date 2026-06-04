@@ -200,8 +200,8 @@ button { font: inherit; color: inherit; }
   }
 }
 .tn-logo { display: inline-flex; align-items: center; cursor: pointer; }
-.tn-logo-img { height: 80px; width: auto; display: block; }
-@media (max-width: 720px) { .tn-logo-img { height: 56px; } }
+.tn-logo-img { height: 96px; width: auto; display: block; }
+@media (max-width: 720px) { .tn-logo-img { height: 64px; } }
 .tn-nav { display: flex; gap: 36px; justify-content: center; }
 .tn-nav-link {
   font-family: 'Cera Pro', sans-serif;
@@ -367,7 +367,7 @@ button { font: inherit; color: inherit; }
   aspect-ratio: 1 / 1.1;
   animation: tn-card-in 0.6s ease both;
   border: 1.5px solid transparent;
-  background: var(--beige);
+  background: #fff;
 }
 .tn-cat-card:hover { transform: translateY(-6px); border-color: var(--ink); }
 .tn-cat-card-illus { flex: 1; min-height: 140px; display: flex; align-items: center; justify-content: center; overflow: hidden; }

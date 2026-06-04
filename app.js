@@ -46,9 +46,9 @@ const COPY = {
     },
     footer: {
       tagline: 'a world of wonders',
-      addr: 'Tinynord OÜ — Tallinn, Estonia',
+      addr: 'Fliis Trade OÜ — Tallinn, Estonia',
       cols: { catalogue: 'Catalogue', company: 'Company', contact: 'Contact' },
-      legal: '© 2026 Tinynord OÜ. All rights reserved.',
+      legal: '© 2026 Fliis Trade OÜ. All rights reserved.',
     },
     modal: {
       materials: 'Materials',
@@ -107,9 +107,9 @@ const COPY = {
     },
     footer: {
       tagline: 'imede maailm',
-      addr: 'Tinynord OÜ — Tallinn, Eesti',
+      addr: 'Fliis Trade OÜ — Tallinn, Eesti',
       cols: { catalogue: 'Tooted', company: 'Ettevõte', contact: 'Kontakt' },
-      legal: '© 2026 Tinynord OÜ. Kõik õigused kaitstud.',
+      legal: '© 2026 Fliis Trade OÜ. Kõik õigused kaitstud.',
     },
     modal: {
       materials: 'Materjalid',
@@ -560,7 +560,7 @@ function renderRetailers() {
             </div>
           </div>`).join('')}
       </div>
-      <p class="tn-ret-cta">${escapeHtml(t.empty)}<a href="mailto:hello@tinynord.com">${escapeHtml(t.emptyLink)}</a></p>
+      <p class="tn-ret-cta">${escapeHtml(t.empty)}<a href="mailto:info@fliistrade.com">${escapeHtml(t.emptyLink)}</a></p>
     </section>`;
 }
 
@@ -624,14 +624,13 @@ function renderFooter() {
             <ul>
               <li><a data-action="route" data-page="about">${escapeHtml(COPY[state.lang].aboutShort)}</a></li>
               <li><a data-action="route" data-page="retailers">${escapeHtml(COPY[state.lang].retailersShort)}</a></li>
-              <li><a>${escapeHtml(COPY[state.lang].sustainability)}</a></li>
             </ul>
           </div>
           <div>
             <div class="tn-footer-h">${escapeHtml(t.cols.contact)}</div>
             <ul>
-              <li><a href="mailto:hello@tinynord.com">hello@tinynord.com</a></li>
-              <li><a>+372 5555 0123</a></li>
+              <li><a href="mailto:info@fliistrade.com">info@fliistrade.com</a></li>
+              <li><a>+372 5194 6988</a></li>
               <li><a>Instagram</a></li>
             </ul>
           </div>
