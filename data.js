@@ -4053,7 +4053,7 @@ window.TINYNORD_DATA = {
 "category": "strollers",
 "subcategory": "",
 "tag": "Smooth, all-season rides for modern, active parents",
-"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nTwo chassis finishes are available: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight aluminium chassis on PUR foam rubber wheels (10″ front / 12″ rear). Both feature a lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
 "materials": [
 "Lightweight aluminium chassis",
 "100% cotton OEKO-TEX lining",
@@ -4061,10 +4061,9 @@ window.TINYNORD_DATA = {
 "Faux leather bumper bar",
 "Magnetic 5-point safety harness",
 "Reflective piping (360°)",
-"ACTIVE wheels: PUR foam rubber 10″/12″",
-"COMFORT wheels: 32 cm air tires with suspension"
+"Wheels: PUR foam rubber 10″/12″"
 ],
-"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • Chassis 14.3 kg total, basket 5 kg, folded 34 cm",
 "ages": "From birth to ~36 months / max 22 kg",
 "certs": [
 "OEKO-TEX (cotton lining)"
@@ -4108,7 +4107,7 @@ window.TINYNORD_DATA = {
 "category": "strollers",
 "subcategory": "",
 "tag": "Smooth, all-season rides for modern, active parents",
-"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nTwo chassis finishes are available: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight aluminium chassis on PUR foam rubber wheels (10″ front / 12″ rear). Both feature a lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
 "materials": [
 "Lightweight aluminium chassis",
 "100% cotton OEKO-TEX lining",
@@ -4116,10 +4115,9 @@ window.TINYNORD_DATA = {
 "Faux leather bumper bar",
 "Magnetic 5-point safety harness",
 "Reflective piping (360°)",
-"ACTIVE wheels: PUR foam rubber 10″/12″",
-"COMFORT wheels: 32 cm air tires with suspension"
+"Wheels: PUR foam rubber 10″/12″"
 ],
-"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • Chassis 14.3 kg total, basket 5 kg, folded 34 cm",
 "ages": "From birth to ~36 months / max 22 kg",
 "certs": [
 "OEKO-TEX (cotton lining)"
@@ -4163,7 +4161,7 @@ window.TINYNORD_DATA = {
 "category": "strollers",
 "subcategory": "",
 "tag": "Smooth, all-season rides for modern, active parents",
-"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nTwo chassis finishes are available: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight aluminium chassis on PUR foam rubber wheels (10″ front / 12″ rear). Both feature a lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
 "materials": [
 "Lightweight aluminium chassis",
 "100% cotton OEKO-TEX lining",
@@ -4171,10 +4169,9 @@ window.TINYNORD_DATA = {
 "Faux leather bumper bar",
 "Magnetic 5-point safety harness",
 "Reflective piping (360°)",
-"ACTIVE wheels: PUR foam rubber 10″/12″",
-"COMFORT wheels: 32 cm air tires with suspension"
+"Wheels: PUR foam rubber 10″/12″"
 ],
-"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • Chassis 14.3 kg total, basket 5 kg, folded 34 cm",
 "ages": "From birth to ~36 months / max 22 kg",
 "certs": [
 "OEKO-TEX (cotton lining)"
@@ -4218,7 +4215,7 @@ window.TINYNORD_DATA = {
 "category": "strollers",
 "subcategory": "",
 "tag": "Smooth, all-season rides for modern, active parents",
-"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nTwo chassis finishes are available: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight aluminium chassis on PUR foam rubber wheels (10″ front / 12″ rear). Both feature a lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
 "materials": [
 "Lightweight aluminium chassis",
 "100% cotton OEKO-TEX lining",
@@ -4226,10 +4223,9 @@ window.TINYNORD_DATA = {
 "Faux leather bumper bar",
 "Magnetic 5-point safety harness",
 "Reflective piping (360°)",
-"ACTIVE wheels: PUR foam rubber 10″/12″",
-"COMFORT wheels: 32 cm air tires with suspension"
+"Wheels: PUR foam rubber 10″/12″"
 ],
-"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • Chassis 14.3 kg total, basket 5 kg, folded 34 cm",
 "ages": "From birth to ~36 months / max 22 kg",
 "certs": [
 "OEKO-TEX (cotton lining)"
@@ -4273,7 +4269,7 @@ window.TINYNORD_DATA = {
 "category": "strollers",
 "subcategory": "",
 "tag": "Smooth, all-season rides for modern, active parents",
-"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nTwo chassis finishes are available: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight aluminium chassis on PUR foam rubber wheels (10″ front / 12″ rear). Both feature a lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
 "materials": [
 "Lightweight aluminium chassis",
 "100% cotton OEKO-TEX lining",
@@ -4281,10 +4277,9 @@ window.TINYNORD_DATA = {
 "Faux leather bumper bar",
 "Magnetic 5-point safety harness",
 "Reflective piping (360°)",
-"ACTIVE wheels: PUR foam rubber 10″/12″",
-"COMFORT wheels: 32 cm air tires with suspension"
+"Wheels: PUR foam rubber 10″/12″"
 ],
-"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • Chassis 14.3 kg total, basket 5 kg, folded 34 cm",
 "ages": "From birth to ~36 months / max 22 kg",
 "certs": [
 "OEKO-TEX (cotton lining)"
@@ -4328,7 +4323,7 @@ window.TINYNORD_DATA = {
 "category": "strollers",
 "subcategory": "",
 "tag": "Smooth, all-season rides for modern, active parents",
-"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nTwo chassis finishes are available: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight aluminium chassis on PUR foam rubber wheels (10″ front / 12″ rear). Both feature a lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
 "materials": [
 "Lightweight aluminium chassis",
 "100% cotton OEKO-TEX lining",
@@ -4336,10 +4331,9 @@ window.TINYNORD_DATA = {
 "Faux leather bumper bar",
 "Magnetic 5-point safety harness",
 "Reflective piping (360°)",
-"ACTIVE wheels: PUR foam rubber 10″/12″",
-"COMFORT wheels: 32 cm air tires with suspension"
+"Wheels: PUR foam rubber 10″/12″"
 ],
-"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • Chassis 14.3 kg total, basket 5 kg, folded 34 cm",
 "ages": "From birth to ~36 months / max 22 kg",
 "certs": [
 "OEKO-TEX (cotton lining)"
@@ -4383,7 +4377,7 @@ window.TINYNORD_DATA = {
 "category": "strollers",
 "subcategory": "",
 "tag": "Smooth, all-season rides for modern, active parents",
-"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nTwo chassis finishes are available: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight aluminium chassis on PUR foam rubber wheels (10″ front / 12″ rear). Both feature a lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
 "materials": [
 "Lightweight aluminium chassis",
 "100% cotton OEKO-TEX lining",
@@ -4391,10 +4385,9 @@ window.TINYNORD_DATA = {
 "Faux leather bumper bar",
 "Magnetic 5-point safety harness",
 "Reflective piping (360°)",
-"ACTIVE wheels: PUR foam rubber 10″/12″",
-"COMFORT wheels: 32 cm air tires with suspension"
+"Wheels: PUR foam rubber 10″/12″"
 ],
-"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • Chassis 14.3 kg total, basket 5 kg, folded 34 cm",
 "ages": "From birth to ~36 months / max 22 kg",
 "certs": [
 "OEKO-TEX (cotton lining)"
@@ -4437,8 +4430,8 @@ window.TINYNORD_DATA = {
 "name": "COMFORT Stroller Set – Brilliant black",
 "category": "strollers",
 "subcategory": "",
-"tag": "Smooth, all-season rides for modern, active parents",
-"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"tag": "All-terrain comfort — big air tires and soft suspension",
+"description": "The Tinynord COMFORT Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThe COMFORT (black grip) chassis is a 10.6 kg lightweight aluminium frame riding on big 32 cm air tires with soft suspension — built for confident rides over snow, mud and rough terrain. It features a lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
 "materials": [
 "Lightweight aluminium chassis",
 "100% cotton OEKO-TEX lining",
@@ -4446,10 +4439,9 @@ window.TINYNORD_DATA = {
 "Faux leather bumper bar",
 "Magnetic 5-point safety harness",
 "Reflective piping (360°)",
-"ACTIVE wheels: PUR foam rubber 10″/12″",
-"COMFORT wheels: 32 cm air tires with suspension"
+"Wheels: 32 cm air tires with suspension"
 ],
-"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • Chassis 15.5 kg total, basket 8 kg, folded 41 cm",
 "ages": "From birth to ~36 months / max 22 kg",
 "certs": [
 "OEKO-TEX (cotton lining)"
@@ -4487,8 +4479,8 @@ window.TINYNORD_DATA = {
 "name": "COMFORT Stroller Set – Garden green",
 "category": "strollers",
 "subcategory": "",
-"tag": "Smooth, all-season rides for modern, active parents",
-"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"tag": "All-terrain comfort — big air tires and soft suspension",
+"description": "The Tinynord COMFORT Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThe COMFORT (black grip) chassis is a 10.6 kg lightweight aluminium frame riding on big 32 cm air tires with soft suspension — built for confident rides over snow, mud and rough terrain. It features a lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
 "materials": [
 "Lightweight aluminium chassis",
 "100% cotton OEKO-TEX lining",
@@ -4496,10 +4488,9 @@ window.TINYNORD_DATA = {
 "Faux leather bumper bar",
 "Magnetic 5-point safety harness",
 "Reflective piping (360°)",
-"ACTIVE wheels: PUR foam rubber 10″/12″",
-"COMFORT wheels: 32 cm air tires with suspension"
+"Wheels: 32 cm air tires with suspension"
 ],
-"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • Chassis 15.5 kg total, basket 8 kg, folded 41 cm",
 "ages": "From birth to ~36 months / max 22 kg",
 "certs": [
 "OEKO-TEX (cotton lining)"
@@ -4537,8 +4528,8 @@ window.TINYNORD_DATA = {
 "name": "COMFORT Stroller Set – Praline beige",
 "category": "strollers",
 "subcategory": "",
-"tag": "Smooth, all-season rides for modern, active parents",
-"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"tag": "All-terrain comfort — big air tires and soft suspension",
+"description": "The Tinynord COMFORT Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThe COMFORT (black grip) chassis is a 10.6 kg lightweight aluminium frame riding on big 32 cm air tires with soft suspension — built for confident rides over snow, mud and rough terrain. It features a lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
 "materials": [
 "Lightweight aluminium chassis",
 "100% cotton OEKO-TEX lining",
@@ -4546,10 +4537,9 @@ window.TINYNORD_DATA = {
 "Faux leather bumper bar",
 "Magnetic 5-point safety harness",
 "Reflective piping (360°)",
-"ACTIVE wheels: PUR foam rubber 10″/12″",
-"COMFORT wheels: 32 cm air tires with suspension"
+"Wheels: 32 cm air tires with suspension"
 ],
-"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • Chassis 15.5 kg total, basket 8 kg, folded 41 cm",
 "ages": "From birth to ~36 months / max 22 kg",
 "certs": [
 "OEKO-TEX (cotton lining)"
@@ -4587,8 +4577,8 @@ window.TINYNORD_DATA = {
 "name": "COMFORT Stroller Set – Dark chocolate",
 "category": "strollers",
 "subcategory": "",
-"tag": "Smooth, all-season rides for modern, active parents",
-"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"tag": "All-terrain comfort — big air tires and soft suspension",
+"description": "The Tinynord COMFORT Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThe COMFORT (black grip) chassis is a 10.6 kg lightweight aluminium frame riding on big 32 cm air tires with soft suspension — built for confident rides over snow, mud and rough terrain. It features a lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
 "materials": [
 "Lightweight aluminium chassis",
 "100% cotton OEKO-TEX lining",
@@ -4596,10 +4586,9 @@ window.TINYNORD_DATA = {
 "Faux leather bumper bar",
 "Magnetic 5-point safety harness",
 "Reflective piping (360°)",
-"ACTIVE wheels: PUR foam rubber 10″/12″",
-"COMFORT wheels: 32 cm air tires with suspension"
+"Wheels: 32 cm air tires with suspension"
 ],
-"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • Chassis 15.5 kg total, basket 8 kg, folded 41 cm",
 "ages": "From birth to ~36 months / max 22 kg",
 "certs": [
 "OEKO-TEX (cotton lining)"
@@ -4637,8 +4626,8 @@ window.TINYNORD_DATA = {
 "name": "COMFORT Stroller Set – Mystic copper",
 "category": "strollers",
 "subcategory": "",
-"tag": "Smooth, all-season rides for modern, active parents",
-"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"tag": "All-terrain comfort — big air tires and soft suspension",
+"description": "The Tinynord COMFORT Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThe COMFORT (black grip) chassis is a 10.6 kg lightweight aluminium frame riding on big 32 cm air tires with soft suspension — built for confident rides over snow, mud and rough terrain. It features a lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
 "materials": [
 "Lightweight aluminium chassis",
 "100% cotton OEKO-TEX lining",
@@ -4646,10 +4635,9 @@ window.TINYNORD_DATA = {
 "Faux leather bumper bar",
 "Magnetic 5-point safety harness",
 "Reflective piping (360°)",
-"ACTIVE wheels: PUR foam rubber 10″/12″",
-"COMFORT wheels: 32 cm air tires with suspension"
+"Wheels: 32 cm air tires with suspension"
 ],
-"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • Chassis 15.5 kg total, basket 8 kg, folded 41 cm",
 "ages": "From birth to ~36 months / max 22 kg",
 "certs": [
 "OEKO-TEX (cotton lining)"
@@ -4687,8 +4675,8 @@ window.TINYNORD_DATA = {
 "name": "COMFORT Stroller Set – Midnight blue",
 "category": "strollers",
 "subcategory": "",
-"tag": "Smooth, all-season rides for modern, active parents",
-"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"tag": "All-terrain comfort — big air tires and soft suspension",
+"description": "The Tinynord COMFORT Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThe COMFORT (black grip) chassis is a 10.6 kg lightweight aluminium frame riding on big 32 cm air tires with soft suspension — built for confident rides over snow, mud and rough terrain. It features a lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
 "materials": [
 "Lightweight aluminium chassis",
 "100% cotton OEKO-TEX lining",
@@ -4696,10 +4684,9 @@ window.TINYNORD_DATA = {
 "Faux leather bumper bar",
 "Magnetic 5-point safety harness",
 "Reflective piping (360°)",
-"ACTIVE wheels: PUR foam rubber 10″/12″",
-"COMFORT wheels: 32 cm air tires with suspension"
+"Wheels: 32 cm air tires with suspension"
 ],
-"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • Chassis 15.5 kg total, basket 8 kg, folded 41 cm",
 "ages": "From birth to ~36 months / max 22 kg",
 "certs": [
 "OEKO-TEX (cotton lining)"
@@ -4737,8 +4724,8 @@ window.TINYNORD_DATA = {
 "name": "COMFORT Stroller Set – Jelly mint",
 "category": "strollers",
 "subcategory": "",
-"tag": "Smooth, all-season rides for modern, active parents",
-"description": "The Tinynord ACTIVE Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThree chassis options pair with every colour: ACTIVE Bronze (black grip) and ACTIVE Onyx (brown grip) — a 9.4 kg lightweight chassis on PUR foam rubber wheels (10″ front / 12″ rear) — and COMFORT (black grip) — a 10.6 kg chassis with big 32 cm air tires and soft suspension for snowy or muddy terrain. All chassis feature lightweight aluminium frames, lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
+"tag": "All-terrain comfort — big air tires and soft suspension",
+"description": "The Tinynord COMFORT Stroller Set is a complete travel system that includes a carrycot, reversible seat unit and chassis, designed to suit the lifestyle of modern and active parents throughout all four seasons. An additional shock absorber system (SAS) with blockade, paired with a lightweight aluminium chassis, guarantees a smooth ride from birth onward.\n\nThe carrycot features a 100% cotton OEKO-TEX lining, an extendable canopy with panorama-view ventilation window, a 5-position adjustable backrest, carrying handle, rocking rails and 360° reflective piping. The reversible seat unit grows with the child — extendable canopy, 4-position backrest, 5-point harness with magnetic buckle, extendable footrest with water-repellent mud cover, faux leather bumper bar and included footcover.\n\nThe COMFORT (black grip) chassis is a 10.6 kg lightweight aluminium frame riding on big 32 cm air tires with soft suspension — built for confident rides over snow, mud and rough terrain. It features a lockable shock absorber system, foldable design with the seat attached, 360° swivelling front wheels, faux leather adjustable handle grip, and a built-in shopping basket.",
 "materials": [
 "Lightweight aluminium chassis",
 "100% cotton OEKO-TEX lining",
@@ -4746,10 +4733,9 @@ window.TINYNORD_DATA = {
 "Faux leather bumper bar",
 "Magnetic 5-point safety harness",
 "Reflective piping (360°)",
-"ACTIVE wheels: PUR foam rubber 10″/12″",
-"COMFORT wheels: 32 cm air tires with suspension"
+"Wheels: 32 cm air tires with suspension"
 ],
-"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • ACTIVE chassis 14.3 kg total, basket 5 kg, folded 34 cm • COMFORT chassis 15.5 kg total, basket 8 kg, folded 41 cm",
+"dims": "Carrycot 74 × 34 × 21 cm, 4.9 kg • Seat unit 51 × 26 × 23 cm, 4 kg, max child 22 kg • Chassis 15.5 kg total, basket 8 kg, folded 41 cm",
 "ages": "From birth to ~36 months / max 22 kg",
 "certs": [
 "OEKO-TEX (cotton lining)"
@@ -4810,8 +4796,9 @@ window.TINYNORD_DATA = {
 "colors": [
 "Caviar black"
 ],
-"cover": "298901 (1)",
+"cover": "298916 (1)",
 "images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Caviar%20black/LUX%20Chrome,%20black%20perforated%20grip/298916%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Caviar%20black/298901%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Caviar%20black/298901%20(2).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Caviar%20black/298901%20(3).jpg",
@@ -4821,10 +4808,10 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Caviar%20black/298901%20(7).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Caviar%20black/298901%20(8).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Caviar%20black/298901%20(9).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Caviar%20black/LUX%20Chrome,%20black%20perforated%20grip/298916%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Caviar%20black/LUX%20Chrome,%20black%20perforated%20grip/298916%20(2).jpg"
 ],
 "cloudIds": [
+"298916_1_ftgdw0",
 "298901_1_fvhrok",
 "298901_2_krxgwd",
 "298901_3_cj69gd",
@@ -4834,7 +4821,6 @@ window.TINYNORD_DATA = {
 "298901_7_uj4s0k",
 "298901_8_kbjujc",
 "298901_9_grljzn",
-"298916_1_ftgdw0",
 "298916_2_dhfpzn"
 ]
 },
@@ -4866,8 +4852,9 @@ window.TINYNORD_DATA = {
 "colors": [
 "Deep green"
 ],
-"cover": "298902 (1)",
+"cover": "298916 (1)",
 "images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Deep%20green/LUX%20Chrome,%20black%20perforated%20grip/298916%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Deep%20green/298902%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Deep%20green/298902%20(2).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Deep%20green/298902%20(3).jpg",
@@ -4877,10 +4864,10 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Deep%20green/298902%20(7).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Deep%20green/298902%20(8).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Deep%20green/298902%20(9).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Deep%20green/LUX%20Chrome,%20black%20perforated%20grip/298916%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Deep%20green/LUX%20Chrome,%20black%20perforated%20grip/298916%20(2).jpg"
 ],
 "cloudIds": [
+"298916_1_ftgdw0",
 "298902_1_mrmh95",
 "298902_2_ftlg9c",
 "298902_3_roaoxz",
@@ -4890,7 +4877,6 @@ window.TINYNORD_DATA = {
 "298902_7_qd3kta",
 "298902_8_ga6fmi",
 "298902_9_k3nmbr",
-"298916_1_ftgdw0",
 "298916_2_dhfpzn"
 ]
 },
@@ -4922,8 +4908,9 @@ window.TINYNORD_DATA = {
 "colors": [
 "Sage green"
 ],
-"cover": "298903 (1)",
+"cover": "298916 (1)",
 "images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Sage%20green/LUX%20Chrome,%20black%20perforated%20grip/298916%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Sage%20green/298903%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Sage%20green/298903%20(2).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Sage%20green/298903%20(3).jpg",
@@ -4933,10 +4920,10 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Sage%20green/298903%20(7).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Sage%20green/298903%20(8).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Sage%20green/298903%20(9).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Sage%20green/LUX%20Chrome,%20black%20perforated%20grip/298916%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Sage%20green/LUX%20Chrome,%20black%20perforated%20grip/298916%20(2).jpg"
 ],
 "cloudIds": [
+"298916_1_ftgdw0",
 "298903_1_vwngjm",
 "298903_2_nxyr3j",
 "298903_3_kwwpki",
@@ -4946,7 +4933,6 @@ window.TINYNORD_DATA = {
 "298903_7_ryvalg",
 "298903_8_lx34yq",
 "298903_9_sj7l4y",
-"298916_1_ftgdw0",
 "298916_2_dhfpzn"
 ]
 },
@@ -4978,8 +4964,9 @@ window.TINYNORD_DATA = {
 "colors": [
 "Champagne beige"
 ],
-"cover": "298904 (1)",
+"cover": "298916 (1)",
 "images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Champagne%20beige/LUX%20Chrome,%20black%20perforated%20grip/298916%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Champagne%20beige/298904%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Champagne%20beige/298904%20(2).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Champagne%20beige/298904%20(3).jpg",
@@ -4989,10 +4976,10 @@ window.TINYNORD_DATA = {
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Champagne%20beige/298904%20(7).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Champagne%20beige/298904%20(8).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Champagne%20beige/298904%20(9).jpg",
-"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Champagne%20beige/LUX%20Chrome,%20black%20perforated%20grip/298916%20(1).jpg",
 "PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/LUX/Champagne%20beige/LUX%20Chrome,%20black%20perforated%20grip/298916%20(2).jpg"
 ],
 "cloudIds": [
+"298916_1_ftgdw0",
 "298904_1_t0up8i",
 "298904_2_nlyuc5",
 "298904_3_nbk5qp",
@@ -5002,7 +4989,6 @@ window.TINYNORD_DATA = {
 "298904_7_qikrdy",
 "298904_8_ewi8ug",
 "298904_9_davpjd",
-"298916_1_ftgdw0",
 "298916_2_dhfpzn"
 ]
 }
