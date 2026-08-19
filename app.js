@@ -199,9 +199,10 @@ const RETAILERS = [
   { name: 'Nordbaby', url: 'https://nordbaby.com', country: 'Estonia, Latvia, Finland', tagline: 'The flagship retailer.', flag: '🇪🇪' },
 ];
 
-const THEME = { lime: '#445E5A', beige: '#E3D8D1', lightgrey: '#EFEFEF' };
-// Concept Collection Moodboard – Season 2026 (product catalogue, pages 6-7)
-const PALETTE = ['#445E5A', '#AA977E', '#593628', '#9FCBC2', '#638879', '#566060'];
+const THEME = { lime: '#9CAFAA', beige: '#E3D8D1', lightgrey: '#EFEFEF' };
+// Our Tiny Friends Textile Collection – Season 2026 (product catalogue, pages 8-9),
+// plus a pastel powder blue pulled from the stroller photography on pages 4-5.
+const PALETTE = ['#F6F8F9', '#DEDDD1', '#D7C8CE', '#BAD4C9', '#9CAFAA', '#B3DBE9'];
 function paletteInk(hex) {
   const r = parseInt(hex.slice(1, 3), 16), g = parseInt(hex.slice(3, 5), 16), b = parseInt(hex.slice(5, 7), 16);
   return (0.299 * r + 0.587 * g + 0.114 * b) < 140 ? '#F7F1E5' : '#231F20';
@@ -220,23 +221,20 @@ const logoWordmark = (height = 32, color = 'currentColor') =>
      <span style="font-family:'Cera Pro',system-ui,sans-serif;font-weight:700;font-size:${height * 0.78}px;letter-spacing:-0.025em;line-height:1;color:${color}">tinynord</span>
    </span>`;
 
-function dottedCircle({ size = 120, color = '#445E5A', cut = 'right', dotSize = 4, style = '' } = {}) {
+function dottedCircle({ size = 120, color = '#9CAFAA', dotSize = 4, style = '' } = {}) {
   const cx = 50, cy = 50, r = 44;
   let dots = '';
   for (let y = 0; y <= 100; y += 6) {
     for (let x = 0; x <= 100; x += 6) {
       const dx = x - cx, dy = y - cy;
       if (Math.hypot(dx, dy) > r) continue;
-      if (cut === 'right' && x > cx && Math.abs(dy) < dx * 0.6) continue;
-      if (cut === 'left'  && x < cx && Math.abs(dy) < (cx - x) * 0.6) continue;
-      if (cut === 'top'   && y < cy && Math.abs(dx) < (cy - y) * 0.6) continue;
       dots += `<circle cx="${x}" cy="${y}" r="${dotSize / 4}" fill="${color}"/>`;
     }
   }
   return `<svg viewBox="0 0 100 100" width="${size}" height="${size}" aria-hidden="true" style="${style}">${dots}</svg>`;
 }
 
-function wavyHills({ color = '#445E5A', opacity = 1, style = '' } = {}) {
+function wavyHills({ color = '#9CAFAA', opacity = 1, style = '' } = {}) {
   return `<svg viewBox="0 0 1440 200" preserveAspectRatio="none" style="width:100%;height:100%;display:block;${style}" aria-hidden="true">
     <g fill="none" stroke="${color}" stroke-width="1" opacity="${opacity}">
       <path d="M 0 100 C 200 60 400 130 600 100 S 1000 70 1240 110 L 1440 90"/>
@@ -448,10 +446,10 @@ function renderHero() {
         <button class="tn-cta" data-action="route" data-page="home" data-anchor="catalogue">${escapeHtml(t.cta)} <span>→</span></button>
       </div>
       <div class="tn-hero-product">
-        <div class="tn-hero-dot-1">${dottedCircle({ size: 140, color: 'var(--accent)', cut: 'right' })}</div>
-        <div class="tn-hero-dot-2">${dottedCircle({ size: 90,  color: 'var(--beige)', cut: 'left' })}</div>
+        <div class="tn-hero-dot-1">${dottedCircle({ size: 140, color: 'var(--accent)' })}</div>
+        <div class="tn-hero-dot-2">${dottedCircle({ size: 90,  color: 'var(--beige)' })}</div>
         <div class="tn-hero-product-frame" style="background:${THEME.lightgrey}">
-          <img src="${isLocalHost() || !CLOUDINARY.CLOUD_NAME ? 'assets/hero.jpg' : `https://res.cloudinary.com/${CLOUDINARY.CLOUD_NAME}/image/upload/${CLOUDINARY.DEFAULTS},w_1400/IMG_1332_yecoea.jpg`}" alt="Tinynord" class="tn-hero-product-illus tn-prod-img" loading="eager" />
+          <img src="${isLocalHost() || !CLOUDINARY.CLOUD_NAME ? 'assets/hero.jpg' : `https://res.cloudinary.com/${CLOUDINARY.CLOUD_NAME}/image/upload/${CLOUDINARY.DEFAULTS},w_1400/IMG_0998_daqczt.jpg`}" alt="Tinynord" class="tn-hero-product-illus tn-prod-img" loading="eager" />
         </div>
       </div>
     </section>`;
@@ -518,7 +516,6 @@ function renderAbout() {
 
 function renderValues() {
   const t = COPY[state.lang].values;
-  const cuts = ['right', 'left', 'top', 'right', 'left', 'top'];
   return `
     <section class="tn-values">
       <div class="tn-section-head tn-section-head--center">
@@ -528,7 +525,7 @@ function renderValues() {
       <div class="tn-values-grid">
         ${t.items.map((it, i) => { const c = PALETTE[i % PALETTE.length]; return `
           <div class="tn-value-card" style="animation-delay:${i * 60}ms">
-            <div class="tn-value-icon" style="background:${c}">${dottedCircle({ size: 36, color: paletteInk(c), cut: cuts[i], dotSize: 2.5 })}</div>
+            <div class="tn-value-icon" style="background:${c}">${dottedCircle({ size: 36, color: paletteInk(c), dotSize: 2.5 })}</div>
             <div class="tn-value-t">${escapeHtml(it.t)}</div>
             <p class="tn-value-b">${escapeHtml(it.b)}</p>
           </div>`; }).join('')}
