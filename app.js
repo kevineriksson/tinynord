@@ -538,7 +538,7 @@ function renderValues() {
 
 function renderRetailers() {
   const t = COPY[state.lang].retailers;
-  const placeholders = 7;
+  const gridClass = RETAILERS.length <= 2 ? 'tn-ret-grid tn-ret-grid--center' : 'tn-ret-grid';
   return `
     <section class="tn-retailers" id="retailers">
       <div class="tn-section-head tn-section-head--center">
@@ -546,7 +546,7 @@ function renderRetailers() {
         <h2 class="tn-h2">${multilineH2(t.title)}</h2>
         <p class="tn-section-sub">${escapeHtml(t.body)}</p>
       </div>
-      <div class="tn-ret-grid">
+      <div class="${gridClass}">
         ${RETAILERS.map(r => `
           <a href="${escapeHtml(r.url)}" target="_blank" rel="noreferrer" class="tn-ret-card">
             <div class="tn-ret-logo">
@@ -558,13 +558,6 @@ function renderRetailers() {
               <div class="tn-ret-tag">${escapeHtml(r.tagline)}</div>
             </div>
           </a>`).join('')}
-        ${Array.from({ length: placeholders }, () => `
-          <div class="tn-ret-card tn-ret-card--ph">
-            <div class="tn-ret-logo tn-ret-logo--ph">
-              <div class="tn-ret-ph-line"></div>
-              <div class="tn-ret-ph-sub">${escapeHtml(COPY[state.lang].spotReserved)}</div>
-            </div>
-          </div>`).join('')}
       </div>
       <p class="tn-ret-cta">${escapeHtml(t.empty)}<a href="mailto:info@fliistrade.com">${escapeHtml(t.emptyLink)}</a></p>
     </section>`;
@@ -610,7 +603,7 @@ function renderCategoryPage() {
 
 function renderFooter() {
   const t = COPY[state.lang].footer;
-  const cats = CATEGORIES.slice(0, 4);
+  const cats = CATEGORIES;
   return `
     <footer class="tn-footer">
       <div class="tn-footer-hills">${wavyHills({ color: 'var(--accent)', opacity: 0.5 })}</div>
