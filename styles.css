@@ -657,7 +657,7 @@ img.tn-thumb-illus { object-fit: cover; }
   border: 1.5px solid transparent;
   background: var(--beige);
 }
-.tn-ret-card:hover .tn-ret-logo { transform: translateY(-4px); border-color: var(--ink); }
+.tn-ret-card:hover .tn-ret-logo { transform: translateY(-4px); border-color: color-mix(in srgb, var(--beige), black 20%); }
 .tn-ret-name {
   font-family: 'Cera Pro', sans-serif;
   font-weight: 700;
