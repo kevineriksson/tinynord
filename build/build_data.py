@@ -177,6 +177,32 @@ def find_images_for_product(product: dict, all_images: list[Path]) -> list[str]:
             elif "_" in img.stem and any(s in img.stem.split("_") for s in accepted_skus):
                 matches.append(img)
 
+    # Default ordering for regular (non colour-split) products: show the base
+    # image (e.g. 299366.jpg) before its numbered detail shots (299366(2).jpg).
+    # Lexicographic sort otherwise puts "(2)" first because "(" < ".".
+    if not image_root:
+        def _order_key(p: Path):
+            stem = p.name.rsplit(".", 1)[0].lower()
+            m = re.search(r"\((\d+)\)\s*$", stem)
+            if m:
+                return (stem[:m.start()].rstrip(), int(m.group(1)))
+            return (stem, 0)  # base file sorts before its (n) variants
+        matches = sorted(matches, key=_order_key)
+
+    # Colour-split strollers: full-set photos live inside a frame subfolder,
+    # part photos sit directly in the colour folder. Group all full-set images
+    # first, then the parts. Stable — preserves sorted order within each group.
+    if image_root:
+        root_prefix = image_root.rstrip(os.sep) + os.sep
+
+        def _is_full_set(p: Path) -> bool:
+            rel = str(p.relative_to(ROOT))
+            remainder = rel[len(root_prefix):] if rel.startswith(root_prefix) else ""
+            return os.sep in remainder  # inside a frame subfolder
+
+        matches = [m for m in matches if _is_full_set(m)] + \
+                  [m for m in matches if not _is_full_set(m)]
+
     # If the product names a `cover` image (filename substring), move it
     # to the front of the matches list so it becomes the card's primary photo.
     cover = product.get("cover")

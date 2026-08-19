@@ -41,6 +41,9 @@
 }
 
 * { box-sizing: border-box; }
+/* Reserve the scrollbar gutter so locking body scroll for the modal doesn't
+   widen the viewport and jolt the centered pop-up sideways. */
+html { scrollbar-gutter: stable; }
 html, body { margin: 0; padding: 0; }
 body {
   background: var(--bg);
@@ -156,8 +159,8 @@ button { font: inherit; color: inherit; }
     left: 0;
     right: 0;
     background: var(--bg);
-    border-top: 1.5px solid var(--ink);
-    border-bottom: 1.5px solid var(--ink);
+    border-top: 1.5px solid var(--beige);
+    border-bottom: 1.5px solid var(--beige);
     padding: 16px 24px 24px;
     transform: translateY(-12px);
     opacity: 0;
@@ -369,7 +372,7 @@ button { font: inherit; color: inherit; }
   border: 1.5px solid var(--beige);
   background: #fff;
 }
-.tn-cat-card:hover { transform: translateY(-6px); border-color: var(--ink); }
+.tn-cat-card:hover { transform: translateY(-6px); border-color: color-mix(in srgb, var(--beige), black 20%); }
 .tn-cat-card-illus { flex: 1; min-height: 140px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
 .tn-cat-card-illus-inner { width: 86%; aspect-ratio: 1; object-fit: contain; transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
 img.tn-cat-card-illus-inner { object-fit: contain; }
@@ -491,7 +494,6 @@ img.tn-thumb-illus { object-fit: cover; }
   grid-template-columns: 1.1fr 1fr;
   overflow: hidden;
   position: relative;
-  border: 1.5px solid var(--ink);
   animation: tn-modal-in 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both;
   overscroll-behavior: contain;
   touch-action: pan-y;
@@ -579,10 +581,10 @@ img.tn-thumb-illus { object-fit: cover; }
 @media (max-width: 880px) {
   .tn-modal-info { overflow: visible; padding: 32px 24px; }
 }
-.tn-modal-title { margin-top: 12px; font-size: clamp(32px, 4vw, 52px); }
+.tn-modal-title { margin-top: 12px; font-size: clamp(32px, 4vw, 52px); overflow-wrap: anywhere; hyphens: auto; }
 .tn-modal-tag { font-family: 'Cera Pro', sans-serif; font-style: italic; font-size: 18px; color: var(--ink); opacity: 0.75; margin: 12px 0 24px; }
 .tn-modal-desc { font-size: 15px; line-height: 1.65; color: var(--ink); opacity: 0.8; margin: 0 0 32px; text-wrap: pretty; }
-.tn-spec { display: grid; gap: 16px; margin: 0; padding: 24px 0 0; border-top: 1.5px solid var(--ink); }
+.tn-spec { display: grid; gap: 16px; margin: 0; padding: 24px 0 0; border-top: 1.5px solid var(--beige); }
 .tn-spec > div { display: grid; grid-template-columns: 110px 1fr; gap: 16px; align-items: baseline; }
 .tn-spec dt { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink); opacity: 0.6; margin: 0; }
 .tn-spec dd { font-size: 13.5px; margin: 0; line-height: 1.5; color: var(--ink); }
@@ -598,7 +600,6 @@ img.tn-thumb-illus { object-fit: cover; }
   color: var(--ink);
   padding: 8px 16px;
   border-radius: 100px;
-  border: 1px solid var(--beige);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.04em;
