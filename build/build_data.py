@@ -209,8 +209,12 @@ def normalize_basename(name: str) -> str:
 
 
 def load_cloudinary_manifest() -> dict[str, str]:
-    """Optional manifest: { '<normalized basename>': '<cloudinary public_id>' }."""
-    manifest_path = ROOT / "data" / "cloudinary-manifest.json"
+    """Path-keyed manifest: { '<url-encoded local path>': '<cloudinary public_id>' }.
+
+    Keyed by the FULL relative path (not basename) so colour-variant photos that
+    share a filename each map to their own asset. Written by build/upload_all.py.
+    """
+    manifest_path = ROOT / "data" / "cloudinary-manifest-paths.json"
     if not manifest_path.exists():
         return {}
     try:
@@ -245,11 +249,9 @@ def main() -> int:
         if cloudinary_manifest and urls:
             cloud_ids: list[str] = []
             for url in urls:
-                # url looks like "PRODUCT%20CATEGORIES/.../303525(1).jpg"
-                basename = url.rsplit("/", 1)[-1]
-                from urllib.parse import unquote
-                stem = normalize_basename(unquote(basename))
-                pid = cloudinary_manifest.get(stem)
+                # Look up by the FULL url-encoded path — the exact string stored
+                # in `images` — so each colour variant maps to its own asset.
+                pid = cloudinary_manifest.get(url)
                 if pid:
                     cloud_hits += 1
                 cloud_ids.append(pid or "")

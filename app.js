@@ -163,7 +163,10 @@ function isLocalHost() {
 function cldUrlFromPublicId(publicId, transforms = '') {
   if (!publicId) return '';
   const t = [CLOUDINARY.DEFAULTS, transforms].filter(Boolean).join(',');
-  return `https://res.cloudinary.com/${CLOUDINARY.CLOUD_NAME}/image/upload/${t}/${encodeURIComponent(publicId)}.jpg`;
+  // Path-based public_ids keep `/` as folder separators — encode each segment
+  // individually so the slashes survive in the delivery URL.
+  const encoded = publicId.split('/').map(encodeURIComponent).join('/');
+  return `https://res.cloudinary.com/${CLOUDINARY.CLOUD_NAME}/image/upload/${t}/${encoded}.jpg`;
 }
 // `pathOrEntry` is either the URL-encoded local path string (back-compat)
 // or a {url, cloudId} pair so the caller can pass both at once.
@@ -614,7 +617,7 @@ function renderFooter() {
       <div class="tn-footer-top">
         <div class="tn-footer-brand">
           <img src="assets/logo-tinynord.png" alt="Tinynord" class="tn-footer-logo" />
-          <div class="tn-footer-tag" style="margin-top:20px">${slogan(t.tagline, 'var(--accent)', 16)}</div>
+          <div class="tn-footer-tag" style="margin-top:20px">${slogan(t.tagline, 'var(--ink)', 16)}</div>
           <p class="tn-footer-addr">${escapeHtml(t.addr)}</p>
         </div>
         <div class="tn-footer-cols">

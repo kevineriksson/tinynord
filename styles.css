@@ -588,7 +588,7 @@ img.tn-thumb-illus { object-fit: cover; }
 .tn-spec dd { font-size: 13.5px; margin: 0; line-height: 1.5; color: var(--ink); }
 
 /* ─── About / Story ──────────────────────────────────────────────────── */
-.tn-about { padding: 96px 0 64px; border-top: 1.5px solid var(--ink); position: relative; }
+.tn-about { padding: 96px 0 64px; position: relative; }
 .tn-about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
 @media (max-width: 880px) { .tn-about-grid { grid-template-columns: 1fr; gap: 32px; } }
 .tn-about-body p { font-size: 16px; line-height: 1.65; color: var(--ink); opacity: 0.82; margin: 0 0 24px; max-width: 56ch; }
@@ -624,7 +624,6 @@ img.tn-thumb-illus { object-fit: cover; }
   width: 56px; height: 56px;
   border-radius: 50%;
   background: var(--accent);
-  border: 1px solid var(--beige);
   display: flex; align-items: center; justify-content: center;
   position: relative;
   z-index: 1;
