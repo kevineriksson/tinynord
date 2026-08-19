@@ -693,6 +693,8 @@ img.tn-thumb-illus { object-fit: cover; }
 .tn-footer-cols ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
 .tn-footer-cols a { font-size: 14px; color: var(--ink); opacity: 0.85; transition: color 0.2s, opacity 0.2s; cursor: pointer; }
 .tn-footer-cols a:hover { color: var(--accent); opacity: 1; }
+.tn-footer-contact { display: inline-flex; align-items: center; gap: 8px; }
+.tn-footer-contact svg { flex: none; color: var(--ink); }
 .tn-footer-bot { max-width: 1320px; margin: 56px auto 0; padding-top: 24px; border-top: 1px solid color-mix(in srgb, var(--ink) 15%, transparent); font-size: 12px; opacity: 0.55; position: relative; z-index: 1; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 
 /* ─── motion respect ─────────────────────────────────────────────────── */

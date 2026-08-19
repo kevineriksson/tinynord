@@ -224,6 +224,14 @@ const logoWordmark = (height = 32, color = 'currentColor') =>
      <span style="font-family:'Cera Pro',system-ui,sans-serif;font-weight:700;font-size:${height * 0.78}px;letter-spacing:-0.025em;line-height:1;color:${color}">tinynord</span>
    </span>`;
 
+// Small footer contact icons (inherit currentColor → --ink).
+const iconMail = () =>
+  `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>`;
+const iconPhone = () =>
+  `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3h3l1.5 5-2 1.5a12 12 0 0 0 5 5l1.5-2 5 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5a2 2 0 0 1 2-2z"/></svg>`;
+const iconInstagram = () =>
+  `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>`;
+
 function dottedCircle({ size = 120, color = '#9CAFAA', dotSize = 4, style = '' } = {}) {
   const cx = 50, cy = 50, r = 44;
   let dots = '';
@@ -628,16 +636,15 @@ function renderFooter() {
           <div>
             <div class="tn-footer-h">${escapeHtml(t.cols.contact)}</div>
             <ul>
-              <li><a href="mailto:info@fliistrade.com">info@fliistrade.com</a></li>
-              <li><a>+372 5194 6988</a></li>
-              <li><a>Instagram</a></li>
+              <li><a href="mailto:info@fliistrade.com" class="tn-footer-contact">${iconMail()}<span>info@fliistrade.com</span></a></li>
+              <li><a href="tel:+37251946988" class="tn-footer-contact">${iconPhone()}<span>+372 5194 6988</span></a></li>
+              <li><a href="https://instagram.com/tinynord" target="_blank" rel="noreferrer" class="tn-footer-contact">${iconInstagram()}<span>Instagram</span></a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="tn-footer-bot">
         <span>${escapeHtml(t.legal)}</span>
-        <span>Pantone 13-0648 · 13-0400 · 13-064B</span>
       </div>
     </footer>`;
 }
