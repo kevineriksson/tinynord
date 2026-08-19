@@ -3633,7 +3633,7 @@ window.TINYNORD_DATA = {
 },
 {
 "code": "301588",
-"name": "GIA gate extension – White",
+"name": "GIA gate extension 7 cm white",
 "category": "safety",
 "subcategory": "Safety gates",
 "tag": "Extension piece for GIA safety gate",
@@ -3687,7 +3687,7 @@ window.TINYNORD_DATA = {
 },
 {
 "code": "301601",
-"name": "GIA gate extension",
+"name": "GIA gate extension 14 cm white",
 "category": "safety",
 "subcategory": "Safety gates",
 "tag": "Extension piece for GIA safety gate",
@@ -3701,7 +3701,9 @@ window.TINYNORD_DATA = {
 "EN 1930:2011",
 "EN 71"
 ],
-"colors": [],
+"colors": [
+"White"
+],
 "images": [
 "PRODUCT%20CATEGORIES/SAFETY%20PRODUCTS/PRODUCT%20PICTURES/SAFETY%20GATE/301601_edited.jpg",
 "PRODUCT%20CATEGORIES/SAFETY%20PRODUCTS/PRODUCT%20PICTURES/SAFETY%20GATE/301601_edited2.jpg"
@@ -3713,7 +3715,7 @@ window.TINYNORD_DATA = {
 },
 {
 "code": "301618",
-"name": "GIA gate extension",
+"name": "GIA gate extension 28 cm white",
 "category": "safety",
 "subcategory": "Safety gates",
 "tag": "Extension piece for GIA safety gate",
@@ -3727,7 +3729,9 @@ window.TINYNORD_DATA = {
 "EN 1930:2011",
 "EN 71"
 ],
-"colors": [],
+"colors": [
+"White"
+],
 "images": [
 "PRODUCT%20CATEGORIES/SAFETY%20PRODUCTS/PRODUCT%20PICTURES/SAFETY%20GATE/301618_edited.jpg",
 "PRODUCT%20CATEGORIES/SAFETY%20PRODUCTS/PRODUCT%20PICTURES/SAFETY%20GATE/301618_edited2.jpg"
