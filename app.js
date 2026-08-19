@@ -199,7 +199,13 @@ const RETAILERS = [
   { name: 'Nordbaby', url: 'https://nordbaby.com', country: 'Estonia, Latvia, Finland', tagline: 'The flagship retailer.', flag: '🇪🇪' },
 ];
 
-const THEME = { lime: '#D0D15F', beige: '#E3D8D1', lightgrey: '#F7F1E5' };
+const THEME = { lime: '#445E5A', beige: '#E3D8D1', lightgrey: '#EFEFEF' };
+// Concept Collection Moodboard – Season 2026 (product catalogue, pages 6-7)
+const PALETTE = ['#445E5A', '#AA977E', '#593628', '#9FCBC2', '#638879', '#566060'];
+function paletteInk(hex) {
+  const r = parseInt(hex.slice(1, 3), 16), g = parseInt(hex.slice(3, 5), 16), b = parseInt(hex.slice(5, 7), 16);
+  return (0.299 * r + 0.587 * g + 0.114 * b) < 140 ? '#F7F1E5' : '#231F20';
+}
 
 // ─── Brand graphics ───────────────────────────────────────────────────────
 const logoMark = (size = 28, color = 'currentColor') =>
@@ -214,7 +220,7 @@ const logoWordmark = (height = 32, color = 'currentColor') =>
      <span style="font-family:'Cera Pro',system-ui,sans-serif;font-weight:700;font-size:${height * 0.78}px;letter-spacing:-0.025em;line-height:1;color:${color}">tinynord</span>
    </span>`;
 
-function dottedCircle({ size = 120, color = '#D0D15F', cut = 'right', dotSize = 4, style = '' } = {}) {
+function dottedCircle({ size = 120, color = '#445E5A', cut = 'right', dotSize = 4, style = '' } = {}) {
   const cx = 50, cy = 50, r = 44;
   let dots = '';
   for (let y = 0; y <= 100; y += 6) {
@@ -230,7 +236,7 @@ function dottedCircle({ size = 120, color = '#D0D15F', cut = 'right', dotSize = 
   return `<svg viewBox="0 0 100 100" width="${size}" height="${size}" aria-hidden="true" style="${style}">${dots}</svg>`;
 }
 
-function wavyHills({ color = '#D0D15F', opacity = 1, style = '' } = {}) {
+function wavyHills({ color = '#445E5A', opacity = 1, style = '' } = {}) {
   return `<svg viewBox="0 0 1440 200" preserveAspectRatio="none" style="width:100%;height:100%;display:block;${style}" aria-hidden="true">
     <g fill="none" stroke="${color}" stroke-width="1" opacity="${opacity}">
       <path d="M 0 100 C 200 60 400 130 600 100 S 1000 70 1240 110 L 1440 90"/>
@@ -499,7 +505,7 @@ function renderAbout() {
           <div class="tn-eyebrow">${escapeHtml(t.eyebrow)}</div>
           <h2 class="tn-h2">${multilineH2(t.title)}</h2>
           <div class="tn-voice-tags">
-            ${t.voice.map(v => `<span class="tn-voice-tag">${escapeHtml(v)}</span>`).join('')}
+            ${t.voice.map((v, i) => { const c = PALETTE[i % PALETTE.length]; return `<span class="tn-voice-tag" style="background:${c};color:${paletteInk(c)}">${escapeHtml(v)}</span>`; }).join('')}
           </div>
         </div>
         <div class="tn-about-body">
@@ -520,12 +526,12 @@ function renderValues() {
         <h2 class="tn-h2">${multilineH2(t.title)}</h2>
       </div>
       <div class="tn-values-grid">
-        ${t.items.map((it, i) => `
+        ${t.items.map((it, i) => { const c = PALETTE[i % PALETTE.length]; return `
           <div class="tn-value-card" style="animation-delay:${i * 60}ms">
-            <div class="tn-value-icon">${dottedCircle({ size: 36, color: 'var(--ink)', cut: cuts[i], dotSize: 2.5 })}</div>
+            <div class="tn-value-icon" style="background:${c}">${dottedCircle({ size: 36, color: paletteInk(c), cut: cuts[i], dotSize: 2.5 })}</div>
             <div class="tn-value-t">${escapeHtml(it.t)}</div>
             <p class="tn-value-b">${escapeHtml(it.b)}</p>
-          </div>`).join('')}
+          </div>`; }).join('')}
       </div>
     </section>`;
 }

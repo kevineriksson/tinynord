@@ -30,14 +30,14 @@
 }
 
 :root {
-  --bg: #F7F1E5;
+  --bg: #FFFFFF;
   --surface: #FFFFFF;
   --ink: #231F20;
   --muted: #959791;
-  --accent: #D0D15F;
-  --lime: #D0D15F;
+  --accent: #445E5A;
+  --lime: #445E5A;
   --beige: #E3D8D1;
-  --lightgrey: #F7F1E5;
+  --lightgrey: #EFEFEF;
 }
 
 * { box-sizing: border-box; }
@@ -317,7 +317,7 @@ button { font: inherit; color: inherit; }
 
 /* ─── Slogan band ─────────────────────────────────────────────────────── */
 .tn-slogan-band {
-  background: var(--accent);
+  background: var(--beige);
   margin: 0 -48px;
   padding: 56px 48px;
   text-align: center;
@@ -366,7 +366,7 @@ button { font: inherit; color: inherit; }
   overflow: hidden;
   aspect-ratio: 1 / 1.1;
   animation: tn-card-in 0.6s ease both;
-  border: 1.5px solid transparent;
+  border: 1.5px solid var(--beige);
   background: #fff;
 }
 .tn-cat-card:hover { transform: translateY(-6px); border-color: var(--ink); }
@@ -651,7 +651,7 @@ img.tn-thumb-illus { object-fit: cover; }
   transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.4s;
   overflow: hidden;
   border: 1.5px solid transparent;
-  background: var(--lime);
+  background: var(--beige);
 }
 .tn-ret-card:hover .tn-ret-logo { transform: translateY(-4px); border-color: var(--ink); }
 .tn-ret-name {
