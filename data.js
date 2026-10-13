@@ -4050,6 +4050,162 @@ window.TINYNORD_DATA = {
 ]
 },
 {
+"code": "smart-latte",
+"name": "SMART Stroller Set – Latte",
+"category": "strollers",
+"subcategory": "",
+"tag": "Elegant urban stroller with middle-folding carrycot",
+"description": "The Tinynord SMART stroller combines elegant design with thoughtful functionality for everyday urban life. Its chassis can be folded together with the carrycot, which also features a newly developed middle-folding design.\n\nThe spacious carrycot provides a comfortable environment for newborns and features an innovative middle-folding design that allows it to fold into a compact size for easy storage and transport. This makes it particularly convenient for homes with limited space and families who travel frequently. Designed with both parents and children in mind, the Tinynord SMART combines comfort, safety, and practical functionality in one elegant package.\n\nAs your child grows, the stroller easily transitions to the seat unit. The adjustable backrest allows you to change the position from upright sitting to a more reclined position, helping provide comfort throughout your child's development. A secure locking system keeps the carrycot, seat unit and compatible car seat firmly attached to the chassis. Reflective details on both the carrycot and seat unit improve visibility in low-light conditions, providing added visibility during evening walks and on overcast days.\n\nFor easy manoeuvring, the Tinynord SMART features 360° swivel front wheels that can be locked when travelling over snowy or muddy surfaces. Car seat and height adapters are included. The car seat adapters are compatible with selected Joie, Cybex, Nuna and Maxi-Cosi car seats.\n\nStroller set includes Tinynord SMART chassis, carrycot, seat unit, footcover, carseat adapter and height adapter.",
+"materials": [
+"Lightweight aluminium chassis",
+"100% bamboo carrycot lining",
+"Faux leather handle grip",
+"Faux leather bumper bar",
+"5-point safety harness",
+"Reflective details on carrycot and seat unit",
+"Wheels: PUR foam 8″/11″"
+],
+"dims": "Carrycot 76 × 34 cm inner, 3.7 kg • Seat unit 99 × 38 cm inner, 3.7 kg, max child 22 kg • Chassis 8.3 kg (aluminium), basket 8 kg • Folded 31 × 50 × 70 cm (no wheels)",
+"ages": "From birth to ~4 years / max 22 kg",
+"certs": [
+"EN 1888-2:2018+A1:2022",
+"EN 1466:2023"
+],
+"chassis": [
+"SMART (lightweight aluminium)"
+],
+"colors": [
+"Latte"
+],
+"cover": "309503_Latte1",
+"images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte1.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte10.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte11.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte12.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte13.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte14.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte15.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte16.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte17.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte18.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte2.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte3.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte4.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte5.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte6.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte7.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte8.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/309503_Latte9.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/imago1.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/imago2.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/imago3.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Latte/imago4.jpg"
+],
+"cloudIds": [
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte1",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte10",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte11",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte12",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte13",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte14",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte15",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte16",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte17",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte18",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte2",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte3",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte4",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte5",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte6",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte7",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte8",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/309503_Latte9",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/imago1",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/imago2",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/imago3",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Latte/imago4"
+]
+},
+{
+"code": "smart-noir",
+"name": "SMART Stroller Set – Noir",
+"category": "strollers",
+"subcategory": "",
+"tag": "Elegant urban stroller with middle-folding carrycot",
+"description": "The Tinynord SMART stroller combines elegant design with thoughtful functionality for everyday urban life. Its chassis can be folded together with the carrycot, which also features a newly developed middle-folding design.\n\nThe spacious carrycot provides a comfortable environment for newborns and features an innovative middle-folding design that allows it to fold into a compact size for easy storage and transport. This makes it particularly convenient for homes with limited space and families who travel frequently. Designed with both parents and children in mind, the Tinynord SMART combines comfort, safety, and practical functionality in one elegant package.\n\nAs your child grows, the stroller easily transitions to the seat unit. The adjustable backrest allows you to change the position from upright sitting to a more reclined position, helping provide comfort throughout your child's development. A secure locking system keeps the carrycot, seat unit and compatible car seat firmly attached to the chassis. Reflective details on both the carrycot and seat unit improve visibility in low-light conditions, providing added visibility during evening walks and on overcast days.\n\nFor easy manoeuvring, the Tinynord SMART features 360° swivel front wheels that can be locked when travelling over snowy or muddy surfaces. Car seat and height adapters are included. The car seat adapters are compatible with selected Joie, Cybex, Nuna and Maxi-Cosi car seats.\n\nStroller set includes Tinynord SMART chassis, carrycot, seat unit, footcover, carseat adapter and height adapter.",
+"materials": [
+"Lightweight aluminium chassis",
+"100% bamboo carrycot lining",
+"Faux leather handle grip",
+"Faux leather bumper bar",
+"5-point safety harness",
+"Reflective details on carrycot and seat unit",
+"Wheels: PUR foam 8″/11″"
+],
+"dims": "Carrycot 76 × 34 cm inner, 3.7 kg • Seat unit 99 × 38 cm inner, 3.7 kg, max child 22 kg • Chassis 8.3 kg (aluminium), basket 8 kg • Folded 31 × 50 × 70 cm (no wheels)",
+"ages": "From birth to ~4 years / max 22 kg",
+"certs": [
+"EN 1888-2:2018+A1:2022",
+"EN 1466:2023"
+],
+"chassis": [
+"SMART (lightweight aluminium)"
+],
+"colors": [
+"Noir"
+],
+"cover": "309504_Noir1",
+"images": [
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir1.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir10.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir11.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir12.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir13.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir14.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir15.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir16.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir17.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir18.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir2.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir3.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir4.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir5.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir6.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir7.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir8.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/309504_Noir9.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/imago1.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/imago2.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/imago3.jpg",
+"PRODUCT%20CATEGORIES/STROLLERS/PRODUCT%20PICTURES/SMART/Noir/imago4.jpg"
+],
+"cloudIds": [
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir1",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir10",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir11",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir12",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir13",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir14",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir15",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir16",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir17",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir18",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir2",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir3",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir4",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir5",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir6",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir7",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir8",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/309504_Noir9",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/imago1",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/imago2",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/imago3",
+"tinynord/PRODUCT_CATEGORIES/STROLLERS/PRODUCT_PICTURES/SMART/Noir/imago4"
+]
+},
+{
 "code": "active-comfort-brilliant-black",
 "name": "ACTIVE Stroller Set – Brilliant black",
 "category": "strollers",
@@ -5003,6 +5159,6 @@ window.TINYNORD_DATA = {
 "car": 12,
 "safety": 8,
 "stroller-acc": 12,
-"strollers": 18
+"strollers": 20
 }
 };

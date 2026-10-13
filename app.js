@@ -22,19 +22,25 @@ const COPY = {
       eyebrow: 'Our values',
       title: 'Why families\nchoose Tinynord.',
       items: [
-        { t: 'Trustful', b: 'We believe trust is earned in every product we create. Families know they can count on us to be safe, reliable and thoughtfully made.' },
-        { t: 'Caring',   b: 'Every product is crafted with heartfelt dedication to support babies during the most important early years.' },
-        { t: 'Joyful',   b: 'We believe childhood should be filled with wonders. That’s why we create playful, engaging products that spark imagination.' },
-        { t: 'Timeless', b: 'Simple, elegant and practical designs that blend seamlessly into any home. This aesthetic ensures our products remain relevant.' },
-        { t: 'Safe',     b: 'Every product we create, from onesies to strollers, is designed and tested to meet the highest safety standards.' },
-        { t: 'Cherish',  b: 'We help create moments – first steps, bedtime giggles, family outings – our designs are made to be part of treasured memories.' },
+        { t: 'Trustful', b: 'We believe trust is earned with every product we create. Families choose Tinynord because they know they can count on us for safe, reliable and thoughtfully made baby essentials.' },
+        { t: 'Caring',   b: 'Every product is crafted with heartfelt dedication to support babies during the most important early years. We design every product with real family needs in mind.' },
+        { t: 'Joyful',   b: 'We believe childhood should be filled with wonders. That’s why we create playful, engaging products that spark imagination and delight.' },
+        { t: 'Timeless', b: 'The brand embraces simple, elegant and practical designs that blend seamlessly into any home. This aesthetic ensures that products remain relevant over time.' },
+        { t: 'Safe',     b: 'Every product we create, from onesies to strollers, is designed and tested to meet the highest safety standards. Because nothing matters more than your baby’s well-being.' },
+        { t: 'Cherish',  b: 'We’re helping create moments – first steps, bedtime giggles, family outings, our designs are made to be part of your baby’s most treasured memories.' },
       ],
     },
     about: {
-      eyebrow: 'About Tinynord',
-      title: 'Made for the\nfirst thousand days.',
-      body: 'Once upon a time in the heart of Estonia, a brand was born to cater to the needs of the tiniest members of our families. Tinynord was created with a heartfelt mission: to provide premium baby essentials that support a child’s earliest years with care, comfort and style.',
-      body2: 'Drawing inspiration from the timeless elegance of Scandinavian design, Tinynord crafts each product with the finest materials — ensuring durability, sustainability and beauty. From strollers, cozy cribs to the softest clothes, every item is made to be cherished, passed down and loved again.',
+      title: ['Where every', 'tiny detail', 'matters.'],
+      body: 'Born in the heart of Estonia, Tinynord makes premium baby essentials that support a child’s earliest years with care, comfort and style — inspired by timeless Scandinavian design.',
+      body2: 'Made from the finest materials, every piece is built to be cherished, passed down and loved again. Quality that never has to be a luxury, trusted in nurseries across the Baltics and Scandinavia.',
+      body3: 'From strollers and cribs to the softest clothes, every detail is considered with real families in mind — safe, durable and beautifully simple, one baby at a time.',
+      full: [
+        'Once upon a time in the heart of Estonia, a brand was born to cater to the needs of the tiniest members of our families. This brand, Tinynord, was created with a heartfelt mission: to provide premium baby essentials that support a child’s earliest years with care, comfort and style.',
+        'Drawing inspiration from the timeless elegance of Scandinavian design, Tinynord crafts each product with the finest materials, ensuring durability, sustainability and beauty. From strollers, cozy cribs to the softest clothes, every item is made to be cherished, passed down and loved again.',
+        'At Tinynord, we believe that every baby deserves the best start in life and that quality should never be a luxury. That’s why we remain committed to keeping our products affordable, without compromising on safety, design or function. Our reputation for excellence has grown across the Baltics and Scandinavia, making Tinynord a trusted name in nurseries and homes alike.',
+        'We envision a world where Tinynord represents more than just baby products – it stands for trust, simplicity and lasting value. With a deep respect for nature and family, we continue to lead the way in sustainable design for modern families. Tinynord is more than a brand – it’s a promise of comfort, quality and care, one baby at a time.',
+      ],
       voice: ['Modern & Relatable', 'Clear & Accessible', 'Joyful & Uplifting'],
     },
     retailers: {
@@ -92,10 +98,16 @@ const COPY = {
       ],
     },
     about: {
-      eyebrow: 'Tinynordist',
-      title: 'Esimese tuhande\npäeva jaoks.',
-      body: 'Kunagi ammu Eesti südames sündis bränd, mis hoolitseb meie perede kõige väiksemate liikmete eest.',
-      body2: 'Skandinaavia disaini ajatust elegantsist inspireerituna valmistab Tinynord iga toote parimatest materjalidest.',
+      title: ['Iga väike', 'detail', 'loeb.'],
+      body: 'Eesti südamest pärit Tinynord valmistab esmaklassilisi beebitooteid, mis toetavad lapse esimesi aastaid hoole, mugavuse ja stiiliga – inspireerituna ajatust Skandinaavia disainist.',
+      body2: 'Parimatest materjalidest valmistatud, iga ese on loodud hoidmiseks ja edasi andmiseks. Kvaliteet, mis ei pea olema luksus – usaldatud lastetubades üle Baltikumi ja Skandinaavia.',
+      body3: 'Vankritest ja võrevooditest pehmeimate rõivasteni – iga detail on läbi mõeldud päris perede jaoks: turvaline, vastupidav ja kaunilt lihtne, üks laps korraga.',
+      full: [
+        'Kunagi ammu Eesti südames sündis bränd, mis hoolitseb meie perede kõige väiksemate liikmete eest. Tinynord loodi südamliku missiooniga: pakkuda esmaklassilisi beebitooteid, mis toetavad lapse esimesi aastaid hoole, mugavuse ja stiiliga.',
+        'Skandinaavia disaini ajatust elegantsist inspireerituna valmistab Tinynord iga toote parimatest materjalidest, tagades vastupidavuse, jätkusuutlikkuse ja ilu. Vankritest hubaste võrevoodite ja pehmeimate rõivasteni – iga ese on loodud hoidmiseks ja edasi andmiseks.',
+        'Usume, et iga laps väärib parimat algust ja et kvaliteet ei tohiks olla luksus. Seepärast hoiame oma tooted taskukohased, tegemata järeleandmisi ohutuses, disainis ega funktsioonis. Meie maine on kasvanud üle Baltikumi ja Skandinaavia.',
+        'Näeme maailma, kus Tinynord tähendab enamat kui beebitooted – see tähistab usaldust, lihtsust ja püsivat väärtust. Sügava austusega looduse ja pere vastu juhime teed jätkusuutliku disaini suunas. Tinynord on enam kui bränd – see on lubadus mugavusest, kvaliteedist ja hoolest.',
+      ],
       voice: ['Modernne & lähedane', 'Selge & ligipääsetav', 'Rõõmus & innustav'],
     },
     retailers: {
@@ -133,8 +145,8 @@ const _CATS_BASE = [
   { id: 'bedroom',      en: 'Bedroom',              et: 'Magamistuba' },
   { id: 'bathroom',     en: 'Bathroom',             et: 'Vannituba' },
   { id: 'eating',       en: 'Eating Goods',         et: 'Söögivahendid' },
-  { id: 'clothing',     en: 'Clothing',             et: 'Rõivad' },
   { id: 'safety',       en: 'Safety Products',      et: 'Turvatooted' },
+  { id: 'clothing',     en: 'Clothing',             et: 'Rõivad' },
   { id: 'car',          en: 'Car Accessories',      et: 'Auto tarvikud' },
 ];
 
@@ -196,16 +208,52 @@ function imageEntry(product, i) {
   const cloudId = (product.cloudIds && product.cloudIds[i]) || '';
   return { url, cloudId };
 }
+// Resolve a static site asset (hero, category tiles). Serves the local file on
+// localhost, otherwise the Cloudinary public_id.
+function assetUrl(localPath, cloudId, transforms = 'w_1600') {
+  if (isLocalHost() || !CLOUDINARY.CLOUD_NAME) return localPath;
+  return cldUrlFromPublicId(cloudId, transforms);
+}
 
 
 const RETAILERS = [
-  { name: 'Nordbaby', url: 'https://nordbaby.com', country: 'Estonia, Latvia, Finland', tagline: 'The flagship retailer.', flag: '🇪🇪' },
+  { country: 'Estonia', flag: '🇪🇪', items: [
+    { name: 'Nordbaby', url: 'https://nordbaby.com' },
+  ] },
+  { country: 'Finland', flag: '🇫🇮', items: [
+    { name: 'AT-Lastenturva', url: 'https://www.lastenturva.fi' },
+    { name: 'OZ Baby', url: 'https://www.ozbaby.fi' },
+    { name: 'Wauva', url: 'https://www.wauva.com' },
+    { name: 'Verkkokauppa', url: 'https://www.verkkokauppa.com' },
+    { name: 'Vaunula', url: 'https://www.vaunula.fi' },
+    { name: 'Vaunupuoti', url: 'https://vaunupuoti.fi' },
+    { name: 'Muksumassi', url: 'https://muksumassi.fi' },
+  ] },
+  { country: 'Sweden', flag: '🇸🇪', items: [
+    { name: 'BabyV', url: 'https://www.babyv.se' },
+    { name: 'Jollyroom', url: 'https://www.jollyroom.se' },
+    { name: 'Babyringen', url: 'https://www.babyringen.se' },
+    { name: 'Babyproffsen', url: 'https://babyproffsen.se' },
+  ] },
+  { country: 'Denmark', flag: '🇩🇰', items: [
+    { name: 'Luksusbaby', url: 'https://luksusbaby.dk' },
+  ] },
+  { country: 'Norway', flag: '🇳🇴', items: [
+    { name: 'Barnevognhuset', url: 'https://barnevognhuset.no' },
+    { name: 'Babyland Sandviken', url: 'https://www.babyland.no' },
+    { name: 'Siljes Barn & Utstyr', url: 'https://siljes.no' },
+    { name: 'Babymagasinet', url: 'https://babymagasinetas.no' },
+    { name: 'Barnevognservice', url: 'https://barnevognservice.no' },
+    { name: 'Tøff og Liten' },
+    { name: 'Ringo Askim', url: 'https://www.ringo.no' },
+    { name: 'S. Endeve Sport', url: 'https://endeve.no' },
+  ] },
 ];
 
-const THEME = { lime: '#9CAFAA', beige: '#E3D8D1', lightgrey: '#EFEFEF' };
+const THEME = { lime: '#7A8E81', beige: '#E3D8D1', lightgrey: '#EFEFEF' };
 // Our Tiny Friends Textile Collection – Season 2026 (product catalogue, pages 8-9),
 // plus a pastel powder blue pulled from the stroller photography on pages 4-5.
-const PALETTE = ['#F6F8F9', '#DEDDD1', '#D7C8CE', '#BAD4C9', '#9CAFAA', '#B3DBE9'];
+const PALETTE = ['#F6F8F9', '#DEDDD1', '#D7C8CE', '#BAD4C9', '#7A8E81', '#B3DBE9'];
 function paletteInk(hex) {
   const r = parseInt(hex.slice(1, 3), 16), g = parseInt(hex.slice(3, 5), 16), b = parseInt(hex.slice(5, 7), 16);
   return (0.299 * r + 0.587 * g + 0.114 * b) < 140 ? '#F7F1E5' : '#231F20';
@@ -232,7 +280,7 @@ const iconPhone = () =>
 const iconInstagram = () =>
   `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>`;
 
-function dottedCircle({ size = 120, color = '#9CAFAA', dotSize = 4, style = '' } = {}) {
+function dottedCircle({ size = 120, color = '#7A8E81', dotSize = 4, style = '' } = {}) {
   const cx = 50, cy = 50, r = 44;
   let dots = '';
   for (let y = 0; y <= 100; y += 6) {
@@ -245,7 +293,7 @@ function dottedCircle({ size = 120, color = '#9CAFAA', dotSize = 4, style = '' }
   return `<svg viewBox="0 0 100 100" width="${size}" height="${size}" aria-hidden="true" style="${style}">${dots}</svg>`;
 }
 
-function wavyHills({ color = '#9CAFAA', opacity = 1, style = '' } = {}) {
+function wavyHills({ color = '#7A8E81', opacity = 1, style = '' } = {}) {
   return `<svg viewBox="0 0 1440 200" preserveAspectRatio="none" style="width:100%;height:100%;display:block;${style}" aria-hidden="true">
     <g fill="none" stroke="${color}" stroke-width="1" opacity="${opacity}">
       <path d="M 0 100 C 200 60 400 130 600 100 S 1000 70 1240 110 L 1440 90"/>
@@ -279,7 +327,16 @@ const state = {
   lang: 'en',
   activeProduct: null,
   modalImgIdx: 0,
+  design: (typeof localStorage !== 'undefined' && localStorage.getItem('tn-design')) === 'original' ? 'original' : 'current',
 };
+// Convenience: true when the "Original (PDF)" design is active.
+function isOriginal() { return state.design === 'original'; }
+function toggleDesign() {
+  state.design = isOriginal() ? 'current' : 'original';
+  try { localStorage.setItem('tn-design', state.design); } catch (e) {}
+  renderApp();
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
 
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -398,16 +455,12 @@ function renderHeader() {
   return `
     <header class="tn-header">
       <a href="#" class="tn-logo" data-action="route" data-page="home" aria-label="Tinynord — home">
-        <img src="assets/logo-tinynord.png" alt="Tinynord" class="tn-logo-img" />
+        <img src="assets/logo-tinynord.png?v=2" alt="Tinynord" class="tn-logo-img" />
       </a>
       <nav class="tn-nav">
         ${items.map(it => `<button class="tn-nav-link${isActive(it.id) ? ' is-active' : ''}" data-action="route" data-page="${it.id}">${escapeHtml(it.label)}</button>`).join('')}
       </nav>
-      <div class="tn-lang">
-        <button class="tn-lang-btn${state.lang === 'en' ? ' is-active' : ''}" data-action="lang" data-lang="en">EN</button>
-        <span class="tn-lang-sep">·</span>
-        <button class="tn-lang-btn${state.lang === 'et' ? ' is-active' : ''}" data-action="lang" data-lang="et">ET</button>
-      </div>
+      <div class="tn-lang"></div>
       <button class="tn-burger" data-action="burger" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -415,11 +468,6 @@ function renderHeader() {
         <nav class="tn-mobile-nav">
           ${items.map(it => `<button class="tn-mobile-link${isActive(it.id) ? ' is-active' : ''}" data-action="route" data-page="${it.id}">${escapeHtml(it.label)}</button>`).join('')}
         </nav>
-        <div class="tn-mobile-lang">
-          <button class="tn-lang-btn${state.lang === 'en' ? ' is-active' : ''}" data-action="lang" data-lang="en">EN</button>
-          <span class="tn-lang-sep">·</span>
-          <button class="tn-lang-btn${state.lang === 'et' ? ' is-active' : ''}" data-action="lang" data-lang="et">ET</button>
-        </div>
       </div>
     </header>`;
 }
@@ -457,10 +505,8 @@ function renderHero() {
         <button class="tn-cta" data-action="route" data-page="home" data-anchor="catalogue">${escapeHtml(t.cta)} <span>→</span></button>
       </div>
       <div class="tn-hero-product">
-        <div class="tn-hero-dot-1">${dottedCircle({ size: 140, color: 'var(--accent)' })}</div>
-        <div class="tn-hero-dot-2">${dottedCircle({ size: 90,  color: 'var(--beige)' })}</div>
         <div class="tn-hero-product-frame" style="background:${THEME.lightgrey}">
-          <img src="${isLocalHost() || !CLOUDINARY.CLOUD_NAME ? 'assets/hero.jpg' : `https://res.cloudinary.com/${CLOUDINARY.CLOUD_NAME}/image/upload/${CLOUDINARY.DEFAULTS},w_1400/IMG_0998_daqczt.jpg`}" alt="Tinynord" class="tn-hero-product-illus tn-prod-img" loading="eager" />
+          <img src="${assetUrl('assets/hero.jpg', 'tinynord/hero', 'w_1600,q_auto,f_auto')}" alt="Parent walking with a Tinynord stroller" class="tn-hero-product-illus tn-prod-img" loading="eager" />
         </div>
       </div>
     </section>`;
@@ -481,24 +527,27 @@ function multilineH2(text) {
 
 function renderCategoryGrid() {
   const t = COPY[state.lang].catalogue;
+  // Colour the second line of the heading with the accent (matches the design).
+  const titleLines = t.title.split('\n');
+  const titleHTML = titleLines.map((l, i) => i === titleLines.length - 1 && titleLines.length > 1
+    ? `<em>${escapeHtml(l)}</em>`
+    : `${escapeHtml(l)} `).join('');
   return `
     <section class="tn-cats" id="catalogue">
       <div class="tn-section-head">
         <div class="tn-eyebrow">${escapeHtml(t.eyebrow)}</div>
-        <h2 class="tn-h2">${multilineH2(t.title)}</h2>
+        <h2 class="tn-h2">${titleHTML}</h2>
         <p class="tn-section-sub">${escapeHtml(t.sub)}</p>
       </div>
       <div class="tn-cat-grid">
         ${CATEGORIES.map((c, idx) => {
-          const sample = productsInCategory(c.id).find(p => p.images && p.images.length);
-          const img = sample ? productImage(sample, 0, 'tn-cat-card-illus-inner tn-prod-img') : '';
+          const img = `<div class="tn-cat-card-illus">
+                <img src="${assetUrl(`assets/cat/${c.id}.jpg`, `tinynord/cat/${c.id}`, 'w_800,h_600,c_fill,q_auto,f_auto')}" alt="${escapeHtml(c[state.lang])}" class="tn-cat-card-illus-inner tn-prod-img" loading="lazy" />${isOriginal() ? '' : `<div class="tn-cat-card-name">${escapeHtml(c[state.lang])}</div>`}
+              </div>`;
+          const nameAbove = isOriginal() ? `<div class="tn-cat-card-name">${escapeHtml(c[state.lang])}</div>` : '';
           return `
             <button class="tn-cat-card" style="animation-delay:${idx * 60}ms" data-action="category" data-cat="${c.id}">
-              <div class="tn-cat-card-illus">${img}</div>
-              <div class="tn-cat-card-foot">
-                <div class="tn-cat-card-name">${escapeHtml(c[state.lang])}</div>
-                <div class="tn-cat-card-arrow">→</div>
-              </div>
+              ${nameAbove}${img}
             </button>`;
         }).join('')}
       </div>
@@ -507,19 +556,36 @@ function renderCategoryGrid() {
 
 function renderAbout() {
   const t = COPY[state.lang].about;
+  const titleHTML = t.title.map((l, i) => {
+    const isLast = i === t.title.length - 1;
+    const piece = isLast ? `<em>${escapeHtml(l)}</em>` : escapeHtml(l);
+    return `<span>${piece}${!isLast ? '<br/>' : ''}</span>`;
+  }).join('');
+  const voiceTags = `<div class="tn-voice-tags">
+            ${t.voice.map(v => `<span class="tn-voice-tag">${escapeHtml(v)}</span>`).join('')}
+          </div>`;
+  if (isOriginal()) {
+    // PDF layout: title on top, full story below in a single column, pills below.
+    const paras = (t.full && t.full.length) ? t.full : [t.body, t.body2].filter(Boolean);
+    return `
+    <section class="tn-about tn-about--original" id="about">
+      <h1 class="tn-h1 tn-about-title">${titleHTML}</h1>
+      <div class="tn-about-body">
+        ${paras.map(p => `<p>${escapeHtml(p)}</p>`).join('')}
+      </div>
+      ${voiceTags}
+    </section>`;
+  }
+  const paras = [t.body, t.body2, t.body3].filter(Boolean);
   return `
     <section class="tn-about" id="about">
       <div class="tn-about-grid">
-        <div>
-          <div class="tn-eyebrow">${escapeHtml(t.eyebrow)}</div>
-          <h2 class="tn-h2">${multilineH2(t.title)}</h2>
-          <div class="tn-voice-tags">
-            ${t.voice.map((v, i) => { const c = PALETTE[i % PALETTE.length]; return `<span class="tn-voice-tag" style="background:${c};color:${paletteInk(c)}">${escapeHtml(v)}</span>`; }).join('')}
-          </div>
+        <div class="tn-about-head">
+          <h1 class="tn-h1 tn-about-title">${titleHTML}</h1>
+          ${voiceTags}
         </div>
         <div class="tn-about-body">
-          <p>${escapeHtml(t.body)}</p>
-          <p>${escapeHtml(t.body2)}</p>
+          ${paras.map(p => `<p>${escapeHtml(p)}</p>`).join('')}
         </div>
       </div>
     </section>`;
@@ -529,24 +595,22 @@ function renderValues() {
   const t = COPY[state.lang].values;
   return `
     <section class="tn-values">
-      <div class="tn-section-head tn-section-head--center">
+      <div class="tn-section-head">
         <div class="tn-eyebrow">${escapeHtml(t.eyebrow)}</div>
         <h2 class="tn-h2">${multilineH2(t.title)}</h2>
       </div>
       <div class="tn-values-grid">
-        ${t.items.map((it, i) => { const c = PALETTE[i % PALETTE.length]; return `
+        ${t.items.map((it, i) => `
           <div class="tn-value-card" style="animation-delay:${i * 60}ms">
-            <div class="tn-value-icon" style="background:${c}">${dottedCircle({ size: 36, color: paletteInk(c), dotSize: 2.5 })}</div>
             <div class="tn-value-t">${escapeHtml(it.t)}</div>
             <p class="tn-value-b">${escapeHtml(it.b)}</p>
-          </div>`; }).join('')}
+          </div>`).join('')}
       </div>
     </section>`;
 }
 
 function renderRetailers() {
   const t = COPY[state.lang].retailers;
-  const gridClass = RETAILERS.length <= 2 ? 'tn-ret-grid tn-ret-grid--center' : 'tn-ret-grid';
   return `
     <section class="tn-retailers" id="retailers">
       <div class="tn-section-head tn-section-head--center">
@@ -554,18 +618,16 @@ function renderRetailers() {
         <h2 class="tn-h2">${multilineH2(t.title)}</h2>
         <p class="tn-section-sub">${escapeHtml(t.body)}</p>
       </div>
-      <div class="${gridClass}">
-        ${RETAILERS.map(r => `
-          <a href="${escapeHtml(r.url)}" target="_blank" rel="noreferrer" class="tn-ret-card">
-            <div class="tn-ret-logo">
-              <span class="tn-ret-name">${escapeHtml(r.name)}</span>
-              <span class="tn-ret-flag" aria-hidden="true">${r.flag}</span>
-            </div>
-            <div class="tn-ret-foot">
-              <div class="tn-ret-country">${escapeHtml(r.country)}</div>
-              <div class="tn-ret-tag">${escapeHtml(r.tagline)}</div>
-            </div>
-          </a>`).join('')}
+      <div class="tn-ret-countries">
+        ${RETAILERS.map(g => `
+          <div class="tn-ret-country-block">
+            <div class="tn-ret-country-h"><span class="tn-ret-flag" aria-hidden="true">${g.flag}</span> ${escapeHtml(g.country)}</div>
+            <ul class="tn-ret-list">
+              ${g.items.map(it => `<li>${it.url
+                ? `<a href="${escapeHtml(it.url)}" target="_blank" rel="noreferrer" class="tn-ret-item tn-ret-item--link">${escapeHtml(it.name)}</a>`
+                : `<span class="tn-ret-item">${escapeHtml(it.name)}</span>`}</li>`).join('')}
+            </ul>
+          </div>`).join('')}
       </div>
       <p class="tn-ret-cta">${escapeHtml(t.empty)}<a href="mailto:info@fliistrade.com">${escapeHtml(t.emptyLink)}</a></p>
     </section>`;
@@ -617,7 +679,7 @@ function renderFooter() {
       <div class="tn-footer-hills">${wavyHills({ color: 'var(--accent)', opacity: 0.5 })}</div>
       <div class="tn-footer-top">
         <div class="tn-footer-brand">
-          <img src="assets/logo-tinynord.png" alt="Tinynord" class="tn-footer-logo" />
+          <img src="assets/logo-tinynord.png?v=2" alt="Tinynord" class="tn-footer-logo" />
           <div class="tn-footer-tag" style="margin-top:20px">${slogan(t.tagline, 'var(--ink)', 16)}</div>
           <p class="tn-footer-addr">${escapeHtml(t.addr)}</p>
         </div>
@@ -652,7 +714,7 @@ function renderFooter() {
 function renderMain() {
   switch (state.route.page) {
     case 'home':
-      return renderHero() + renderSloganBand() + renderCategoryGrid() + renderAbout() + renderValues();
+      return renderHero() + renderCategoryGrid();
     case 'category':
       return renderCategoryPage();
     case 'about':
@@ -665,9 +727,28 @@ function renderMain() {
 }
 
 function renderApp() {
+  document.body.classList.toggle('tn-design-original', isOriginal());
+  document.body.classList.toggle('tn-design-current', !isOriginal());
   document.getElementById('header-slot').innerHTML = renderHeader();
   document.getElementById('main-slot').innerHTML = renderMain();
   document.getElementById('footer-slot').innerHTML = renderFooter();
+  renderDesignToggle();
+}
+
+// Floating bottom-right pill to switch between the current and the original
+// (PDF-derived) design. Injected once, then just its label updates.
+function renderDesignToggle() {
+  let btn = document.getElementById('tn-design-toggle');
+  if (!btn) {
+    btn = document.createElement('button');
+    btn.id = 'tn-design-toggle';
+    btn.className = 'tn-design-toggle';
+    btn.setAttribute('data-action', 'toggle-design');
+    document.body.appendChild(btn);
+  }
+  btn.innerHTML = isOriginal()
+    ? 'Design: <strong>Original</strong>'
+    : 'Design: <strong>Current</strong>';
 }
 
 function renderModal() {
@@ -728,6 +809,8 @@ document.addEventListener('click', (e) => {
     e.preventDefault();
     closeMobileMenu();
     setRoute({ page: 'category', cat: target.dataset.cat });
+  } else if (action === 'toggle-design') {
+    toggleDesign();
   } else if (action === 'lang') {
     setLang(target.dataset.lang);
     closeMobileMenu();

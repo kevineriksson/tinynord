@@ -44,6 +44,7 @@ COLOR_SPLIT_PRODUCTS = {
     "lux":            "STROLLERS/PRODUCT PICTURES/LUX",
     "active-comfort": "STROLLERS/PRODUCT PICTURES/ACTIVE_COMFORT",
     "comfort":        "STROLLERS/PRODUCT PICTURES/ACTIVE_COMFORT",
+    "smart":          "STROLLERS/PRODUCT PICTURES/SMART",
 }
 
 IMAGE_EXTS = {"jpg", "jpeg", "png"}

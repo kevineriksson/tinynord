@@ -21,3 +21,11 @@ node_modules/
 *.heic
 *.heif
 *.raw
+.gstack/
+
+# Python
+__pycache__/
+*.pyc
+
+# Design source assets (large; images delivered via Cloudinary)
+GENERAL/Updates/
