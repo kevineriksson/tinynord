@@ -676,10 +676,17 @@ img.tn-thumb-illus { object-fit: cover; }
 .tn-footer { background: var(--footer-beige); color: var(--ink); margin-top: 64px; padding: 80px 0 32px; position: relative; overflow: hidden; }
 .tn-footer-hills { position: absolute; left: 0; right: 0; bottom: 0; height: 100px; opacity: 0.35; pointer-events: none; }
 .tn-footer-top { max-width: 1320px; margin: 0 auto; padding: 0 48px; display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; position: relative; z-index: 1; }
-@media (max-width: 880px) { .tn-footer-top { grid-template-columns: 1fr; gap: 48px; } .tn-footer { padding: 56px 0 24px; } }
+@media (max-width: 880px) {
+  .tn-footer-top { grid-template-columns: 1fr; gap: 44px; }
+  .tn-footer { padding: 56px 0 24px; }
+  /* Logo block drops to the bottom of the footer on mobile. */
+  .tn-footer-cols { order: 1; }
+  .tn-footer-brand { order: 2; }
+  .tn-footer-logo { height: 34px; }
+}
 @media (max-width: 720px) { .tn-footer-top, .tn-footer-bot { padding-left: 24px; padding-right: 24px; } }
 .tn-footer-logo { height: 40px; width: auto; display: block; opacity: 0.82; }
-@media (max-width: 720px) { .tn-footer-logo { height: 80px; } }
+@media (max-width: 720px) { .tn-footer-logo { height: 34px; } }
 .tn-footer-tag { font-family: 'Cera Pro', sans-serif; font-style: italic; font-size: 18px; margin: 16px 0 8px; opacity: 0.85; }
 .tn-footer-addr { font-size: 13px; opacity: 0.55; margin: 0; }
 .tn-footer-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
