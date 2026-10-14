@@ -327,16 +327,7 @@ const state = {
   lang: 'en',
   activeProduct: null,
   modalImgIdx: 0,
-  design: (typeof localStorage !== 'undefined' && localStorage.getItem('tn-design')) === 'original' ? 'original' : 'current',
 };
-// Convenience: true when the "Original (PDF)" design is active.
-function isOriginal() { return state.design === 'original'; }
-function toggleDesign() {
-  state.design = isOriginal() ? 'current' : 'original';
-  try { localStorage.setItem('tn-design', state.design); } catch (e) {}
-  renderApp();
-  window.scrollTo({ top: 0, behavior: 'instant' });
-}
 
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -540,16 +531,13 @@ function renderCategoryGrid() {
         <p class="tn-section-sub">${escapeHtml(t.sub)}</p>
       </div>
       <div class="tn-cat-grid">
-        ${CATEGORIES.map((c, idx) => {
-          const img = `<div class="tn-cat-card-illus">
-                <img src="${assetUrl(`assets/cat/${c.id}.jpg`, `tinynord/cat/${c.id}`, 'w_800,h_600,c_fill,q_auto,f_auto')}" alt="${escapeHtml(c[state.lang])}" class="tn-cat-card-illus-inner tn-prod-img" loading="lazy" />${isOriginal() ? '' : `<div class="tn-cat-card-name">${escapeHtml(c[state.lang])}</div>`}
-              </div>`;
-          const nameAbove = isOriginal() ? `<div class="tn-cat-card-name">${escapeHtml(c[state.lang])}</div>` : '';
-          return `
+        ${CATEGORIES.map((c, idx) => `
             <button class="tn-cat-card" style="animation-delay:${idx * 60}ms" data-action="category" data-cat="${c.id}">
-              ${nameAbove}${img}
-            </button>`;
-        }).join('')}
+              <div class="tn-cat-card-illus">
+                <img src="${assetUrl(`assets/cat/${c.id}.jpg`, `tinynord/cat/${c.id}`, 'w_800,h_600,c_fill,q_auto,f_auto')}" alt="${escapeHtml(c[state.lang])}" class="tn-cat-card-illus-inner tn-prod-img" loading="lazy" />
+                <div class="tn-cat-card-name">${escapeHtml(c[state.lang])}</div>
+              </div>
+            </button>`).join('')}
       </div>
     </section>`;
 }
@@ -561,28 +549,15 @@ function renderAbout() {
     const piece = isLast ? `<em>${escapeHtml(l)}</em>` : escapeHtml(l);
     return `<span>${piece}${!isLast ? '<br/>' : ''}</span>`;
   }).join('');
-  const voiceTags = `<div class="tn-voice-tags">
-            ${t.voice.map(v => `<span class="tn-voice-tag">${escapeHtml(v)}</span>`).join('')}
-          </div>`;
-  if (isOriginal()) {
-    // PDF layout: title on top, full story below in a single column, pills below.
-    const paras = (t.full && t.full.length) ? t.full : [t.body, t.body2].filter(Boolean);
-    return `
-    <section class="tn-about tn-about--original" id="about">
-      <h1 class="tn-h1 tn-about-title">${titleHTML}</h1>
-      <div class="tn-about-body">
-        ${paras.map(p => `<p>${escapeHtml(p)}</p>`).join('')}
-      </div>
-      ${voiceTags}
-    </section>`;
-  }
   const paras = [t.body, t.body2, t.body3].filter(Boolean);
   return `
     <section class="tn-about" id="about">
       <div class="tn-about-grid">
         <div class="tn-about-head">
           <h1 class="tn-h1 tn-about-title">${titleHTML}</h1>
-          ${voiceTags}
+          <div class="tn-voice-tags">
+            ${t.voice.map(v => `<span class="tn-voice-tag">${escapeHtml(v)}</span>`).join('')}
+          </div>
         </div>
         <div class="tn-about-body">
           ${paras.map(p => `<p>${escapeHtml(p)}</p>`).join('')}
@@ -727,30 +702,9 @@ function renderMain() {
 }
 
 function renderApp() {
-  document.body.classList.toggle('tn-design-original', isOriginal());
-  document.body.classList.toggle('tn-design-current', !isOriginal());
-  document.body.classList.remove('tn-route-home', 'tn-route-about', 'tn-route-category', 'tn-route-retailers');
-  document.body.classList.add('tn-route-' + (state.route.page || 'home'));
   document.getElementById('header-slot').innerHTML = renderHeader();
   document.getElementById('main-slot').innerHTML = renderMain();
   document.getElementById('footer-slot').innerHTML = renderFooter();
-  renderDesignToggle();
-}
-
-// Floating bottom-right pill to switch between the current and the original
-// (PDF-derived) design. Injected once, then just its label updates.
-function renderDesignToggle() {
-  let btn = document.getElementById('tn-design-toggle');
-  if (!btn) {
-    btn = document.createElement('button');
-    btn.id = 'tn-design-toggle';
-    btn.className = 'tn-design-toggle';
-    btn.setAttribute('data-action', 'toggle-design');
-    document.body.appendChild(btn);
-  }
-  btn.innerHTML = isOriginal()
-    ? 'Design: <strong>Original</strong>'
-    : 'Design: <strong>Current</strong>';
 }
 
 function renderModal() {
@@ -811,8 +765,6 @@ document.addEventListener('click', (e) => {
     e.preventDefault();
     closeMobileMenu();
     setRoute({ page: 'category', cat: target.dataset.cat });
-  } else if (action === 'toggle-design') {
-    toggleDesign();
   } else if (action === 'lang') {
     setLang(target.dataset.lang);
     closeMobileMenu();
