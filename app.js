@@ -729,6 +729,8 @@ function renderMain() {
 function renderApp() {
   document.body.classList.toggle('tn-design-original', isOriginal());
   document.body.classList.toggle('tn-design-current', !isOriginal());
+  document.body.classList.remove('tn-route-home', 'tn-route-about', 'tn-route-category', 'tn-route-retailers');
+  document.body.classList.add('tn-route-' + (state.route.page || 'home'));
   document.getElementById('header-slot').innerHTML = renderHeader();
   document.getElementById('main-slot').innerHTML = renderMain();
   document.getElementById('footer-slot').innerHTML = renderFooter();

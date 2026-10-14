@@ -722,15 +722,28 @@ img.tn-thumb-illus { object-fit: cover; }
 /* Original theme differs from current ONLY in colours and the category-image
    treatment. Type weight, logos, hero size, header and about stay identical. */
 body.tn-design-original {
-  --accent: #8A9678;
-  --lime: #8A9678;
-  --gold: #D9CC82;
-  --footer-beige: #F1EAE3;
+  --accent: #C3BE7D;
+  --lime: #C3BE7D;
+  --gold: #C1AC92;
+  --footer-beige: #E8E5E0;
 }
-/* Gold CTA + pills need dark text (gold is light); weight unchanged. */
+/* Tan CTA + pills need dark text; weight unchanged. */
 .tn-design-original .tn-cta { background: var(--gold); color: var(--ink); }
 .tn-design-original .tn-cta:hover { background: color-mix(in srgb, var(--gold), black 10%); color: var(--ink); }
 .tn-design-original .tn-voice-tag { background: var(--gold); color: var(--ink); }
+
+/* Original LANDING (home) is dark; about/retailers stay light. */
+body.tn-design-original.tn-route-home { background: #2E2D2B; }
+.tn-design-original.tn-route-home .tn-h1,
+.tn-design-original.tn-route-home .tn-h2 { color: #F3F0EA; }
+.tn-design-original.tn-route-home .tn-eyebrow,
+.tn-design-original.tn-route-home .tn-hero-lede,
+.tn-design-original.tn-route-home .tn-section-sub,
+.tn-design-original.tn-route-home .tn-cat-card-name { color: #E7E3DB; }
+.tn-design-original.tn-route-home .tn-nav-link { color: #E7E3DB; }
+.tn-design-original.tn-route-home .tn-hero-eyebrow::before { background: var(--accent); }
+/* Black logo → light on the dark landing. */
+.tn-design-original.tn-route-home .tn-logo-img { filter: invert(1) brightness(1.7); opacity: 0.92; }
 /* Category tiles: label ABOVE the image, 4-up, square, no scrim overlay. */
 .tn-design-original .tn-cat-grid { grid-template-columns: repeat(4, 1fr); gap: 18px; }
 @media (max-width: 1080px) { .tn-design-original .tn-cat-grid { grid-template-columns: repeat(3, 1fr); } }
