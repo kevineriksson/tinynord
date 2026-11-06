@@ -675,7 +675,7 @@ function renderFooter() {
             <ul>
               <li><a href="mailto:info@fliistrade.com" class="tn-footer-contact">${iconMail()}<span>info@fliistrade.com</span></a></li>
               <li><a href="tel:+37251946988" class="tn-footer-contact">${iconPhone()}<span>+372 5194 6988</span></a></li>
-              <li><a href="https://instagram.com/tinynord" target="_blank" rel="noreferrer" class="tn-footer-contact">${iconInstagram()}<span>Instagram</span></a></li>
+              <li><a href="https://instagram.com/tinynord.design" target="_blank" rel="noreferrer" class="tn-footer-contact">${iconInstagram()}<span>Instagram</span></a></li>
             </ul>
           </div>
         </div>
